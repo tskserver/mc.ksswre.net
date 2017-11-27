@@ -1,0 +1,37 @@
+---
+title: tskserver
+layout: default
+---
+
+<section class="top-image">
+</section>
+
+		<div class="container">
+			<div class="container-twice">
+				<div class="container-left">
+					<section class="post-list">
+						{% for post in site.posts %}
+								<article>
+									<h1 class="post-title">
+										{{ post.title | escape }}
+									</h1>
+									<p class="post-meta"><i class="fa fa-calendar"></i>Last updated: {{ post.date | date: "%Y-%m-%d %H:%M" }}</p>
+									<p class="post-body">{{ post.excerpt }}</p>
+									
+									<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+										<button class="post-more" href="{{ post.url | prepend: site.baseurl }}">
+											続きを読む
+											<i class="fa fa-caret-right"></i>
+										</button>
+									</a>
+								</article>
+						{% endfor %}
+					</section>
+				</div>
+				<div class="container-right sidebar">
+{% include sidebar.html %}
+				</div>
+			</div>
+			<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+		</div>
+

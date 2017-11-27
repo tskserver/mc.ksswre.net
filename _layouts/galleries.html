@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+{% for photo in page.photos %}
+  <img src="{{ photo.url }}" style="width:800px;"/>
+  {% if photo.info %}
+  <p>{{ photo.info }}</p>
+  {% endif %}
+  <hr >
+{% endfor %}

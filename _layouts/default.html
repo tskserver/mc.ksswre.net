@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+{% if page.ng_app.empty? %}
+<html>
+{% else %}
+<html ng-app="{{ page.ng_app }}">
+{% endif %}
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23849444-15"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-23849444-15');
+		</script>
+		<meta charset="utf-8" />
+		<title>{{ page.title }}</title>
+		<link href='/css/styles.css' rel='stylesheet' />
+		<link href='/css/toc.css' rel='stylesheet' />
+		<link href='/css/highlight.css' rel='stylesheet' />
+		<link href='/css/font-awesome.css' rel='stylesheet' />
+	</head>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<body>
+		<header>
+			<div class="container">
+				<a href="/" class="logo">
+					<h1>tskserver</h1>
+					<span>A Minecraft Server!</span>
+				</a>
+			</div>
+			<nav>
+				<div class="container">
+						<ul>
+							<li>
+								<a href="/">トップページ</a>
+							</li>
+							<li>
+								<a href="/about">サーバ情報</a>
+							</li>
+							<li>
+								<a href="/plugins">プラグイン一覧</a>
+							</li>
+							<li>
+								<a href="/commands">コマンド集</a>
+							</li>
+							<li>
+								<a href="/mcMMO">mcMMO</a>
+							</li>
+							<li>
+								<a href="/introduction">サーバ参加ガイド</a>
+							</li>
+						</ul>
+				</div>
+			</nav>
+		</header>
+{{ content }}
+		<footer>
+			mc.ksswre.net は Google Analytics を利用してデータを収集しています。
+		</footer>
+	</body>
+	<link href='https://fonts.googleapis.com/css?family=Passion+One:700' rel='stylesheet' type='text/css' />
+	<link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+{% unless page.ng_app.empty? %}
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-resource.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.min.js"></script>
+{% endunless %}
+	<script src="/scripts/script.js"></script>
+	<script src="/scripts/jquery.tocLight.js"></script>
+	<script type="text/javascript">
+			$(function() {
+				$.toc.clickHideButton();
+			});
+	</script>
+</html>
