@@ -71,3 +71,4 @@ title: Herbalism
 |        花        |   ジャガイモ、ニンジン、リンゴ   |
 |      植木鉢      |  エメラルド、ダイアモンド、金塊  |
 
+{% include related/mcMMO.md %}

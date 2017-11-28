@@ -31,4 +31,4 @@ title: Repair
 ### Arcane Forging
   * 修繕時に、エンチャントを保持できるか、エンチャントレベルを減らすかのチャンスを与える。
 
-
+{% include related/mcMMO.md %}

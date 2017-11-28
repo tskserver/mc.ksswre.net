@@ -26,3 +26,4 @@ title: Archery
   * 追加ダメージを与えるが、対人のみ。
   * レベルにより、発動確率が 0.05% ずつ増加する。
 
+{% include related/mcMMO.md %}

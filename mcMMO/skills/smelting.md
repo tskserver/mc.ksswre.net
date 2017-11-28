@@ -33,3 +33,4 @@ Mining スキル、Repair スキルレベルの平均値が Smelting スキル�
   * Smelting ピッケルで採掘すると 33% の確率で、採掘したアイテムが精錬された状態でドロップする。
   * 解禁レベルに達してない人が Smelting ピッケルを使用した場合は、通常のピッケルと同じ動作をする。
 
+{% include related/mcMMO.md %}

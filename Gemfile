@@ -25,3 +25,4 @@ gem "minima"
 gem "nokogiri" #toc-generator
 gem "rouge" # syntax-hightlight
 gem "jekyll-angular"
+gem "jekyll-tagging"

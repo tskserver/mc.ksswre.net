@@ -34,3 +34,4 @@ title: Axes
 ### Greater Impact
   * ボーナスダメージと共に、ノックバックⅡのような感じになる。
 
+{% include related/mcMMO.md %}

@@ -44,3 +44,4 @@ title: Woodcutting
   * たまに 2 個ドロップする。
   * レベル毎に 0.1% 確率が加算され、Level 1000 で上限の 100% になる。
 
+{% include related/mcMMO.md %}

@@ -1,5 +1,5 @@
 ---
-title: mcMMO/スキル/swords
+title: Swords
 ---
 
 このページは [https://github.com/mcMMO-Dev/mcMMO/wiki/Swords](https://github.com/mcMMO-Dev/mcMMO/wiki/Swords) の和訳です。
@@ -32,3 +32,4 @@ Swords スキルは、剣を使った戦闘に関するスキル。
   * ただし、自分のダメージが残りハート 0.5 個分のときは発動しない。
   * 相手に遠距離攻撃を加えられた場合でも発動する。
 
+{% include related/mcMMO.md %}

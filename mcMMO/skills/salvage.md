@@ -1,5 +1,5 @@
 ---
-title: Salage
+title: Salvage
 ---
 
 このページは [https://github.com/mcMMO-Dev/mcMMO/wiki/Salvage](https://github.com/mcMMO-Dev/mcMMO/wiki/Salvage) の和訳です。
@@ -9,3 +9,5 @@ title: Salage
 |`/salvage`|詳細や現在のステータスを確認する|
 
 以下編集中
+
+{% include related/mcMMO.md %}

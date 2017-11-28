@@ -43,3 +43,4 @@ title: Unarmed
   * Dusarm に対してカウンターできるチャンスを得る。
   * レベル毎に 0.1% ずつ増加し、Level 1000 で上限 100% になる。
 
+{% include related/mcMMO.md %}

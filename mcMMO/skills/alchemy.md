@@ -28,3 +28,4 @@ Alchemy はポーション醸造に関してのスキルです。
   * レベルにより、通常の醸造レシピにないポーションを醸造可能にする
   * レシピは [Wikia](http://mcmmo.wikia.com/wiki/Alchemy) の方に詳しく載っているので参照のこと。
 
+{% include related/mcMMO.md %}
