@@ -18,7 +18,7 @@ email:
 description: > # this means to ignore newlines until "baseurl:"
     tskserver, the Minecraft server's blog which reports update information, event information to you.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://mc.ksswre.net" # the base hostname & protocol for your site
+url: "https://mc.ksswre.net" # the base hostname & protocol for your site
 twitter_username: tskserver
 
 # Build settings
@@ -37,12 +37,6 @@ defaults:
 
 gems:
     - jekyll-angular
-    - rmagick
-
-galleries:
-      - name: galleries
-      - subtitle: This is a sample gallery
-gallery_dir: "/img/galleries" 
 
 tocTopTag: "h2"
 showToggleButton: true
