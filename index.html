@@ -14,6 +14,11 @@ layout: default
 								<article>
 									<h1 class="post-title">
 										{{ post.title | escape }}
+										<section class="tags">
+											{% for tag in post.tags %}
+												<a href="/tag/{{ tag | slugize }}" rel="tag">{{ tag }}</a>
+											{% endfor %}
+										</section>
 									</h1>
 									<p class="post-meta"><i class="fa fa-calendar"></i>Last updated: {{ post.date | date: "%Y-%m-%d %H:%M" }}</p>
 									<p class="post-body">{{ post.excerpt }}</p>
