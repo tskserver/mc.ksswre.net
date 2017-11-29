@@ -134,3 +134,10 @@ noToc: true
 ![2017-11-26 15:20:36 UTC](http://pbs.twimg.com/media/DPkXVWBUMAIpGBt.jpg)
 
 
+<script>
+$('.album img').each(function(x,elm){
+  elm.addEventListener('click', function(e){
+    location.href = elm.src;
+  }.bind(elm));
+});
+</script>
