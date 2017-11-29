@@ -5,7 +5,7 @@ permalink: /introduction
 ---
 
 ## はじめに
-tskserver へようこそ．[tskserver はこういうサーバです．](/gallaries)
+tskserver へようこそ．[tskserver はこういうサーバです．](/galleries)
 このサーバは，サバイバル要素に加え，クリエイティブモードも開放して建築に専念できる環境も用意したサーバです．
 出来るだけ惰性でやる作業を減らすように運営していきたいと思っています．
 
