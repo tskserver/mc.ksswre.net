@@ -519,3 +519,7 @@ pre.highlight {
 .tag, a[rel=tag].set-4, .tag-cloud > a.set-4 { font-size: 1.3em; }
 .tag, a[rel=tag].set-5, .tag-cloud > a.set-5 { font-size: 1.4em; }
 
+.album img {
+	width: 48%;
+	display: inline;
+}

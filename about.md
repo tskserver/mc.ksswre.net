@@ -14,7 +14,7 @@ Update: 2017/11/18
 
 |アドレス        |Minecraft バージョン|
 |:--------------:|:------------------:|
-|mc.ksswre.net   |Minecraft 1.12.x    |
+|mc.ksswre.net   |Minecraft Java Edition 1.12.x|
 
 
 {% comment %}
