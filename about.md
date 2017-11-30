@@ -12,10 +12,12 @@ noToc: true
 ### tskserver
 Update: 2017/11/18 
 
-|アドレス        |Minecraft バージョン|
-|:--------------:|:------------------:|
-|mc.ksswre.net   |Minecraft Java Edition 1.12.x|
+| アドレス             | mc.ksswre.net |
+| Minecraft バージョン | Minecraft Java Edition 1.12.x |
+| CPU                  | Intel Core i5-7600K @ 3.80GHz |
+| RAM                  | 32GB (allocated 5GB) |
 
+サーバに接続できないときは[このページ](/status)をヒントにしてください。
 
 {% comment %}
 ### Minecraft Unusual Skyblock サーバ
