@@ -1,7 +1,6 @@
 ---
 title: プラグイン一覧
 date: 2016-08-10
-permalink: /plugins/
 noToc: true
 ---
 
