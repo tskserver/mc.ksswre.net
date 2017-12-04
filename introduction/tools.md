@@ -19,6 +19,8 @@ Dynmap というプラグインを導入していて，これを使うとサー�
 
 * [https://dynmap.mc.ksswre.net](https://dynmap.mc.ksswre.net)
 
+![](/img/dynmap.png)
+
 ## Twitter Bot
 誰かがログインしたときやサーバが落ちたり復活したときにツイートしてくれる bot です．
 <a href="https://twitter.com/tskserver?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-dnt="true" data-show-count="false">Follow @tskserver</a>
