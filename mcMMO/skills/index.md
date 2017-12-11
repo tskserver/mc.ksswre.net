@@ -3,40 +3,18 @@ title: mcMMO のスキル一覧
 noToc: true
 ---
 
-mcMMO は 15 のスキルがあります．
+mcMMO は以下の 15 個のスキルがあります．
 
-## [Acrobatics](/mcMMO/skills/acrobatics) 
+{% include skills.html %}
 
-## [Alchemy](/mcMMO/skills/alchemy)
-醸造 
 
-## [Archery](/mcMMO/skills/archery) 
+## [mcMMO の関連ページ](/mcMMO)
 
-## [Axes](/mcMMO/skills/axes) 
+### [スキル一覧](/mcMMO/skills)
+mcMMO の 15 のスキルについてのまとめ．
 
-## [Excavation](/mcMMO/skills/excavation)
-発掘 
+### [Party システム](/mcMMO/party)
+仲間とパーティを作って一緒に経験値をもらうことができます．
 
-## [Fishing](/mcMMO/skills/fishing) 
-
-## [Herbalism](/mcMMO/skills/herbalism)
-本草学 
-
-## [Mining](/mcMMO/skills/mining) 
-
-## [Repair](/mcMMO/skills/repair) 
-
-## [Salvage](/mcMMO/skills/salvage) 
-
-## [Smelting](/mcMMO/skills/smelting)
-精錬 
-
-## [Swords](/mcMMO/skills/swords) 
-
-## [Taming](/mcMMO/skills/taming)
-調教; テイム
-
-## [Unarmed](/mcMMO/skills/unarmed)
-コブシ
-
-## [Woodcutting](/mcMMO/skills/woodcutting) 
+### [経験値設定ファイル](/mcMMO/experience)
+mcMMO の各アクションでもらえる経験値の設定がぜんぶわかります．

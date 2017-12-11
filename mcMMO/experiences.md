@@ -1,6 +1,7 @@
 ---
 title: mcMMO/experience
 permalink: /mcMMO/experience/
+noToc: true
 ---
 
 サーバの `mcMMO/experience.yml` なファイルを公開します。
@@ -268,3 +269,5 @@ Experience:
             Elder_Guardian: 4.0
             Shulker: 2.0
 {% endhighlight %}
+
+{% include related/mcMMO.md %}

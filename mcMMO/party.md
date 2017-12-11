@@ -43,3 +43,4 @@ mcMMO のパーティを始めるには、新しいパーティを作成する�
 
 ### パーティを管理する
 
+{% include related/mcMMO.md %}
