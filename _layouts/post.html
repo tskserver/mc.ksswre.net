@@ -2,10 +2,10 @@
 layout: page
 ---
 
-<article>
-	<h1 class="post-title">
+<article vocab="http://schema.org/" typeof="BlogPosting">
+	<h1 class="post-title" property="name">
 		{{ page.title }}
-		<section class="tags">
+		<section class="tags" property="keywords" content="{{ page.tags | join: ',' }}">
 			{% for tag in page.tags %}
 				<a href="/tag/{{ tag | slugize }}" rel="tag">{{ tag }}</a>
 			{% endfor %}
@@ -13,10 +13,12 @@ layout: page
 	</h1>
 	<p class="post-meta">
 		{% if page.date %}
-		<i class="fa fa-calendar"></i> Last updated: {{ page.date | date: "%Y-%m-%d %H:%M" }}
+		<i class="fa fa-calendar"></i> Published: <time property="datePublished" content="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y-%m-%d %H:%M" }}</time>
 		//
 		{% endif %}
 		<a href="https://github.com/k5342/mc.ksswre.net/blob/master/{{ page.path }}"><i class="fa fa-pencil" aria-hidden="true"></i> Edit</a>
 	</p>
+	<section property="articleBody">
 {{ content | toc_generate }}
+	</section>
 </article>
