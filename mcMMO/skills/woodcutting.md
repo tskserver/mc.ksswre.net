@@ -1,5 +1,6 @@
 ---
 title: Woodcutting
+description: mcMMO の Woodcutting スキルのアクティブ能力やパッシブ能力，利用できるコマンドについて解説します
 ---
 
 このページは [https://github.com/mcMMO-Dev/mcMMO/wiki/Woodcutting](https://github.com/mcMMO-Dev/mcMMO/wiki/Woodcutting) の和訳です。

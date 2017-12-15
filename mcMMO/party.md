@@ -1,6 +1,7 @@
 ---
-title: mcMMO/Party
+title: mcMMO の Party システム
 permalink: mcMMO/party/
+description: mcMMO は高度なパーティシステムを持っています。複数プレーヤをチームとして一緒にゲームをすることができます。
 ---
 
 mcMMO は高度なパーティシステムを持っています。複数プレーヤをチームとして一緒にゲームをすることができます。

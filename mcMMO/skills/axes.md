@@ -1,5 +1,6 @@
 ---
 title: Axes
+description: mcMMO の Axes スキルのアクティブ能力やパッシブ能力，利用できるコマンドについて解説します
 ---
 
 このページは [https://github.com/mcMMO-Dev/mcMMO/wiki/Axes](https://github.com/mcMMO-Dev/mcMMO/wiki/Axes) の和訳です。

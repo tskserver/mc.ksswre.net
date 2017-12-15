@@ -2,6 +2,7 @@
 title: mcMMO
 permalink: /mcMMO/
 noToc: true
+description: mcMMO は Minecraft に様々なスキルやレベル，パーティーの概念を導入してくれるプラグインです。プレイヤーのスキルレベルに応じて特殊能力がついたりイベントが発生したりします。
 ---
 
 mcMMO は Minecraft に様々なスキルやレベル，パーティーの概念を導入してくれるプラグインです。

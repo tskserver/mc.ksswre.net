@@ -1,5 +1,6 @@
 ---
 title: Swords
+description: mcMMO の Swords スキルのアクティブ能力やパッシブ能力，利用できるコマンドについて解説します
 ---
 
 このページは [https://github.com/mcMMO-Dev/mcMMO/wiki/Swords](https://github.com/mcMMO-Dev/mcMMO/wiki/Swords) の和訳です。

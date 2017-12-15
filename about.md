@@ -3,6 +3,7 @@ title: サーバ情報
 date: 2017-11-18
 permalink: /about/
 noToc: true
+description: Minecraft サーバ，tskserver のサーバ情報．サーバマシンのスペックや接続するための情報，ワールド構成についてまとめています．
 ---
 
 ## 接続情報

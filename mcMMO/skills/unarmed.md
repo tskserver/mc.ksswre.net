@@ -1,5 +1,6 @@
 ---
 title: Unarmed
+description: mcMMO の Unarmed スキルのアクティブ能力やパッシブ能力，利用できるコマンドについて解説します
 ---
 
 このページは [https://github.com/mcMMO-Dev/mcMMO/wiki/Unarmed](https://github.com/mcMMO-Dev/mcMMO/wiki/Unarmed) の和訳です。

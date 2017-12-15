@@ -1,5 +1,6 @@
 ---
 title: Mining
+description: mcMMO の Mining スキルのアクティブ能力やパッシブ能力，利用できるコマンドについて解説します
 ---
 
 このページは [https://github.com/mcMMO-Dev/mcMMO/wiki/Mining](https://github.com/mcMMO-Dev/mcMMO/wiki/Mining) の和訳です。

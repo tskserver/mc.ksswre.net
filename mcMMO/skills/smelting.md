@@ -1,5 +1,6 @@
 ---
 title: Smelting
+description: mcMMO の Smelting スキルが持つパッシブ能力や利用できるコマンドについて解説します
 ---
 
 このページは [https://github.com/mcMMO-Dev/mcMMO/wiki/Smelting](https://github.com/mcMMO-Dev/mcMMO/wiki/Smelting) の和訳です。

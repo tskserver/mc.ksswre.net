@@ -1,6 +1,7 @@
 ---
 title: tskserver について
 noToc: true
+description: tskserver は 2012 年頃に Minecraft v1.2.3 のサーバを建ててスタートしたサーバです．読み方は tsu-ku-server とよみます．
 ---
 
 tskserver は 2012 年頃に Minecraft v1.2.3 のサーバを建ててスタートしたサーバです．

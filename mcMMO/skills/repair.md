@@ -1,5 +1,6 @@
 ---
 title: Repair
+description: mcMMO の Repair スキルが持つパッシブ能力と利用できるコマンドについて解説します
 ---
 
 このページは [https://github.com/mcMMO-Dev/mcMMO/wiki/Repair](https://github.com/mcMMO-Dev/mcMMO/wiki/Repair) の和訳です。

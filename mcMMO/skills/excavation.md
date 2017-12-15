@@ -1,5 +1,6 @@
 ---
 title: Excavation
+description: mcMMO の Excavation スキルのアクティブ能力やパッシブ能力，利用できるコマンドについて解説します
 ---
 
 このページは [https://github.com/mcMMO-Dev/mcMMO/wiki/Excavation](https://github.com/mcMMO-Dev/mcMMO/wiki/Excavation) の和訳です。

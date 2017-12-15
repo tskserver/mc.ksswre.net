@@ -2,6 +2,7 @@
 title: コマンド一覧
 date: 2016-08-10
 permalink: /commands/
+description: 現在の tskserver で通常ユーザが利用可能な Minecraft コマンド一覧。用法・用量を守って楽しく遊びましょう。コマンドを途中で忘れた場合は、Tab キーを押すと補完候補を出してくれることがあります。
 ---
 
 現在の tskserver で通常ユーザが利用可能なコマンド一覧。

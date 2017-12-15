@@ -1,5 +1,6 @@
 ---
 title: Herbalism
+description: mcMMO の Herbalism スキルのアクティブ能力やパッシブ能力，利用できるコマンドについて解説します
 ---
 
 このページは [https://github.com/mcMMO-Dev/mcMMO/wiki/Herbalism](https://github.com/mcMMO-Dev/mcMMO/wiki/Herbalism) の和訳です。

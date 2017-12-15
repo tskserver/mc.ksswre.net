@@ -1,5 +1,6 @@
 ---
 title: Archery
+description: mcMMO の Archery スキルのアクティブ能力やパッシブ能力，利用できるコマンドについて解説します
 ---
 
 このページは [https://github.com/mcMMO-Dev/mcMMO/wiki/Archery](https://github.com/mcMMO-Dev/mcMMO/wiki/Archery) の和訳です。
