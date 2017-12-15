@@ -35,8 +35,9 @@ defaults:
         values:
             layout: "post"
 
-gems:
+plugins:
     - jekyll-angular
+    - jekyll-sitemap
 
 tocTopTag: "h2"
 showToggleButton: true
