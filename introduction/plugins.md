@@ -45,7 +45,10 @@ MOB の移動に便利．
 楽しい．
 
 
-## サーバ参加ガイド
-* [目次](/introduction)
-* つぎ：[コマンドを使った効率化](/introduction/commands)
-* まえ：[Minecraft 外の便利ツールについて](/introduction/tools)
+## [サーバ参加ガイド目次](/introduction)
+* [tskserver について](/introduction/about)
+* [tskserver で遊ぶ準備](/introduction/prepare)
+* [Minecraft 外の便利ツールについて](/introduction/tools)
+* **[少し違う遊び方](/introduction/plugins)**
+* [コマンドを使った効率化](/introduction/commands)
+* [高度な遊び方](/introduction/advanced)

@@ -93,6 +93,11 @@ WorldEdit というプラグインがやってくれます．
 ## さらに知りたい場合
 続きは[コマンド集](/commands)へ．このサイト上部のナビゲーションからも移動できます．
 
-## サーバ参加ガイド
-* [目次](/introduction)
-* まえ：[少し違う遊び方](/introduction/plugins)
+
+## [サーバ参加ガイド目次](/introduction)
+* [tskserver について](/introduction/about)
+* [tskserver で遊ぶ準備](/introduction/prepare)
+* [Minecraft 外の便利ツールについて](/introduction/tools)
+* [少し違う遊び方](/introduction/plugins)
+* **[コマンドを使った効率化](/introduction/commands)**
+* [高度な遊び方](/introduction/advanced)

@@ -11,6 +11,10 @@ tskserver は 2012 年頃に Minecraft v1.2.3 のサーバを建ててスター�
 現在のマップは 2017 年 11 月 19 日にリセットしたものです (下図)．
 ![](https://pbs.twimg.com/media/DO_xfIkU8AAq8iS.jpg)
 
-## サーバ参加ガイド
-* [目次](/introduction)
-* つぎ：[tskserver で遊ぶ準備](/introduction/prepare)
+## [サーバ参加ガイド目次](/introduction)
+* **[tskserver について](/introduction/about)**
+* [tskserver で遊ぶ準備](/introduction/prepare)
+* [Minecraft 外の便利ツールについて](/introduction/tools)
+* [少し違う遊び方](/introduction/plugins)
+* [コマンドを使った効率化](/introduction/commands)
+* [高度な遊び方](/introduction/advanced)

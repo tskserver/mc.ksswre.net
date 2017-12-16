@@ -34,25 +34,9 @@ tskserver はパブリックサーバで，[こういう雰囲気のサーバ](/
   * WorldEdit を使う
   * 時刻や天気を変える
 
-## ドキュメントを調べる
-このサイトでは，一部のプラグインや遊び方について，より詳細に解説した記事を用意していて，たくさんの機能を皆さんに使ってもらいたいと思っています．
-  * [mcMMO](/mcMMO)
-  * [プラグイン一覧](/plugins)
-  * [コマンド集](/commands)
+## [高度な遊び方](/introduction/advanced)
+  * 友達を誘う
+  * サイトを活用する
+  * プログラムを書く
 
-## 友人を誘う
-Minecraft サーバに招待したい友人がいますか？<br />
-友人にこのページの URL ([https://mc.ksswre.net/introduction](https://mc.ksswre.net/introduction)) を送りつけましょう．
-以下をコピペしてください．
 
-> https://mc.ksswre.net/introduction をみて
-
-## [mc.ksswre.net](https://mc.ksswre.net) を改善する
-このサイトはモバイル対応していなかったり，ServiceWorker でキャッシュしていなかったり，
-記事の編集が終わってなかったり，触れていない話題も多々あるので，誰か編集を手伝ってください．
-以下の手順でページを編集できます．
-
-### GitHub に登録する
-
-### プルリクを投げつける
-このページのソースコードは [GitHub](https://github.com/k5342/mc.ksswre.net) で公開されているのでプルリクを投げましょう．

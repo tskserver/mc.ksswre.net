@@ -28,7 +28,10 @@ Minecraft バージョンの変更はランチャの設定から変更できま�
 > そのときは[次のガイド](/introduction/tools)に示す便利ツールを使って情報収集してサーバが落ちているかどうか確認してください．
 
 
-## サーバ参加ガイド
-* [目次](/introduction)
-* つぎ：[Minecraft 外の便利ツールについて](/introduction/tools)
-* まえ：[tskserver について](/introduction/about)
+## [サーバ参加ガイド目次](/introduction)
+* [tskserver について](/introduction/about)
+* **[tskserver で遊ぶ準備](/introduction/prepare)**
+* [Minecraft 外の便利ツールについて](/introduction/tools)
+* [少し違う遊び方](/introduction/plugins)
+* [コマンドを使った効率化](/introduction/commands)
+* [高度な遊び方](/introduction/advanced)
