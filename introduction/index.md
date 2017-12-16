@@ -16,6 +16,8 @@ tskserver はパブリックサーバで，[こういう雰囲気のサーバ](/
 ガイドでは，tskserver で遊ぶための設定から，コマンドを使った高度な遊び方まで解説します．
 
 ## [tskserver について](/introduction/about)
+  * 読み方
+  * 歴史
 
 ## [tskserver で遊ぶ準備](/introduction/prepare)
   * サーバ情報を追加して接続する
