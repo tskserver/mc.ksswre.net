@@ -30,6 +30,9 @@ noToc: true
 ## PermissionsEx-1.23.4.jar
 通常ユーザが操作できるコマンドや動作に制限をかけたり、緩くしたりします。
 
+## [TrainCarts](/plugins/traincarts)
+トロッコを電車のようにします．
+
 ## TreeAssist.jar
 木こり MOD。
 Minecraft 1.10 対応版は GitHub からダウンロードしてビルドしたもの。
