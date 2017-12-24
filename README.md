@@ -13,4 +13,5 @@ bundle exec jekyll serve
 * jekyll-toc-generator - https://github.com/dafi/jekyll-toc-generator
 
 ## TODO
-* tag support
+* support categories
+* support oEmbed about this site and preview other site in Markdown
