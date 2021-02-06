@@ -27,3 +27,4 @@ gem "rouge" # syntax-hightlight
 gem "jekyll-angular"
 gem "jekyll-tagging"
 gem "jekyll-sitemap"
+gem "jekyll-seo-tag"

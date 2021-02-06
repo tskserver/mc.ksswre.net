@@ -38,6 +38,7 @@ defaults:
 plugins:
     - jekyll-angular
     - jekyll-sitemap
+    - jekyll-seo-tag
 
 tocTopTag: "h2"
 showToggleButton: true
