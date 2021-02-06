@@ -5,7 +5,7 @@ description: tskserver は 2012 年頃に Minecraft v1.2.3 のサーバを建て
 ---
 
 tskserver は 2012 年頃に Minecraft v1.2.3 のサーバを建ててスタートしたサーバです．
-読み方は tsu-ku-server とよみます．
+読み方は tsu-ku-server とよみます．つくしさーばとも呼ばれます。
 
 これまで，Minecraft のバージョンが大きく変わる度にワールドをリセットしてきました．
 現在のマップは 2017 年 11 月 19 日にリセットしたものです (下図)．
