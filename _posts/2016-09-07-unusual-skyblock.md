@@ -1,7 +1,7 @@
 ---
 title: The Unusual Skyblock サーバ復旧しました
 date: 2016/09/07 19:51
-tag: [update, skyblock, trouble]
+tag: [update, skyblock, outage]
 ---
 
 以前、[試運転](https://twitter.com/k5342/status/723502398510116865)で [The Unusual Skyblock](http://forum.minecraftuser.jp/viewtopic.php?t=5255) サーバを立ち上げていましたが、負荷が大きく、ラグが酷い、**3 分間隔で落ちる**などといったトラブルが多発し、実用に耐えるものではありませんでした。

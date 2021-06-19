@@ -1,7 +1,7 @@
 ---
 title: The Unusual SkyBlock サーバを一時休止しています
 date: 2016/09/08 1:56
-tag: [trouble, skyblock]
+tag: [outage, skyblock]
 ---
 
 ワールドデータが保存されていないタイミングがあったため、一時的にサーバを停めています。
