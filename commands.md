@@ -1,6 +1,6 @@
 ---
-title: コマンド一覧
-date: 2016-08-10
+title: 開放コマンド一覧
+date: 2021-06-20
 permalink: /commands/
 description: 現在の tskserver で通常ユーザが利用可能な Minecraft コマンド一覧。用法・用量を守って楽しく遊びましょう。コマンドを途中で忘れた場合は、Tab キーを押すと補完候補を出してくれることがあります。
 ---
@@ -11,20 +11,6 @@ description: 現在の tskserver で通常ユーザが利用可能な Minecraft 
 
 コマンドを途中で忘れた場合は、`<tab>`キーを押すと補完候補を出してくれることがあります。
 
-## 移動
-
-`/spawn` | 初期スポーン地点に移動
-`/sethome` | リスポーン地点を設定
-`/home` | リスポーン地点に移動
-`/fly` | 飛行モードのオン・オフを切り替えます
-`/flyspeed <1-10>` | 飛行時のスピードを変更します
-
-## ゲームモード
-
-`/gamemode 0` | サバイバルモードにする
-`/gamemode 1` | クリエイティブモードにする
-`/gamemode 2` | アドベンチャーモードにする
-`/gamemode 3` | スペクテイターモードにする
 
 ## Dynmap
 
@@ -38,25 +24,6 @@ description: 現在の tskserver で通常ユーザが利用可能な Minecraft 
 * `/dmarker update <marker-label> set:<markerset-id> icon:<icon-id> newlabel:<new-label>` <br /> `<marker-label>` で指定したマーカの情報を更新します。ただし、マーカセットは変更できません。
 * `/dmarker delete id:<marker-id> set:<markerset-id>` <br /> `<marker-label>` で指定したマーカを削除します。
 
-
-## mcMMO
-
-`/mcstats` | 自分のスキルレベルを一覧表示します
-`/mctop [skill]` | [skill] で指定するスキルのレベルランキングを表示します
-`/mcrank [skill]` | 上と同様 
-`/mcrank` | すべてのスキルについて自分の順位を表示します
-`/kraken` | 怖くて夜に一人でトイレに行けなくなります
-
-コマンドを途中まで打って `<tab>` キー押すとスキル名などを補完してくれます。
-
-## Vote
-
-`/vote list` | 投票可能な項目を表示する
-`/vote day` | 朝にする
-`/vote night` | 夜にする
-`/vote sun` | 晴れにする
-`/vote yes` | 賛成票を投じる
-`/vote no` | 反対票を投じる
 
 ## WorldEdit
 

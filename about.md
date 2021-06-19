@@ -1,6 +1,6 @@
 ---
 title: サーバ情報
-date: 2018-10-23
+date: 2021-06-20
 permalink: /about/
 noToc: true
 description: Minecraft サーバ，tskserver のサーバ情報．サーバマシンのスペックや接続するための情報，ワールド構成についてまとめています．
@@ -11,12 +11,11 @@ description: Minecraft サーバ，tskserver のサーバ情報．サーバマ�
 でないと簡単に自爆します。
 
 ### tskserver
-Update: 2018-10-23
+Update: 2021-06-20
 
 | アドレス             | mc.ksswre.net |
-| Minecraft バージョン | Minecraft Java Edition 1.13.2 |
-| CPU                  | Intel Core i5-7600K @ 3.80GHz |
-| RAM                  | 32GB (allocated 10GB) |
+| Minecraft バージョン | Minecraft Java Edition 1.17 |
+| RAM                  | 16 GB (allocated 10 GB) |
 
 サーバに接続できないときは[このページ](/status)をヒントにしてください。
 

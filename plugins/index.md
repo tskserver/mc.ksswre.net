@@ -1,62 +1,55 @@
 ---
 title: プラグイン一覧
-date: 2016-08-10
+date: 2021-06-20 0:48
 noToc: true
 ---
 
 サーバに導入済みのプラグイン一覧。
 
-## Cenotaph-4.5.jar
-自分が倒されたときに、遺品を詰めてチェストを作ります。
+## Cenotaph
+チェストがインベントリにある状態で自分が倒されたとき、その場に遺品を詰めたチェストを作ります。
 1 時間経っても回収されない場合は消滅します。
 
-## ChatManager.jar
+<https://www.spigotmc.org/resources/cenotaph.2180/>
 
-## HomeSpawnPlus.jar
-リスポーン地点をコマンドで操作可能にするもの。
-
-## [LimitedCreative.jar](https://dev.bukkit.org/bukkit-plugins/limited-creative)
-クリエイティブモードに制限をかけます。
-
-## MobCatcherLite.jar
-タマゴを Mob に向かって投げることで Mob をスポーンエッグ化することができます。
-
-## Multiverse-Core-2.5.0-SNAPSHOT.jar
-
-## Multiverse-NetherPortals-2.5.0-SNAPSHOT.jar
-
-## Multiverse-Portals-2.5.0-SNAPSHOT.jar
-
-## PermissionsEx-1.23.4.jar
+## LuckPerms
 通常ユーザが操作できるコマンドや動作に制限をかけたり、緩くしたりします。
 
-## [TrainCarts](/plugins/traincarts)
-トロッコを電車のようにします．
+<https://www.spigotmc.org/resources/luckperms.28140/>
 
-## TreeAssist.jar
-木こり MOD。
-Minecraft 1.10 対応版は GitHub からダウンロードしてビルドしたもの。
+## TreeAssist
+木こり MOD
 
-## Vote.jar
-投票で時刻や天候を変更できるようにします。
+<https://www.spigotmc.org/resources/treeassist.67436/>
 
-## [WireRod.jar](http://forum.minecraftuser.jp/viewtopic.php?f=38&t=21210&p=188854#p188854)
-詳細はリンク先参照のこと。
+## WireRod
+WireRod という立体機動な釣り竿を追加します。この釣り竿は先端を引っ掛けることで空高くジャンプできます。
+WireRod 使用時の着地時のダメージ判定は無効にしているので、落下ダメージを受けることはありません。
+クラフトのレシピは以下参照。
 
-## dynmap-2.3.jar
-開拓済みの地形を Web ブラウザで表示できるようにします。
+```
+◯◯鉄
+◯鉄糸
+鉄◯糸
 
-## dynmap-mobs-1.3.jar
-一部の動物やモンスターを表示します。
+◯: 空欄
+鉄: 鉄インゴット
+糸: クモ糸
+```
 
-## fly.jar
-`/fly` コマンドや `/flyspeed` コマンドを追加します。
+<https://github.com/ucchyocean/WireRod>
 
-## mcMMO.jar
-スキルシステムを導入します。
+## dynmap
+開拓済みの地形を [Web ブラウザで表示](https://dynmap.mc.ksswre.net)できるようにします。
 
-## worldedit-bukkit-6.1.5.jar
+<https://www.spigotmc.org/resources/dynmap.274/>
+
+## WorldEdit
 コマンドを用いた地形操作をできるようにします。
 
-## worldguard-6.1.2.jar
+<https://dev.bukkit.org/projects/worldedit>
 
+## WorldGuard
+地形保護を追加します。プレイヤーごとの領域保護や、ワールド全体のクリーパー爆破保護など。
+
+<https://dev.bukkit.org/projects/worldguard>
