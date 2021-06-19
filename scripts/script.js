@@ -45,7 +45,7 @@ function redraw_is_running(servername, key, value){
 	}
 	elm.className += " a-rotation a-ease-in";
 	elm.appendChild(icon);
-	elm.appendChild(document.createTextNode((is_online) ? 'Yes' : 'No'));
+	elm.appendChild(document.createTextNode(text));
 	e.appendChild(elm);
 	return elm;
 }
