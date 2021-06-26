@@ -38,6 +38,7 @@ plugins:
     - jekyll-angular
     - jekyll-sitemap
     - jekyll-seo-tag
+    - jekyll-last-modified-at
 
 tocTopTag: "h2"
 showToggleButton: true

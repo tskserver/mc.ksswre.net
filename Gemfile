@@ -24,7 +24,11 @@ gem "minima"
 # end
 gem "nokogiri" #toc-generator
 gem "rouge" # syntax-hightlight
-gem "jekyll-angular"
-gem "jekyll-tagging"
-gem "jekyll-sitemap"
-gem "jekyll-seo-tag"
+
+group :jekyll_plugins do
+  gem "jekyll-angular"
+  gem "jekyll-tagging"
+  gem "jekyll-sitemap"
+  gem "jekyll-seo-tag"
+  gem 'jekyll-last-modified-at'
+end

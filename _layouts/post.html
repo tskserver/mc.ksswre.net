@@ -14,6 +14,10 @@ layout: page
 	<p class="post-meta">
 		{% if page.date %}
 		<i class="fa fa-calendar"></i> Published: <time property="datePublished" content="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y-%m-%d %H:%M" }}</time>
+		/
+		{% endif %}
+		{% if page.last_modified_at %}
+		<i class="fa fa-rotate-left"></i> Updated: <time property="dateModified" content="{{ page.last_modified_at | date_to_xmlschema }}">{{ page.last_modified_at | date: "%Y-%m-%d %H:%M" }}</time>
 		//
 		{% endif %}
 		<a href="https://github.com/k5342/mc.ksswre.net/blob/master/{{ page.path }}"><i class="fa fa-pencil" aria-hidden="true"></i> Edit</a>
