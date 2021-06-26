@@ -35,7 +35,6 @@ defaults:
             layout: "post"
 
 plugins:
-    - jekyll-angular
     - jekyll-sitemap
     - jekyll-seo-tag
     - jekyll-last-modified-at

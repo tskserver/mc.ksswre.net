@@ -2,12 +2,7 @@
 layout: compress
 ---
 <!DOCTYPE html>
-{% seo title=false %}
-{% if page.ng_app.empty? %}
 <html>
-{% else %}
-<html ng-app="{{ page.ng_app }}">
-{% endif %}
 	<head>
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23849444-15"></script>
@@ -25,11 +20,7 @@ layout: compress
 		<meta name="twitter:title" content="{{ page.title }}" />
 		{% seo %}
 		<link href='/css/styles.css' rel='stylesheet' />
-		<link href='/css/toc.css' rel='stylesheet' />
-		<link href='/css/highlight.css' rel='stylesheet' />
-		<link href='/css/font-awesome.css' rel='stylesheet' />
 	</head>
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<body>
 		<header>
 			<div class="container" vocab="http://schema.org/" typeof="logo">
@@ -71,11 +62,10 @@ layout: compress
 	<link href='https://fonts.googleapis.com/css?family=Passion+One:700' rel='stylesheet' type='text/css' />
 	<link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-{% unless page.ng_app.empty? %}
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-resource.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.min.js"></script>
-{% endunless %}
+	<link href='/css/toc.css' rel='stylesheet' />
+	<link href='/css/highlight.css' rel='stylesheet' />
+	<link href='/css/font-awesome.css' rel='stylesheet' />
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script src="/scripts/script.js"></script>
 	<script src="/scripts/jquery.tocLight.js"></script>
 	<script type="text/javascript">

@@ -26,7 +26,6 @@ gem "nokogiri" #toc-generator
 gem "rouge" # syntax-hightlight
 
 group :jekyll_plugins do
-  gem "jekyll-angular"
   gem "jekyll-tagging"
   gem "jekyll-sitemap"
   gem "jekyll-seo-tag"
