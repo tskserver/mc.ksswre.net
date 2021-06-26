@@ -16,6 +16,7 @@ body {
 	color: rgb(70, 70, 70);
 	font-size: 11pt;
 	font-family: 'Lato', 'Meiryo', 'Arial', sans-serif;
+	font-display: swap;
 /*	letter-spacing: 0.07em; */
 	-webkit-font-smoothing: antialiased;
 	-webkit-text-size-adjust: 100%;
@@ -42,6 +43,7 @@ header .logo h1 {
 	margin: 0;
 	font-size: 30pt;
 	font-family: 'Passion One', 'Meiryo', 'Arial', 'Helvetica', sans-serif;
+	font-display: swap;
 	
 	display: flex-item;
 }
@@ -283,6 +285,7 @@ li {
 
 code {
 	font-family: 'Inconsolata', 'Ricty', 'Consolas', sans-serif;
+	font-display: swap;
 	padding: 0.2em 0.3em;
 	color: rgb(230, 30, 20);
 	text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.7);
@@ -310,6 +313,7 @@ figure.highlight code {
 
 button {
 	font-family: 'Lato', 'Meiryo', 'Arial', sans-serif;
+	font-display: swap;
 	color: rgb(255, 255, 255);
 	cursor: pointer;
 	padding: 0.7em 0;
