@@ -55,9 +55,7 @@ layout: compress
 			mc.ksswre.net は Google Analytics を利用してデータを収集しています。
 		</footer>
 	</body>
-	<link href='https://fonts.googleapis.com/css?family=Passion+One:700' rel='stylesheet' type='text/css' />
-	<link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
-	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link href='/fonts/fontawesome-webfont.woff2?v=4.6.3' rel='preload' as='font' type='font/woff2' crossorigin/>
 	<link href='/css/toc.css' rel='stylesheet' />
 	<link href='/css/highlight.css' rel='stylesheet' />
 	<link href='/css/font-awesome.css' rel='stylesheet' />
@@ -68,5 +66,13 @@ layout: compress
 			$(function() {
 				$.toc.clickHideButton();
 			});
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+	<script>
+		WebFont.load({
+			google: {
+				families: ['Passion One:700', 'Inconsolata', 'Lato']
+			}
+		});
 	</script>
 </html>
