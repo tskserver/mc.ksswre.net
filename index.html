@@ -21,7 +21,17 @@ description: Minecraft Java Edition のサーバ，tskserver の Web ページ�
 											{% endfor %}
 										</section>
 									</h1>
-									<p class="post-meta"><i class="fa fa-calendar"></i>Published: <time property="datePublished" content="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d %H:%M" }}</time></p>
+									<p class="post-meta">
+										<span>
+											<i class="fa fa-calendar"></i>Published: <time property="datePublished" content="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d %H:%M" }}</time>
+										</span>
+										{% if post.last_modified_at %}
+										<span>/</span>
+										<span>
+											<i class="fa fa-rotate-left"></i>Updated: <time property="dateModified" content="{{ post.last_modified_at | date_to_xmlschema }}">{{ post.last_modified_at | date: "%Y-%m-%d %H:%M" }}</time>
+										</span>
+										{% endif %}
+									</p>
 									<p class="post-body" property="headline" content="{{ post.excerpt | strip_html | strip_newlines }}">{{ post.excerpt }}</p>
 									
 									<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
