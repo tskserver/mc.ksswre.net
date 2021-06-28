@@ -266,8 +266,28 @@ article h6 {
 
 article h1 .tags, .tags {
 	margin-left: 1ch;
-	font-size: 0.6em;
+	font-size: 0.4em;
 	display: inline-block
+}
+
+article h2 {
+	font-size: 1.5em;
+}
+
+article h3 {
+	font-size: 1.2em;
+}
+
+article h4 {
+	font-size: 1.2em;
+}
+
+article h5 {
+	font-size: 1.2em;
+}
+
+article h6 {
+	font-size: 1em;
 }
 
 h2 {
@@ -333,6 +353,7 @@ article {
 
 article .post-title {
 	margin: 0;
+	font-size: 1.8em;
 }
 
 article .post-meta {
