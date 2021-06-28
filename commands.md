@@ -9,21 +9,63 @@ description: 現在の tskserver で通常ユーザが利用可能な Minecraft 
 
 用法・用量を守って楽しく遊びましょう。
 
+コマンドは `/` (スラッシュ) で始まる文字列です。コマンドは <kbd>T</kbd> を入力してチャット入力画面を出してから入力します。
 コマンドを途中で忘れた場合は、`<tab>`キーを押すと補完候補を出してくれることがあります。
 
 
+
 ## Dynmap
+Dynmap はリアルタイムマップのプラグインです。マップにマーカーを追加できる設定にしています。  
+表示はこちらから： <https://dynmap.mc.ksswre.net/>
 
-### Marker
+### マーカを設定する
+Dynmap にマーカを表示します。ランドマークや道案内に便利です。
 
-* 公式ドキュメント(英語) [https://github.com/webbukkit/dynmap/wiki/Using-markers](https://github.com/webbukkit/dynmap/wiki/Using-markers)
+公式ドキュメント(英語) [https://github.com/webbukkit/dynmap/wiki/Using-markers](https://github.com/webbukkit/dynmap/wiki/Using-markers)
 
-* `/dmarker list` - 現在設定されているマーカの一覧を表示します。
-* `/dmarker add <marker-label> icon:<icon-id> set:<markerset-id>` <br /> Dynmap のマーカを現在の場所に追加します。利用できるアイコンは[こちら](/img/dynmap-markers.png)を参照。`icon:` を省略すると、house アイコンになります。`set:` を省略するとデフォルトマーカセットの *Markers* になります。
-* `/dmarker movehere <marker-label> set:<markerset-id>` <br /> `<marker-label>` で指定したマーカを現在の場所に移動します。`set:` はデフォルトマーカセットでないマーカを指定するときは省略できません。
-* `/dmarker update <marker-label> set:<markerset-id> icon:<icon-id> newlabel:<new-label>` <br /> `<marker-label>` で指定したマーカの情報を更新します。ただし、マーカセットは変更できません。
-* `/dmarker delete id:<marker-id> set:<markerset-id>` <br /> `<marker-label>` で指定したマーカを削除します。
+#### マーカの一覧を表示 (dmarker list)
+現在設定されているマーカの一覧を表示します。
+```
+/dmarker list
+```
 
+#### マーカを追加 (dmarker add)
+Dynmap にマーカを追加します。コマンドが成功すると `マーカの表示名` のラベルが付いた Dynmap に追加されます。
+```
+/dmarker add マーカの表示名 icon:アイコン名 set:マーカセット名
+```
+
+- **マーカの表示名**: マーカの表示名を指定します。ここで指定した文字列がそのまま表示されます。日本語でも大丈夫です
+- **icon:アイコン名**: (省略可能) `アイコン名` でマーカの表示アイコンを指定します。利用できるアイコンは[こちら](/img/dynmap-markers.png)を参照。省略した場合は house アイコンになります
+- **set:マーカセット名**: (省略可能) マーカセット名。省略するとデフォルトマーカセットになります。
+
+#### マーカを現在位置に移動 (dmarker movehere)
+指定したマーカを現在の場所に移動します。マーカの位置を修正できます
+```
+/dmarker movehere マーカの表示名 set:マーカセット名
+```
+
+- **set:マーカセット名**: (省略可能) マーカセット名。省略するとデフォルトマーカセットになります。
+
+#### マーカの表示名変更・アイコン変更 (dmarker update)
+指定したマーカの表示名やアイコンを変更します。
+
+```
+/dmarker update マーカの表示名 set:マーカセット名 icon:アイコン名 newlabel:新しい表示名
+```
+
+- **icon:アイコン名**: (省略可能) `アイコン名` でマーカの表示アイコンを指定します。利用できるアイコンは[こちら](/img/dynmap-markers.png)を参照。省略した場合は house アイコンになります
+- **newlabel:新しい表示名**: (省略可能) 新しい表示名
+- **set:マーカセット名**: (省略可能) マーカセット名。省略するとデフォルトマーカセットになります。
+
+#### マーカの削除 (dmarker delete)
+指定したマーカを削除します。
+
+```
+/dmarker delete マーカの表示名 set:マーカセット名
+```
+
+- **set:マーカセット名**: (省略可能) マーカセット名。省略するとデフォルトマーカセットになります。
 
 ## WorldEdit
 
