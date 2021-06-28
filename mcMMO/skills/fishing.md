@@ -1,6 +1,6 @@
 ---
 title: Fishing
-description: mcMMO の Fishing スキルのアクティブ能力やパッシブ能力，利用できるコマンドについて解説します
+description: mcMMO の Fishing スキルのアクティブ能力やパッシブ能力、利用できるコマンドについて解説します
 ---
 
 このページは [https://github.com/mcMMO-Dev/mcMMO/wiki/Fishing](https://github.com/mcMMO-Dev/mcMMO/wiki/Fishing) の和訳です。

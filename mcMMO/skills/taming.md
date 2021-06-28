@@ -1,6 +1,6 @@
 ---
 title: Taming
-description: mcMMO の Taming スキルのアクティブ能力やパッシブ能力，利用できるコマンドについて解説します
+description: mcMMO の Taming スキルのアクティブ能力やパッシブ能力、利用できるコマンドについて解説します
 ---
 
 このページは [https://github.com/mcMMO-Dev/mcMMO/wiki/Taming](https://github.com/mcMMO-Dev/mcMMO/wiki/Taming) の和訳です。

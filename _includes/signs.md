@@ -3,8 +3,8 @@
 |eject|トロッコから乗客を下ろす|
 |enter|トロッコにプレイヤーや Mob を乗せる|
 |blocker|トロッコの進行を妨げる (`[+train]` は使えない)|
-|[station](/plugins/traincarts/signs/station)|トロッコを停止させ，直後に発進させる|
-|launch|トロッコを発進させたり，スピードを変更したりする|
+|[station](/plugins/traincarts/signs/station)|トロッコを停止させ、直後に発進させる|
+|launch|トロッコを発進させたり、スピードを変更したりする|
 |property|トロッコのプロパティの値を変更する|
 |blockchanger|トロッコに表示されるブロックの種類を変更する|
 |switcher|トロッコの内容によって線路のポイント切り替えを行って進行方向をスイッチする|

@@ -1,6 +1,6 @@
 ---
 title: Acrobatics
-description: mcMMO の Acrobatics スキルのアクティブ能力やパッシブ能力，利用できるコマンドについて解説します
+description: mcMMO の Acrobatics スキルのアクティブ能力やパッシブ能力、利用できるコマンドについて解説します
 ---
 
 このページは [https://github.com/mcMMO-Dev/mcMMO/wiki/Acrobatics](https://github.com/mcMMO-Dev/mcMMO/wiki/Acrobatics) の和訳です。

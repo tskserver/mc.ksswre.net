@@ -2,7 +2,7 @@
 title: mcMMO/experience
 permalink: /mcMMO/experience/
 noToc: true
-description: tskserver の mcMMO 設定を公開します．これを見れば何をすれば経験値がいくら貰えるかが全部わかります．
+description: tskserver の mcMMO 設定を公開します。これを見れば何をすれば経験値がいくら貰えるかが全部わかります。
 ---
 
 サーバの `mcMMO/experience.yml` なファイルを公開します。

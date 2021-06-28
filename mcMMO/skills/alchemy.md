@@ -1,6 +1,6 @@
 ---
 title: Alchemy
-description: mcMMO の Alchemy スキルのアクティブ能力やパッシブ能力，利用できるコマンドについて解説します
+description: mcMMO の Alchemy スキルのアクティブ能力やパッシブ能力、利用できるコマンドについて解説します
 ---
 
 このページは [https://github.com/mcMMO-Dev/mcMMO/wiki/Skills](https://github.com/mcMMO-Dev/mcMMO/wiki/Skills) の和訳です。
