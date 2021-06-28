@@ -275,7 +275,7 @@ article h2 {
 }
 
 article h3 {
-	font-size: 1.2em;
+	font-size: 1.5em;
 }
 
 article h4 {
@@ -291,7 +291,8 @@ article h6 {
 }
 
 h2 {
-	border-bottom: dotted 1px rgb(200, 200, 200);
+	border-bottom: solid 2px rgb(200, 200, 200);
+	padding-bottom: .1em
 }
 
 article p {
