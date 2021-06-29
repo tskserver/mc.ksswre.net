@@ -2,40 +2,33 @@
 title: サーバ参加ガイド
 date: 2017-11-29
 noToc: true
-description: tskserver へようこそ。tskserver はパブリックサーバで、誰でも、自由に、好き勝手に遊ぶことが出来ます。このサーバはサバイバル要素に加え、クリエイティブモードも開放して建築に専念できる環境も用意していて、出来るだけ惰性でやる作業を減らすように運営する方針です。
 ---
 
 ## はじめに
 tskserver へようこそ。
-tskserver はパブリックサーバで、[こういう雰囲気のサーバ](/galleries)です。
-誰でも、自由に、好き勝手に遊ぶことが出来ます。
+tskserver は **Minecraft Java Edition** のパブリックサーバです。サーバの雰囲気は[アルバム](/galleries)をみてください。
 
-ガイドでは、tskserver で遊ぶための設定から、コマンドを使った高度な遊び方まで解説します。
+このサーバ参加ガイドでは tskserver で遊ぶための事前準備の方法や、サーバ接続後の操作方法、コマンドを使った高度な遊び方などを紹介します。
 
 ## [tskserver について](/introduction/about)
-  * 読み方
-  * 歴史
 
 ## [tskserver で遊ぶ準備](/introduction/prepare)
-  * サーバ情報を追加して接続する
-  * サーババージョン確認 & 起動確認
+  * Minecraft バージョンを揃える
+  * サーバ設定の追加
+  * サーバに接続する
+
+## [ログイン後の操作](/introduction/day1)
+  * 操作方法・チャット
+  * 観光する
+  * 家を作る
+
+## [プラグインの利用](/introduction/plugins)
+  * プラグインの機能紹介
 
 ## [Minecraft 外の便利ツールについて](/introduction/tools)
   * Dynmap
   * 通知サービス
-  * 情報収集・トラブルシューティング
-
-## [少し違う遊び方](/introduction/plugins)
-  * 導入している拡張機能・プラグインについて
-
-## [コマンドを使った効率化](/introduction/commands)
-  * 空を飛ぶ、テレポート、クリエイティブモードを使う
-  * WorldEdit を使う
-  * 時刻や天気を変える
 
 ## [高度な遊び方](/introduction/advanced)
-  * 友達を誘う
-  * サイトを活用する
-  * プログラムを書く
 
-
+## [サーバに接続できない場合](/faq/cannot-connect)
