@@ -6,9 +6,10 @@ noToc: true
 
 ## はじめに
 tskserver へようこそ。
-tskserver は **Minecraft Java Edition** のパブリックサーバです。サーバの雰囲気は[アルバム](/galleries)をみてください。
+tskserver は **Minecraft Java Edition** のパブリックサーバです。  
+サーバの雰囲気は[アルバム](/galleries)をみてください。
 
-このサーバ参加ガイドでは tskserver で遊ぶための事前準備の方法や、サーバ接続後の操作方法、コマンドを使った高度な遊び方などを紹介します。
+このサーバ参加ガイドでは、tskserver で遊ぶための事前準備の方法や、サーバ接続後の操作方法、コマンドを使った高度な遊び方などを紹介します。
 
 ## [tskserver について](/introduction/about)
 
@@ -22,7 +23,7 @@ tskserver は **Minecraft Java Edition** のパブリックサーバです。サ
   * 観光する
   * 家を作る
 
-## [プラグインの利用](/introduction/plugins)
+## [プラグイン紹介](/introduction/plugins)
   * プラグインの機能紹介
 
 ## [Minecraft 外の便利ツールについて](/introduction/tools)
@@ -31,4 +32,4 @@ tskserver は **Minecraft Java Edition** のパブリックサーバです。サ
 
 ## [高度な遊び方](/introduction/advanced)
 
-## [サーバに接続できない場合](/faq/cannot-connect)
+<!-- ## [サーバに接続できない場合](/faq/cannot-connect) -->

@@ -13,8 +13,8 @@ description: Minecraft サーバ、tskserver のサーバ情報。サーバマ�
 ### tskserver
 Update: 2021-06-20
 
-| アドレス             | mc.ksswre.net |
-| Minecraft バージョン | Minecraft Java Edition 1.17 |
+| アドレス             | {% include hostname.md %} |
+| Minecraft バージョン | {% include latest_version.md %} |
 | RAM                  | 16 GB (allocated 10 GB) |
 
 サーバに接続できないときは[このページ](/status)をヒントにしてください。
