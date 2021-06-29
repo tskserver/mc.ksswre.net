@@ -11,7 +11,7 @@ Minecraft におけるコマンドとはスラッシュから始まるテキス�
 ## [サーバ参加ガイド目次](/introduction)
 * [tskserver について](/introduction/about)
 * [tskserver で遊ぶ準備](/introduction/prepare)
+* [ログイン後の操作](/introduction/day1)
+* [プラグイン紹介](/introduction/plugins)
 * [Minecraft 外の便利ツールについて](/introduction/tools)
-* [少し違う遊び方](/introduction/plugins)
-* **[コマンドを使った効率化](/introduction/commands)**
 * [高度な遊び方](/introduction/advanced)

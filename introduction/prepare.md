@@ -4,35 +4,60 @@ date: 2017-11-29
 noToc: true
 ---
 
-tskserver へ接続して遊ぶために、Minecraft の設定をしましょう。
+このページでは tskserver で遊ぶための設定方法を解説します。大雑把に、以下のような手順になります。
 
-## バージョンを合わせる
-サーバへ接続するには、クライアントの Minecraft バージョンをサーバのバージョンに合わせる必要があります。
-このサイト上部にある[サーバ情報](/about)のページでサーバのバージョンを確認し、あなたの Minecraft バージョンをそれに合わせて変更してください。
+1. Minecraft Launcher でゲームクライアントのバージョンを設定する
+1. サーバを追加する
+1. サーバに接続する
 
-Minecraft バージョンの変更はランチャの設定から変更できます。
+## Minecraft のバージョン確認＆起動
+サーバへ接続するには、Minecraft バージョンをサーバのバージョンと揃える必要があります。
+Minecraft Launcher を起動したら、バージョンが **{% include latest_version.md %}** に設定されているかどうかを確認してください。
+バージョンは赤枠の部分に表示されます。
 
-## サーバ情報を追加して接続する
-このサイト上部にある[サーバ情報](/about)からホスト名を確認し、ゲームにホスト名を登録して接続します。
-プレイヤーの画面が表示されたら接続完了です。
+<p class="warning">
+  <strong>Minecraft Bedrock Edition</strong> や<strong>統合版</strong>をお持ちの方は <strong>Minecraft Java Edition</strong> が起動・選択されているかよく確認してください！
+</p>
 
-## テキストチャット
-<kbd>Tab</kbd> を押すと、ログイン中のプレイヤーを一覧表示できます。
-<kbd>T</kbd> を押すとチャットできるので雑に hi とかあいさつしてみましょう。
-チャットは <kbd>Enter</kbd> で送信するか <kbd>Esc</kbd> で閉じることができます。
+
+<p class="info">Minecraft サーバのバージョン情報はこのサイト上部の<a href="/about">サーバ情報</a>のページでも確認できます。</p>
+
+![Minecraft のバージョン確認方法](/introduction/img/launcher1.png)
+
+バージョンが違う場合は設定変更が必要ですので、[Minecraft バージョン変更方法](/introduction/change-version)のページを参照してください。
+
+Minecraft Launcher に表示されるバージョンが正しいことを確認 ({% include latest_version.md %} です！) したら、Minecraft を起動します。
+
+## サーバを追加する
+接続先は以下になっていますので設定してください。  
+スクリーンショット付きの解説を見たい方は[Minecraft サーバの追加方法](/introduction/add-server)のページを参照してください
+
+| サーバアドレス |
+|:------:|
+| {% include hostname.md %} |
+
+## サーバに接続する
+サーバ設定が終わると、サーバ情報が表示されますので接続します。接続したいサーバを選択してから「サーバに接続」ボタンをクリックします。
+
+![サーバに接続する](/introduction/img/connect-server.png)
+
+以下のような画面になればサーバ接続完了です。
+![サーバに接続した後の画面](/introduction/img/logined.png)
+
+これでサーバ設定とサーバ接続が完了しました。[次のページ](/introduction/day1)ではサーバに接続した後の操作について紹介します。
 
 ## サーバに接続できない場合
 サーバに接続できないときは、エラーを一度確認してください。小さくかかれた文字にヒントが書いてあることがあります。
 多くの場合は一時的なものなので 5 分程度待つか、Minecraft を再起動すれば治るものだと思います。
 
 一方で、本当にサーバが落ちていることも有りえます。
-そのときは[次のガイド](/introduction/tools)に示す便利ツールを使って情報収集してサーバが落ちているかどうか確認してください。
+そのときは [Minecraft 外の便利ツール](/introduction/tools)を使って情報収集してサーバが落ちているかどうか確認してください。
 
 
 ## [サーバ参加ガイド目次](/introduction)
 * [tskserver について](/introduction/about)
-* **[tskserver で遊ぶ準備](/introduction/prepare)**
+* [tskserver で遊ぶ準備](/introduction/prepare)
+* [ログイン後の操作](/introduction/day1)
+* [プラグイン紹介](/introduction/plugins)
 * [Minecraft 外の便利ツールについて](/introduction/tools)
-* [少し違う遊び方](/introduction/plugins)
-* [コマンドを使った効率化](/introduction/commands)
 * [高度な遊び方](/introduction/advanced)
