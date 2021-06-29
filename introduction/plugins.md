@@ -1,5 +1,5 @@
 ---
-title: 少し違う遊び方
+title: プラグイン紹介
 noToc: true
 ---
 
