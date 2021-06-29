@@ -50,7 +50,6 @@ Windows の場合のスクリーンショットの保存場所は `%appdata%\.mi
 Minecraft の操作方法はこのくらいにして、[次のページ](/introduction/plugins)ではマルチプレイのサーバに導入されているプラグインについて解説します！
 
 ## [サーバ参加ガイド目次](/introduction)
-* [tskserver について](/introduction/about)
 * [tskserver で遊ぶ準備](/introduction/prepare)
 * [ログイン後の操作](/introduction/day1)
 * [プラグイン紹介](/introduction/plugins)

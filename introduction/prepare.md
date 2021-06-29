@@ -55,7 +55,6 @@ Minecraft Launcher に表示されるバージョンが正しいことを確認 
 
 
 ## [サーバ参加ガイド目次](/introduction)
-* [tskserver について](/introduction/about)
 * [tskserver で遊ぶ準備](/introduction/prepare)
 * [ログイン後の操作](/introduction/day1)
 * [プラグイン紹介](/introduction/plugins)

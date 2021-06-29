@@ -33,7 +33,6 @@ WireRod という立体機動な釣り竿なプラグインを導入していま
 
 
 ## [サーバ参加ガイド目次](/introduction)
-* [tskserver について](/introduction/about)
 * [tskserver で遊ぶ準備](/introduction/prepare)
 * [ログイン後の操作](/introduction/day1)
 * [プラグイン紹介](/introduction/plugins)

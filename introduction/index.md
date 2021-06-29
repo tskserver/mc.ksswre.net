@@ -6,12 +6,17 @@ noToc: true
 
 ## はじめに
 tskserver へようこそ。
-tskserver は **Minecraft Java Edition** のパブリックサーバです。  
+tskserver は 2012 年頃に Minecraft v1.2.3 のサーバを建ててスタートした **Minecraft Java Edition** のパブリックサーバです。  
+読み方はつくさーばとよみます。つくしさーばとも呼ばれます。
+
+これまで、Minecraft のバージョンが大きく変わる度にワールドをリセットしてきました。  
+現在のマップは 2021 年 6 月 18 日にリセットしたもので、第 8 世代目のマップになります。
+
+![](/img/2021-06-29_00.28.46.png)
+
 サーバの雰囲気は[アルバム](/galleries)をみてください。
 
 このサーバ参加ガイドでは、tskserver で遊ぶための事前準備の方法や、サーバ接続後の操作方法、コマンドを使った高度な遊び方などを紹介します。
-
-## [tskserver について](/introduction/about)
 
 ## [tskserver で遊ぶ準備](/introduction/prepare)
   * Minecraft バージョンを揃える
