@@ -4,6 +4,7 @@ date: 2021-06-29
 noToc: true
 ---
 
+このページでは Minecraft マルチサーバでの基本的な操作を解説します。
 
 ## チャットする
 キーボードの <kbd>T</kbd> キーを押すとチャット画面が開きます。hi とかあいさつしてみましょう。
@@ -22,6 +23,10 @@ noToc: true
 > minecraft player no naka niha katakata hyouki ga sonomama eitango ni naru hito mo iru  
 > (マインクラフトプレイヤーの中にはカタカナ表記がそのまま英単語なる人もいる)
 
+## サーバのマップや他のプレイヤーの位置を確認する
+Dynmap を Web ブラウザで開いてみてください。Dynmap へのリンクは tskserver のサイト内の全てのページの右側に貼ってあります。
+
+こちらの URL から → <https://dynmap.mc.ksswre.net/>
 
 ## ログイン中のプレイヤーを表示する
 <kbd>Tab</kbd> キーを押すと、ログイン中のプレイヤーを一覧表示できます。
