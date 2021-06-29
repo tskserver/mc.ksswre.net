@@ -25,6 +25,7 @@ Dynmap というプラグインを導入しています。このプラグイン�
 
 サーバのマップはこちらから表示できます：<https://dynmap.mc.ksswre.net/>
 
+![Dynmap](/img/dynmap.png)
 
 ## 立体機動装置で移動する
 WireRod という立体機動な釣り竿なプラグインを導入しています。

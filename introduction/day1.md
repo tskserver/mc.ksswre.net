@@ -28,6 +28,8 @@ Dynmap を Web ブラウザで開いてみてください。Dynmap へのリン�
 
 こちらの URL から → <https://dynmap.mc.ksswre.net/>
 
+![Dynmap](/img/dynmap.png)
+
 ## ログイン中のプレイヤーを表示する
 <kbd>Tab</kbd> キーを押すと、ログイン中のプレイヤーを一覧表示できます。
 
