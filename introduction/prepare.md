@@ -15,12 +15,12 @@ noToc: true
 Minecraft Launcher を起動したら、バージョンが **{% include latest_version.md %}** に設定されているかどうかを確認してください。
 バージョンは赤枠の部分に表示されます。
 
-<p class="warning">
-  <strong>Minecraft Bedrock Edition</strong> や<strong>統合版</strong>をお持ちの方は <strong>Minecraft Java Edition</strong> が起動・選択されているかよく確認してください！
-</p>
+{: .note .warning }
+Minecraft **Bedrock Edition** や Minecraft **Windows 10 Edition** では接続できません  
+お持ちの Minecraft が Minecraft **Java Edition** であるかどうかをよく確認してください！
 
-
-<p class="info">Minecraft サーバのバージョン情報はこのサイト上部の<a href="/about">サーバ情報</a>のページでも確認できます。</p>
+{: .note .info }
+Minecraft サーバのバージョン情報はこのサイト上部の[サーバ情報](/about)のページでも確認できます。
 
 ![Minecraft のバージョン確認方法](/introduction/img/launcher1.png)
 
