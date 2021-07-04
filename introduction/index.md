@@ -2,6 +2,7 @@
 title: サーバ参加ガイド
 date: 2017-11-29
 noToc: true
+description: tskserver に初めて接続する方向けのガイドです。
 ---
 
 tskserver へようこそ。
