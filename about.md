@@ -24,14 +24,14 @@ tskserver に接続するために必要になる情報です。
 {: .note .info }
 初めてのログインの場合は事前に[サーバ参加ガイド](/introduction)をご確認ください
 
-{: .note .info }
-サーバに接続できないときは[サーバ稼働状況](/status)のページを確認すると解決するかもです
-
 {% assign server = site.data.servers.tskserver %}
 
 | アドレス             | {{ server.host }} |
 | Minecraft バージョン | {{ server.version }} |
 | Dynmap | <{{ server.dynmap_url }}> |
+
+## サーバに接続できない場合
+[サーバ稼働状況](/status)のページをご確認ください。
 
 
 {% comment %}
