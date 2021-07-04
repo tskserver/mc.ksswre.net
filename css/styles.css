@@ -299,6 +299,44 @@ article p {
 	margin: 1em 0 1em 0;
 }
 
+article p.note {
+	padding: 0.9em 0.8em 0.8em 3.0em;
+	border-radius: 2px 3px 3px 2px;
+	vertical-align: -2px;
+	position: relative;
+}
+
+article p.note:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0px;
+	width: 25px;
+	text-align: center;
+	padding: 0.55em;
+	font-size: 1.5em;
+	font-family: FontAwesome;
+	vertical-align: -2px;
+	display: inline-block;
+}
+article p.note.warning:before {
+	content: '\f071';
+	color: rgb(222, 138, 12);
+}
+article p.note.info:before {
+	content: '\f129';
+	color: rgb(11, 134, 239);
+}
+
+article p.note.warning {
+	background-color: rgb(255, 252, 247);
+	border-left: 4px solid rgb(222, 138, 12);
+}
+article p.note.info {
+	background-color: rgb(250, 251, 255);
+	border-left: 4px solid rgb(11, 134, 239);
+}
+
 li {
 	margin-bottom: 1em;
 }
