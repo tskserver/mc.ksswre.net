@@ -2,6 +2,7 @@
 title: tskserver で遊ぶ準備
 date: 2017-11-29
 noToc: true
+description: このページでは tskserver で遊ぶための設定方法を解説します
 ---
 
 このページでは tskserver で遊ぶための設定方法を解説します。大雑把に、以下のような手順になります。
@@ -11,8 +12,8 @@ noToc: true
 1. サーバに接続する
 
 ## Minecraft のバージョン確認＆起動
-サーバへ接続するには、Minecraft バージョンをサーバのバージョンと揃える必要があります。
-Minecraft Launcher を起動したら、バージョンが **{% include latest_version.md %}** に設定されているかどうかを確認してください。
+サーバへ接続するには、Minecraft バージョンを tskserver のバージョンと揃える必要があります。
+Minecraft Launcher を起動したら、バージョンが **{{ site.data.servers.tskserver.version_short }}** に設定されているかどうかを確認してください。
 バージョンは赤枠の部分に表示されます。
 
 {: .note .warning }
@@ -20,23 +21,23 @@ Minecraft **Bedrock Edition** や Minecraft **Windows 10 Edition** では接続�
 お持ちの Minecraft が Minecraft **Java Edition** であるかどうかをよく確認してください！
 
 {: .note .info }
-Minecraft サーバのバージョン情報はこのサイト上部の[サーバ情報](/about)のページでも確認できます。
+tskserver のバージョン情報はこのサイト上部の[サーバ情報](/about)のページでも確認できます。
 
 ![Minecraft のバージョン確認方法](/introduction/img/launcher1.png)
 
 バージョンが違う場合は設定変更が必要ですので、[Minecraft バージョン変更方法](/introduction/change-version)のページを参照してください。
 
-Minecraft Launcher に表示されるバージョンが正しいことを確認 ({% include latest_version.md %} です！) したら、Minecraft を起動します。
+Minecraft Launcher に表示されるバージョンが正しいことを確認 ({{ site.data.servers.tskserver.version }} です！) したら、Minecraft を起動します。
 
 ## サーバを追加する
 接続先は以下になっていますので設定してください。  
 
 {: .note .info }
-スクリーンショット付きで見たい方は[Minecraft サーバの追加方法](/introduction/add-server)のページを参照してください
+サーバ追加方法の手順をスクリーンショット付きで確認したい方は[Minecraft サーバの追加方法](/introduction/add-server)のページを参照してください
 
 | サーバアドレス |
 |:------:|
-| {% include hostname.md %} |
+| {{ site.data.servers.tskserver.host }} |
 
 ## サーバに接続する
 サーバ設定が終わると、サーバ情報が表示されますので接続します。接続したいサーバを選択してから「サーバに接続」ボタンをクリックします。
