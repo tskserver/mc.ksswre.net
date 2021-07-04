@@ -20,7 +20,7 @@ Minecraft を起動すると以下のような画面になるはずです。
 「サーバを追加」を選択
 ![Minecraft 起動画面](/introduction/img/addserver1.png)
 
-サーバアドレスの入力欄に **{% include hostname.md %}** を設定します。サーバ名はサーバの表示名ですのでお好みで。入力したら「完了」を押します。
+サーバアドレスの入力欄に **{{ site.data.servers.tskserver.host }}** を設定します。サーバ名はサーバの表示名ですのでお好みで。入力したら「完了」を押します。
 ![Minecraft 起動画面](/introduction/img/addserver2.png)
 
 うまく設定できれば以下のような画面になるはずです。
