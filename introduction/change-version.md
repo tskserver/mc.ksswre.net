@@ -26,15 +26,18 @@ Minecraft Launcher では起動する Minecraft のバージョンが表示さ�
 今回は Minecraft Launcher の設定を変更して **Minecraft Java Edition 1.16.5** を起動してみます。
 Minecraft Launcher では「起動構成」という単位でゲームを管理しています。今回は新しく Minecraft 1.16.5 用に起動構成を作成・追加してみます。
 
-**注意:** 現在稼働中のサーバは **{% include latest_version.md %}** なので、ご注意ください！バージョンの部分は適宜読み替えてください
+{: .note .warning }
+このページでは Minecraft Java Edition **1.16.5** に変更する例を紹介しています。現在稼働中のサーバは **{{ site.data.servers.tskserver.version }}** なので、ご注意ください！
 
 ### 起動構成を開く
 画面上部にある「起動構成」をクリックしてから「New Installation」ボタンをクリックします。
 ![起動構成の画面](/introduction/img/launcher2.png)
 
 ### 起動構成の作成
-バージョンをお好みのバージョンにします。今回は Minecraft Java Edition の **1.16.5** に設定するので **release 1.16.5** を選択します。
-実際はサーバのバージョンに合わせる必要がありますので、ここのバージョンは適宜読み替えてください (現在のサーバのバージョンは **{% include latest_version.md %}** です！)。
+バージョンをお好みのバージョンにします。今回は Minecraft Java Edition の **1.16.5** に変更する例ですので **release 1.16.5** を選択します。
+
+{: .note .info }
+現在稼働中のサーバの対応バージョンは **{{ site.data.servers.tskserver.version }}** です。tskserver に接続される方は適宜読み替えてください！
 
 選択したら「作成」ボタンをクリックします。
 ![起動構成の作成画面](/introduction/img/launcher3.png)
@@ -43,7 +46,7 @@ Minecraft Launcher では「起動構成」という単位でゲームを管理�
 うまく設定できていれば、バージョン名が書かれた項目が起動構成に追加されているはずです！起動は「プレイ」ボタンを押します
 ![起動構成追加後の画面](/introduction/img/launcher4.png)
 
-必要に応じて Minecraft Launcher が起動に必要なファイルをダウンロードします。
+必要に応じて Minecraft Launcher が起動に必要なファイルをダウンロードします。このダウンロードは自動で始まるはずです。しばらく待つと Minecraft が指定バージョンで起動するはずです。
 ![Minecraft 起動中の画面](/introduction/img/launcher5.png)
 
-これで設定は完了です！次はサーバに接続してみましょう。続きは [tskserver で遊ぶ準備](/introduction/prepare) で解説しています。
+Minecraft が起動すれば、設定は完了です！次はサーバに接続してみましょう。続きは [tskserver で遊ぶ準備](/introduction/prepare) で解説しています。

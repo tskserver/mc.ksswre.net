@@ -30,7 +30,9 @@ Minecraft Launcher に表示されるバージョンが正しいことを確認 
 
 ## サーバを追加する
 接続先は以下になっていますので設定してください。  
-スクリーンショット付きの解説を見たい方は[Minecraft サーバの追加方法](/introduction/add-server)のページを参照してください
+
+{: .note .info }
+スクリーンショット付きで見たい方は[Minecraft サーバの追加方法](/introduction/add-server)のページを参照してください
 
 | サーバアドレス |
 |:------:|
