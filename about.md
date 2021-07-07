@@ -35,6 +35,7 @@ tskserver に接続するために必要になる情報です。
 | アドレス             | {{ server.host }} |
 | Minecraft バージョン | {{ server.version }} |
 | Dynmap | <{{ server.dynmap_url }}> |
+| 最終アップデート | {{ server.last_updated_at }} |
 
 ### サーバに接続できない場合
 [サーバ稼働状況](/status)のページをご確認ください。
@@ -62,7 +63,7 @@ tskserver では、クリエイティブモードや他の便利プラグイン�
 {% endcomment %}
 
 ## ワールドリセット情報
-最新のワールドリセットは {{ site.data.servers.tskserver.last_updated_at }} で、バージョンは {{ site.data.servers.tskserver.version }} です。
+最新のワールドリセットは {{ site.data.servers.tskserver.last_reset_at }} で、バージョンは {{ site.data.servers.tskserver.version }} です。
 
 {: .note .info }
 過去のリセット前のワールド情報については[ギャラリー](/galleries)を参照ください
