@@ -14,7 +14,6 @@ description: このページでは tskserver で遊ぶための設定方法を�
 ## Minecraft のバージョン確認＆起動
 サーバへ接続するには、Minecraft バージョンを tskserver のバージョンと揃える必要があります。
 Minecraft Launcher を起動したら、バージョンが **{{ site.data.servers.tskserver.version_short }}** に設定されているかどうかを確認してください。
-バージョンは赤枠の部分に表示されます (この画像では **1.17** が起動する設定であることが分かります)。
 
 {: .note .warning }
 Minecraft **Bedrock Edition** や Minecraft **Windows 10 Edition** では接続できません  
@@ -23,6 +22,7 @@ Minecraft **Bedrock Edition** や Minecraft **Windows 10 Edition** では接続�
 {: .note .info }
 tskserver のバージョン情報はこのサイト上部の[サーバ情報](/about)のページでも確認できます。
 
+バージョンは赤枠の部分に表示されます (この画像では **1.17** が起動する設定であることが分かります)。
 ![Minecraft のバージョン確認方法](/introduction/img/launcher1.png)
 
 バージョンが違う場合は設定変更が必要ですので、[Minecraft バージョン変更方法](/introduction/change-version)のページを参照してください。
