@@ -2,7 +2,7 @@
 title: メンテナンス実施のお知らせ
 date: 2021-08-12 9:20
 tag: [maintenance, gen9]
-description: メンテナンスのお知らせ
+description: メンテナンス (8/12) のお知らせ
 image: /img/2021-06-29_00.28.46.png
 ---
 
