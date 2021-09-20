@@ -101,6 +101,43 @@ header a.logo {
 	text-decoration: none;
 }
 
+
+footer {
+	color: rgb(255, 255, 255);
+	padding: 12px 0;
+	margin-top: 50px;
+	border-top: solid 5px rgb(130, 236, 133);
+	background-color: rgb(54, 49, 49);
+}
+
+footer .logo {
+	width: 190px;
+	height: 88px;
+  position: relative;
+	margin: 0 auto;
+}
+
+footer img.logo-logo {
+  width: 67px;
+	position: absolute;
+	top: 15px;
+	left: 6px;
+}
+
+footer img.logo-text {
+  width: 108px;
+	position: absolute;
+	top: 26px;
+	left: 67px;
+}
+
+footer .footer-footer {
+	font-size: 12px;
+	text-align: right;
+}
+footer .copyright {
+}
+
 .container {
 	width: 950px;
 	margin: 0 auto;
@@ -502,6 +539,10 @@ article table th {
 	flex-wrap: wrap;
 	-webkit-justify-content: space-around;
 	justify-content: space-around;
+}
+
+.flex.flex-align-center {
+  align-items: center;
 }
 
 .flex > * {
