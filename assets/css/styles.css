@@ -261,7 +261,7 @@ article h3,
 article h4,
 article h5,
 article h6 {
-	margin: 2em 0 0.8em 0;
+	margin: 1.3em 0 0.8em 0;
 }
 
 article h1 .tags, .tags {
@@ -295,7 +295,7 @@ h2 {
 	padding-bottom: .1em
 }
 
-article p {
+article p, article div.highlight {
 	margin: 1em 0 1em 0;
 	line-height: 1.6em;
 }
@@ -394,6 +394,10 @@ button:hover {
 article {
 	margin-bottom: 50px;
 	padding: 0 0 50px 0;
+}
+
+article .post-header {
+	margin: 0 0 2em 0;
 }
 
 article .post-title {

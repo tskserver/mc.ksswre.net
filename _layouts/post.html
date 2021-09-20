@@ -3,35 +3,37 @@ layout: page
 ---
 
 <article vocab="http://schema.org/" typeof="BlogPosting">
-	<h1 class="post-title" property="name">
-		{{ page.title }}
-		<section class="tags" property="keywords" content="{{ page.tags | join: ',' }}">
-			{% for tag in page.tags %}
-				<a href="/tag/{{ tag | slugize }}" rel="tag">{{ tag }}</a>
-			{% endfor %}
-		</section>
-	</h1>
-	<p class="post-meta">
-		{% if page.date %}
-			<span>
-				<i class="fa fa-calendar"></i>
+	<section class="post-header">
+		<h1 class="post-title" property="name">
+			{{ page.title }}
+			<section class="tags" property="keywords" content="{{ page.tags | join: ',' }}">
+				{% for tag in page.tags %}
+					<a href="/tag/{{ tag | slugize }}" rel="tag">{{ tag }}</a>
+				{% endfor %}
+			</section>
+		</h1>
+		<p class="post-meta">
+			{% if page.date %}
 				<span>
-					Published: <time property="datePublished" content="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y-%m-%d %H:%M" }}</time>
+					<i class="fa fa-calendar"></i>
+					<span>
+						Published: <time property="datePublished" content="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y-%m-%d %H:%M" }}</time>
+					</span>
 				</span>
-			</span>
-			<span>/</span>
-		{% endif %}
-		{% if page.last_modified_at %}
-			<span>
-				<i class="fa fa-rotate-left"></i>
+				<span>/</span>
+			{% endif %}
+			{% if page.last_modified_at %}
 				<span>
-					Updated: <time property="dateModified" content="{{ page.last_modified_at | date_to_xmlschema }}">{{ page.last_modified_at | date: "%Y-%m-%d %H:%M" }}</time>
+					<i class="fa fa-rotate-left"></i>
+					<span>
+						Updated: <time property="dateModified" content="{{ page.last_modified_at | date_to_xmlschema }}">{{ page.last_modified_at | date: "%Y-%m-%d %H:%M" }}</time>
+					</span>
 				</span>
-			</span>
-			<span>//</span>
-		{% endif %}
-		<a href="https://github.com/k5342/mc.ksswre.net/blob/master/{{ page.path }}"><i class="fa fa-github" aria-hidden="true"></i>Source</a>
-	</p>
+				<span>//</span>
+			{% endif %}
+			<a href="https://github.com/k5342/mc.ksswre.net/blob/master/{{ page.path }}"><i class="fa fa-github" aria-hidden="true"></i>Source</a>
+		</p>
+	</section>
 	<section property="articleBody">
 {{ content }}
 	</section>
