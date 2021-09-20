@@ -14,7 +14,7 @@ html, body {
 
 body {
 	color: rgb(55, 55, 55);
-	font-size: 11pt;
+	font-size: 12pt;
 	font-family: 'Lato', 'Meiryo', 'Arial', sans-serif;
 	font-display: swap;
 /*	letter-spacing: 0.07em; */
@@ -261,7 +261,7 @@ article h3,
 article h4,
 article h5,
 article h6 {
-	margin: 2em 0 0 0;
+	margin: 2em 0 0.8em 0;
 }
 
 article h1 .tags, .tags {
@@ -297,6 +297,7 @@ h2 {
 
 article p {
 	margin: 1em 0 1em 0;
+	line-height: 1.6em;
 }
 
 article p.note {
@@ -335,6 +336,11 @@ article p.note.warning {
 article p.note.info {
 	background-color: rgb(250, 251, 255);
 	border-left: 4px solid rgb(11, 134, 239);
+}
+
+ul, ol {
+	margin: 0.2em 0;
+	padding-left: 28px;
 }
 
 li {

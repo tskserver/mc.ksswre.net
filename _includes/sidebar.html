@@ -76,10 +76,12 @@
 						<h2>Recent Posts</h2>
 						<section>
 						{% for post in site.posts %}
-							<li vocab="http://schema.org/" typeof="BlogPosting">
-								<strong><time property="datePublished" content="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y/%m/%d" }}</time></strong><br />
-								<a href="{{ post.url | prepend: site.baseurl }}" property="name">{{ post.title | escape }}</a>
-							</li>
+							<ul>
+								<li vocab="http://schema.org/" typeof="BlogPosting">
+									<strong><time property="datePublished" content="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y/%m/%d" }}</time></strong><br />
+									<a href="{{ post.url | prepend: site.baseurl }}" property="name">{{ post.title | escape }}</a>
+								</li>
+							</ul>
 						{% endfor %}
 						</section>
 					<section>
