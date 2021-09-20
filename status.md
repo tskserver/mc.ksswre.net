@@ -18,9 +18,9 @@ description: tskserver の稼働状況や直近のログイン人数について
 ありがちなケースに当てはまらないか確認してください。
 
 - ゲームバージョンを確認する → [Minecraft バージョンの確認方法](/introduction/prepare)
-- ゲームを再起動してみる
+- ゲームをランチャーごと再起動してみる
 
-いろいろ調べてみたけど全然ダメだった場合は [Twitter などでお問い合わせ](https://twitter.com/intent/tweet?text=@k5342%20tskserver%20%E7%B9%8B%E3%81%92%E3%81%AA%E3%81%84%E3%82%93%E3%81%A0%E3%81%91%E3%81%A9%EF%BC%9F)ください。
+いろいろ調べてみたけど全然ダメだった場合はスクリーンショットを添えて [Twitter などでお問い合わせ](https://twitter.com/intent/tweet?text=@k5342%20tskserver%20%E7%B9%8B%E3%81%92%E3%81%AA%E3%81%84%E3%82%93%E3%81%A0%E3%81%91%E3%81%A9%EF%BC%9F)ください。
 
 ## Twitter
 * サーバ情報通知ボット [@tskserver](https://twitter.com/tskserver)
