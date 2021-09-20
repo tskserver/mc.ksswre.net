@@ -18,27 +18,22 @@ tskserver は Minecraft Java Edition のパブリックサーバです。つく�
 {: .note .info }
 導入済みプラグインの情報については[プラグイン紹介](/plugins)のページを参照ください
 
-{: .note .info }
-サーバが落ちた場合のトラブルシューティングは[サーバ稼働状況](/status)のページを参照ください
-
-## サーバ参加方法
-興味のある方は[サーバ参加ガイド](/introduction)を用意していますので参照してみてください。
-
-### 接続情報
-tskserver に接続するために必要になる情報です。
-
 {: .note .warning }
 初めてのログインの場合は事前に[サーバ参加ガイド](/introduction)をご確認ください
+
+## 接続情報
+tskserver に接続するために必要になる情報です。
+
+{: .note .info }
+サーバに接続できない場合は[サーバ稼働状況](/status)のページを参照ください
 
 {% assign server = site.data.servers.tskserver %}
 
 | アドレス             | {{ server.host }} |
 | Minecraft バージョン | {{ server.version }} |
 | Dynmap | <{{ server.dynmap_url }}> |
-| 最終アップデート | {{ server.last_updated_at }} |
-
-### サーバに接続できない場合
-[サーバ稼働状況](/status)のページをご確認ください。
+| ワールドリセット実施日 | {{ server.last_reset_at }} |
+| メンテナンス実施日 | {{ server.last_updated_at }} |
 
 
 {% comment %}
