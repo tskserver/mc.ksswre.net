@@ -1,0 +1,12 @@
+baseURL: https://mc.ksswre.net/
+languageCode: ja
+hasCJKLanguage: true
+googleAnalytics: UA-23849444-15
+enableEmoji: true
+enableGitInfo: true
+title: tskserver
+timeZone: Asia/Tokyo
+sitemap:
+  changefreq: monthly
+  filename: sitemap.xml
+  priority: 0.5
