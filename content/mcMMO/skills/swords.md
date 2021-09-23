@@ -3,7 +3,9 @@ title: Swords
 description: mcMMO の Swords スキルのアクティブ能力やパッシブ能力、利用できるコマンドについて解説します
 ---
 
-このページは [https://github.com/mcMMO-Dev/mcMMO/wiki/Swords](https://github.com/mcMMO-Dev/mcMMO/wiki/Swords) の和訳です。
+このページは <https://github.com/mcMMO-Dev/mcMMO/wiki/Swords> の和訳です
+{ .note .info }
+
 Swords スキルは、剣を使った戦闘に関するスキル。
 
 |コマンド|内容|
@@ -33,4 +35,3 @@ Swords スキルは、剣を使った戦闘に関するスキル。
   * ただし、自分のダメージが残りハート 0.5 個分のときは発動しない。
   * 相手に遠距離攻撃を加えられた場合でも発動する。
 
-{% include related/mcMMO.md %}

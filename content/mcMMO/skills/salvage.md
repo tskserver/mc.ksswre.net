@@ -3,7 +3,8 @@ title: Salvage
 description: mcMMO の Salvage スキルが持つ能力や利用できるコマンドについて解説します
 ---
 
-このページは [https://github.com/mcMMO-Dev/mcMMO/wiki/Salvage](https://github.com/mcMMO-Dev/mcMMO/wiki/Salvage) の和訳です。
+このページは <https://github.com/mcMMO-Dev/mcMMO/wiki/Salvage> の和訳です
+{ .note .info }
 
 |コマンド|説明|
 |:------:|:--:|
@@ -11,4 +12,3 @@ description: mcMMO の Salvage スキルが持つ能力や利用できるコマ�
 
 以下編集中
 
-{% include related/mcMMO.md %}

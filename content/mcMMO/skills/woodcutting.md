@@ -3,7 +3,8 @@ title: Woodcutting
 description: mcMMO の Woodcutting スキルのアクティブ能力やパッシブ能力、利用できるコマンドについて解説します
 ---
 
-このページは [https://github.com/mcMMO-Dev/mcMMO/wiki/Woodcutting](https://github.com/mcMMO-Dev/mcMMO/wiki/Woodcutting) の和訳です。
+このページは <https://github.com/mcMMO-Dev/mcMMO/wiki/Woodcutting> の和訳です
+{ .note .info }
 
 木こりに関するスキル。tskserver では木こり MOD と連動していて、木こり MOD が自動で切った分についても経験値が入ります。
 
@@ -45,4 +46,3 @@ description: mcMMO の Woodcutting スキルのアクティブ能力やパッシ
   * たまに 2 個ドロップする。
   * レベル毎に 0.1% 確率が加算され、Level 1000 で上限の 100% になる。
 
-{% include related/mcMMO.md %}

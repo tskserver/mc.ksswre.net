@@ -3,7 +3,8 @@ title: Mining
 description: mcMMO の Mining スキルのアクティブ能力やパッシブ能力、利用できるコマンドについて解説します
 ---
 
-このページは [https://github.com/mcMMO-Dev/mcMMO/wiki/Mining](https://github.com/mcMMO-Dev/mcMMO/wiki/Mining) の和訳です。
+このページは <https://github.com/mcMMO-Dev/mcMMO/wiki/Mining> の和訳です
+{ .note .info }
 
 Mining はピッケルで採掘するときのスキルです。
 
@@ -61,4 +62,3 @@ Mining はピッケルで採掘するときのスキルです。
   * レベルが 1 上がるごとに、発動確率が 0.1% 加算される。
   * この能力はピッケルが最適なブロック全てで発生しうる。
 
-{% include related/mcMMO.md %}

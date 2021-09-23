@@ -3,7 +3,8 @@ title: Axes
 description: mcMMO の Axes スキルのアクティブ能力やパッシブ能力、利用できるコマンドについて解説します
 ---
 
-このページは [https://github.com/mcMMO-Dev/mcMMO/wiki/Axes](https://github.com/mcMMO-Dev/mcMMO/wiki/Axes) の和訳です。
+このページは <https://github.com/mcMMO-Dev/mcMMO/wiki/Axes> の和訳です
+{ .note .info }
 
 斧を使って戦闘するスキル。
 
@@ -35,4 +36,3 @@ description: mcMMO の Axes スキルのアクティブ能力やパッシブ能�
 ### Greater Impact
   * ボーナスダメージと共に、ノックバックⅡのような感じになる。
 
-{% include related/mcMMO.md %}

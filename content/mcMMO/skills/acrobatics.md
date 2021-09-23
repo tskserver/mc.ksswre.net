@@ -3,7 +3,8 @@ title: Acrobatics
 description: mcMMO の Acrobatics スキルのアクティブ能力やパッシブ能力、利用できるコマンドについて解説します
 ---
 
-このページは [https://github.com/mcMMO-Dev/mcMMO/wiki/Acrobatics](https://github.com/mcMMO-Dev/mcMMO/wiki/Acrobatics) の和訳です。
+このページは <https://github.com/mcMMO-Dev/mcMMO/wiki/Acrobatics> の和訳です
+{ .note .info }
 
 |コマンド|説明|
 |:------:|:--:|
@@ -14,7 +15,7 @@ description: mcMMO の Acrobatics スキルのアクティブ能力やパッシ�
  * 落下ダメージを受けたときや Dodge に成功したときに、ハート半分につき 120xp
  * ただし、死ぬと経験値ナシ
  * Roll か Graseful Roll に成功したときに、ハート1個につき 80xp
- * エンダーパールによるテレポートで発生するダメージでは経験値は得られない。<br />
+ * エンダーパールによるテレポートで発生するダメージでは経験値は得られない。  
    エンダーパール使用後 5 秒間はクールダウンとしてこのスキルの経験値は得られない。
 
 ## アクティブ能力
@@ -34,4 +35,3 @@ description: mcMMO の Acrobatics スキルのアクティブ能力やパッシ�
   * クリーパーの爆発やスケルトンの矢を含む、戦闘時のダメージを半減させる。
   * レベルにより、発動確率が 0.025% ずつ加算され、Level 800 で発動確率が最大の 20% まで上昇する。
 
-{% include related/mcMMO.md %}

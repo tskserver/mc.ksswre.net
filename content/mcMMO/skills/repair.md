@@ -3,7 +3,9 @@ title: Repair
 description: mcMMO の Repair スキルが持つパッシブ能力と利用できるコマンドについて解説します
 ---
 
-このページは [https://github.com/mcMMO-Dev/mcMMO/wiki/Repair](https://github.com/mcMMO-Dev/mcMMO/wiki/Repair) の和訳です。
+このページは <https://github.com/mcMMO-Dev/mcMMO/wiki/Repair> の和訳です
+{ .note .info }
+
 修繕スキル。
 
 |コマンド|説明|
@@ -32,4 +34,3 @@ description: mcMMO の Repair スキルが持つパッシブ能力と利用で�
 ### Arcane Forging
   * 修繕時に、エンチャントを保持できるか、エンチャントレベルを減らすかのチャンスを与える。
 
-{% include related/mcMMO.md %}

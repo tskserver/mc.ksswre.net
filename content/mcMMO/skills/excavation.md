@@ -3,7 +3,8 @@ title: Excavation
 description: mcMMO の Excavation スキルのアクティブ能力やパッシブ能力、利用できるコマンドについて解説します
 ---
 
-このページは [https://github.com/mcMMO-Dev/mcMMO/wiki/Excavation](https://github.com/mcMMO-Dev/mcMMO/wiki/Excavation) の和訳です。
+このページは <https://github.com/mcMMO-Dev/mcMMO/wiki/Excavation> の和訳です
+{ .note .info }
 
 Excavation はショベルで発掘することに関するスキルです。
 
@@ -29,4 +30,3 @@ Excavation はショベルで発掘することに関するスキルです。
     * `Occasionally, Treasure Hunt will bug.` ってドキュメントに書いてある
   * 出現確率などは、[このページの表](https://github.com/mcMMO-Dev/mcMMO/wiki/Excavation#active-abilities)を参照のこと。
 
-{% include related/mcMMO.md %}

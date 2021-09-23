@@ -3,7 +3,8 @@ title: Taming
 description: mcMMO の Taming スキルのアクティブ能力やパッシブ能力、利用できるコマンドについて解説します
 ---
 
-このページは [https://github.com/mcMMO-Dev/mcMMO/wiki/Taming](https://github.com/mcMMO-Dev/mcMMO/wiki/Taming) の和訳です。
+このページは <https://github.com/mcMMO-Dev/mcMMO/wiki/Taming> の和訳です
+{ .note .info }
 
 Taming スキルは、テイム (飼いならし) に関するスキル。ペットや動物に関する能力があります。PvP に有用なスキルが多い。
 
@@ -52,4 +53,3 @@ Taming スキルは、テイム (飼いならし) に関するスキル。ペッ
   * **Level 750 で解禁**
   * ペットが攻撃するときにダメージボーナスを追加します。
 
-{% include related/mcMMO.md %}

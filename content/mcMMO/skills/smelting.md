@@ -3,7 +3,8 @@ title: Smelting
 description: mcMMO の Smelting スキルが持つパッシブ能力や利用できるコマンドについて解説します
 ---
 
-このページは [https://github.com/mcMMO-Dev/mcMMO/wiki/Smelting](https://github.com/mcMMO-Dev/mcMMO/wiki/Smelting) の和訳です。
+このページは <https://github.com/mcMMO-Dev/mcMMO/wiki/Smelting> の和訳です
+{ .note .info }
 
 |コマンド|説明|
 |:------:|:--:|
@@ -34,4 +35,3 @@ Mining スキル、Repair スキルレベルの平均値が Smelting スキル�
   * Smelting ピッケルで採掘すると 33% の確率で、採掘したアイテムが精錬された状態でドロップする。
   * 解禁レベルに達してない人が Smelting ピッケルを使用した場合は、通常のピッケルと同じ動作をする。
 
-{% include related/mcMMO.md %}

@@ -3,7 +3,8 @@ title: Fishing
 description: mcMMO の Fishing スキルのアクティブ能力やパッシブ能力、利用できるコマンドについて解説します
 ---
 
-このページは [https://github.com/mcMMO-Dev/mcMMO/wiki/Fishing](https://github.com/mcMMO-Dev/mcMMO/wiki/Fishing) の和訳です。
+このページは <https://github.com/mcMMO-Dev/mcMMO/wiki/Fishing> の和訳です
+{ .note .info }
 
 釣りに関するスキル。
 (訳注: mcMMO が入った環境で自動釣りをしようとすると身の毛もよだつ怖い事が起こるので注意してね。
@@ -42,4 +43,3 @@ description: mcMMO の Fishing スキルのアクティブ能力やパッシブ�
   * 釣り竿で Mob を引っ掛けることで、アイテムを奪い取ることができる。
   * 相手の残り HP に依存したアイテムを得ることができる (釣り竿はダメージを 1 与えるので無限に得ることはできない)。
 
-{% include related/mcMMO.md %}

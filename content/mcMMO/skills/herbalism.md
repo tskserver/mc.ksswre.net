@@ -3,7 +3,8 @@ title: Herbalism
 description: mcMMO の Herbalism スキルのアクティブ能力やパッシブ能力、利用できるコマンドについて解説します
 ---
 
-このページは [https://github.com/mcMMO-Dev/mcMMO/wiki/Herbalism](https://github.com/mcMMO-Dev/mcMMO/wiki/Herbalism) の和訳です。
+このページは <https://github.com/mcMMO-Dev/mcMMO/wiki/Herbalism> の和訳です
+{ .note .info }
 
 |コマンド|説明|
 |:------:|:--:|
@@ -72,4 +73,3 @@ description: mcMMO の Herbalism スキルのアクティブ能力やパッシ�
 |        花        |   ジャガイモ、ニンジン、リンゴ   |
 |      植木鉢      |  エメラルド、ダイアモンド、金塊  |
 
-{% include related/mcMMO.md %}

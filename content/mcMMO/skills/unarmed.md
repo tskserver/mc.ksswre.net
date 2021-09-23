@@ -3,7 +3,8 @@ title: Unarmed
 description: mcMMO の Unarmed スキルのアクティブ能力やパッシブ能力、利用できるコマンドについて解説します
 ---
 
-このページは [https://github.com/mcMMO-Dev/mcMMO/wiki/Unarmed](https://github.com/mcMMO-Dev/mcMMO/wiki/Unarmed) の和訳です。
+このページは <https://github.com/mcMMO-Dev/mcMMO/wiki/Unarmed> の和訳です
+{ .note .info }
 
 素手で戦闘するスキル。
 
@@ -44,4 +45,3 @@ description: mcMMO の Unarmed スキルのアクティブ能力やパッシブ�
   * Dusarm に対してカウンターできるチャンスを得る。
   * レベル毎に 0.1% ずつ増加し、Level 1000 で上限 100% になる。
 
-{% include related/mcMMO.md %}

@@ -3,7 +3,8 @@ title: Alchemy
 description: mcMMO の Alchemy スキルのアクティブ能力やパッシブ能力、利用できるコマンドについて解説します
 ---
 
-このページは [https://github.com/mcMMO-Dev/mcMMO/wiki/Skills](https://github.com/mcMMO-Dev/mcMMO/wiki/Skills) の和訳です。
+このページは <https://github.com/mcMMO-Dev/mcMMO/wiki/Skills> の和訳です
+{ .note .info }
 
 Alchemy はポーション醸造に関してのスキルです。
 レベルを上げるとポーション醸造のスピードを向上させるだけでなく、通常のクラフトで入手不可能なポーションを醸造できるようになります。
@@ -29,4 +30,3 @@ Alchemy はポーション醸造に関してのスキルです。
   * レベルにより、通常の醸造レシピにないポーションを醸造可能にする
   * レシピは [Wikia](http://mcmmo.wikia.com/wiki/Alchemy) の方に詳しく載っているので参照のこと。
 
-{% include related/mcMMO.md %}

@@ -3,7 +3,8 @@ title: Archery
 description: mcMMO の Archery スキルのアクティブ能力やパッシブ能力、利用できるコマンドについて解説します
 ---
 
-このページは [https://github.com/mcMMO-Dev/mcMMO/wiki/Archery](https://github.com/mcMMO-Dev/mcMMO/wiki/Archery) の和訳です。
+このページは <https://github.com/mcMMO-Dev/mcMMO/wiki/Archery> の和訳です
+{ .note .info }
 
 |コマンド|説明|
 |:------:|:--:|
@@ -27,4 +28,3 @@ description: mcMMO の Archery スキルのアクティブ能力やパッシブ�
   * 追加ダメージを与えるが、対人のみ。
   * レベルにより、発動確率が 0.05% ずつ増加する。
 
-{% include related/mcMMO.md %}
