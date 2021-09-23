@@ -4,21 +4,19 @@ layout: page
 
 <article>
 	<h1 class="post-title">
-		{{ page.title }}
+		{{ .Title }}
 		<section class="tags">
-			{% for tag in page.tags %}
-				<a href="/tag/{{ tag | slugize }}" rel="tag">{{ tag }}</a>
-			{% endfor %}
+			{% range .Params.tags %}
+				<a href="/tag/{{ . | urlize }}" rel="tag">{{ . }}</a>
+			{% end %}
 		</section>
 	</h1>
 	<p class="post-meta">
-		{% if page.date %}
-		<i class="fa fa-calendar"></i> Last updated: {{ page.date | date: "%Y-%m-%d %H:%M" }}
+		<i class="fa fa-calendar"></i> Last updated: {{ .Lastmod.Format "2006-01-02 15:04" }}
 		//
-		{% endif %}
-		<a href="https://github.com/k5342/mc.ksswre.net/blob/master/{{ page.path }}"><i class="fa fa-pencil" aria-hidden="true"></i> Edit</a>
+		<a href="https://github.com/k5342/mc.ksswre.net/blob/master/{{ .File.Path }}"><i class="fa fa-pencil" aria-hidden="true"></i> Edit</a>
 	</p>
 	<section class="album">
-{{ content | toc_generate }}
+{{ .Content }}
 	</section>
 </article>

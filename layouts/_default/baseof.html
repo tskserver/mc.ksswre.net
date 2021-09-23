@@ -1,8 +1,5 @@
----
-layout: compress
----
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="{{ .Site.LanguageCode }}">
 	<head>
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23849444-15"></script>
@@ -14,15 +11,14 @@ layout: compress
 		</script>
 		<meta charset="utf-8" />
 		<meta name="google-site-verification" content="XabRge_swrYHPC0fR1d_7yqKf2sqFcCIy4IaXL-T2Cs" />
-		<link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
-		<link rel="manifest" href="/assets/site.webmanifest">
-		<link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#ff0000">
+		<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+		<link rel="manifest" href="/favicon/site.webmanifest">
+		<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#ff0000">
 		<meta name="msapplication-TileColor" content="#00aba9">
 		<meta name="theme-color" content="#ffffff">
-		{% seo %}
-		<link href='/assets/css/styles.css' rel='stylesheet' />
+		<link href='/css/styles.css' rel='stylesheet' />
 	</head>
 	<body>
 		<header>
@@ -57,15 +53,27 @@ layout: compress
 				</div>
 			</nav>
 		</header>
-{{ content }}
+		{{ block "main" . }}
+			<div class="container">
+				<div class="container-twice">
+					<div class="container-left">
+						{{ block "main-container-left" . }}
+						{{ end }}
+					</div>
+					<div class="container-right sidebar" vocab="http://schema.org/" typeof="SiteNavigationElement">
+						{{ partial "sidebar.html" . }}
+					</div>
+				</div>
+			</div>
+		{{ end }}
 		<footer>
 			<div class="container">
 				<div class="flex flex-align-center">
 					<section class="quarter">
 						<a href="/">
 							<div class="logo">
-								<img class="logo-logo" src="/assets/tskserver-logo.png" srcset="/assets/tskserver-logo.png 1x, /assets/tskserver-logo@2x.png 2x" alt="logo" />
-								<img class="logo-text" src="/assets/tskserver-logo-text.svg" alt="tskserver: a minecraft server" />
+								<img class="logo-logo" src="/img/tskserver-logo.png" srcset="/img/tskserver-logo.png 1x, /img/tskserver-logo@2x.png 2x" alt="logo" />
+								<img class="logo-text" src="/img/tskserver-logo-text.svg" alt="tskserver: a minecraft server" />
 							</div>
 						</a>
 					</section>
@@ -78,13 +86,13 @@ layout: compress
 				</div>
 		</footer>
 	</body>
-	<link href='/assets/fonts/fontawesome-webfont.woff2?v=4.6.3' rel='preload' as='font' type='font/woff2' crossorigin/>
-	<link href='/assets/css/toc.css' rel='stylesheet' />
-	<link href='/assets/css/highlight.css' rel='stylesheet' />
-	<link href='/assets/css/font-awesome.css' rel='stylesheet' />
+	<link href='/fonts/fontawesome-webfont.woff2?v=4.6.3' rel='preload' as='font' type='font/woff2' crossorigin/>
+	<link href='/css/toc.css' rel='stylesheet' />
+	<link href='/css/highlight.css' rel='stylesheet' />
+	<link href='/css/font-awesome.css' rel='stylesheet' />
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Passion+One:wght@700&display=swap" rel="stylesheet">
-	<script defer src="/assets/scripts/script.js"></script>
+	<script defer src="/scripts/script.js"></script>
 </html>

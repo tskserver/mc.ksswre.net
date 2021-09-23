@@ -75,18 +75,13 @@
 					<section>
 						<h2>Recent Posts</h2>
 						<section>
-						{% for post in site.posts %}
+							{{ range (where .Site.RegularPages "Section" "posts").ByDate }}
 							<ul>
 								<li vocab="http://schema.org/" typeof="BlogPosting">
-									<strong><time property="datePublished" content="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y/%m/%d" }}</time></strong><br />
-									<a href="{{ post.url | prepend: site.baseurl }}" property="name">{{ post.title | escape }}</a>
+									<strong><time property="datePublished" content="{{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" }}">{{ .PublishDate.Format "2006/01/02" }}</time></strong><br />
+									<a href="{{ .File.Path }}" property="name">{{ .Title }}</a>
 								</li>
 							</ul>
-						{% endfor %}
-						</section>
-					<section>
-						<h2>Tags</h2>
-						<section class="tag-cloud">
-							{{ site | tag_cloud }}
+							{{ end }}
 						</section>
 					</section>

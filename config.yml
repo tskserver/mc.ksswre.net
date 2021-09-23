@@ -4,9 +4,18 @@ hasCJKLanguage: true
 googleAnalytics: UA-23849444-15
 enableEmoji: true
 enableGitInfo: true
+disablePathToLower: true
 title: tskserver
 timeZone: Asia/Tokyo
 sitemap:
   changefreq: monthly
   filename: sitemap.xml
   priority: 0.5
+taxonomies:
+  category: categories
+  tag: tags
+markup:
+  goldmark:
+    parser:
+      attribute:
+        block: true

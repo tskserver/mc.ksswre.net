@@ -24,16 +24,16 @@ description: プラグインの紹介ページです。
 ### TreeAssist
 いわゆる木こり MOD です。斧で原木ブロックを破壊すると連続する原木ブロックを連鎖的にアイテム化します。
 
-{: .note .warning }
 素手で原木ブロックを破壊した場合は発動しません。また WorldEdit が有効の場合、木の斧では発動しません
+{ .note .warning }
 
 <https://www.spigotmc.org/resources/treeassist.67436/>
 
 ### WireRod
 WireRod という立体機動な釣り竿を追加します。パスファインダーのグラップリングフックのような挙動をします。この釣り竿は先端を引っ掛けることで空高くジャンプできます。  
 
-{: .note .info }
 WireRod の使用中は落下ダメージを受けません
+{ .note .info }
 
 WireRod はクラフトで作製します。レシピは以下参照。
 
@@ -52,8 +52,8 @@ WireRod はクラフトで作製します。レシピは以下参照。
 ### dynmap
 開拓済みの地形を [Web ブラウザで表示](https://dynmap.mc.ksswre.net)できるようにします。
 
-{: .note .info }
 Dynmap では地図上にマーカを配置できるように設定しています。詳しくは[コマンド集](/commands)を参照ください
+{ .note .info }
 
 
 <https://www.spigotmc.org/resources/dynmap.274/>
@@ -61,8 +61,8 @@ Dynmap では地図上にマーカを配置できるように設定していま�
 ### WorldEdit
 コマンドを用いた地形操作をできるようにします。
 
-{: .note .info }
 現在の Minecraft バージョンでは一般開放していません。しばらくおまちください
+{ .note .info }
 
 <https://dev.bukkit.org/projects/worldedit>
 

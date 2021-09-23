@@ -26,8 +26,8 @@ Minecraft Launcher では起動する Minecraft のバージョンが表示さ�
 今回は Minecraft Launcher の設定を変更して **Minecraft Java Edition 1.16.5** を起動してみます。
 Minecraft Launcher では「起動構成」という単位でゲームを管理しています。今回は新しく Minecraft 1.16.5 用に起動構成を作成・追加してみます。
 
-{: .note .warning }
 このページでは Minecraft Java Edition **1.16.5** に変更する例を紹介しています。現在稼働中のサーバは **{{ site.data.servers.tskserver.version }}** なので、ご注意ください！
+{ .note .warning }
 
 ### 起動構成を開く
 画面上部にある「起動構成」をクリックしてから「New Installation」ボタンをクリックします。
@@ -36,8 +36,8 @@ Minecraft Launcher では「起動構成」という単位でゲームを管理�
 ### 起動構成の作成
 バージョンをお好みのバージョンにします。今回は Minecraft Java Edition の **1.16.5** に変更する例ですので **release 1.16.5** を選択します。
 
-{: .note .info }
 現在稼働中のサーバの対応バージョンは **{{ site.data.servers.tskserver.version }}** です。tskserver に接続される方は適宜読み替えてください！
+{ .note .info }
 
 選択したら「作成」ボタンをクリックします。
 ![起動構成の作成画面](/introduction/img/launcher3.png)
