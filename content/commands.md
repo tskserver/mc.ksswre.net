@@ -15,73 +15,71 @@ description: 現在の tskserver で通常ユーザが利用可能な Minecraft 
 
 
 ## Dynmap
-Dynmap はリアルタイムマップのプラグインです。マップにマーカーを追加できる設定にしています。  
-表示はこちらから： <https://dynmap.mc.ksswre.net/>
+Dynmap はリアルタイムマップのプラグインです。
+
+マップの表示はこちらから → <https://dynmap.mc.ksswre.net/>
+{ .note .info }
 
 ### マーカを設定する
-Dynmap にマーカを表示します。ランドマークや道案内に便利です。
+tskserver では一般権限で Dynmap にマーカーを追加できるような設定にしています。  
 
-公式ドキュメント(英語) [https://github.com/webbukkit/dynmap/wiki/Using-markers](https://github.com/webbukkit/dynmap/wiki/Using-markers)
+マーカセット、アイコン名などは省略可能。
+マーカセットはマーカの数が多くなったときに整理するための機能です。省略するとデフォルトのマーカセットになります。
+アイコンは省略すると default (家のマーク) になります。利用できるアイコンは[こちら](/img/dynmap-markers.png)を参照。
 
-#### マーカの一覧を表示 (dmarker list)
-現在設定されているマーカの一覧を表示します。
-```
-/dmarker list
-```
+コマンド | 説明
+:-----|:-----
+`/dmarker list` | 現在設定されているマーカの一覧を表示します。
+`/dmarker add マーカの表示名 icon:アイコン名 set:マーカセット名` | Dynmap にマーカを追加する。コマンドが成功すると `マーカの表示名` のラベルが付いたマーカが Dynmap に追加されます。
+`/dmarker movehere マーカの表示名 set:マーカセット名` | 指定したマーカを現在の場所に移動する
+`/dmarker update マーカの表示名 set:マーカセット名 icon:アイコン名 newlabel:新しい表示名` | 指定したマーカの表示名やアイコンを変更します。
+`/dmarker delete マーカの表示名 set:マーカセット名` | 指定したマーカを削除する
 
-#### マーカを追加 (dmarker add)
-Dynmap にマーカを追加します。コマンドが成功すると `マーカの表示名` のラベルが付いたマーカが Dynmap に追加されます。
-```
-/dmarker add マーカの表示名 icon:アイコン名 set:マーカセット名
-```
+### 関連ページ
+- 公式ドキュメント(英語) ... <https://github.com/webbukkit/dynmap/wiki/Using-markers>
 
-- **マーカの表示名**: マーカの表示名を指定します。ここで指定した文字列がそのまま表示されます。日本語でも大丈夫です
-- **icon:アイコン名**: (省略可能) `アイコン名` でマーカの表示アイコンを指定します。利用できるアイコンは[こちら](/img/dynmap-markers.png)を参照。省略した場合は house アイコンになります
-- **set:マーカセット名**: (省略可能) マーカセット名。省略するとデフォルトマーカセットになります。
-
-#### マーカを現在位置に移動 (dmarker movehere)
-指定したマーカを現在の場所に移動します。マーカの位置を修正できます
-```
-/dmarker movehere マーカの表示名 set:マーカセット名
-```
-
-- **set:マーカセット名**: (省略可能) マーカセット名。省略するとデフォルトマーカセットになります。
-
-#### マーカの表示名変更・アイコン変更 (dmarker update)
-指定したマーカの表示名やアイコンを変更します。
-
-```
-/dmarker update マーカの表示名 set:マーカセット名 icon:アイコン名 newlabel:新しい表示名
-```
-
-- **icon:アイコン名**: (省略可能) `アイコン名` でマーカの表示アイコンを指定します。利用できるアイコンは[こちら](/img/dynmap-markers.png)を参照。省略した場合は house アイコンになります
-- **newlabel:新しい表示名**: (省略可能) 新しい表示名
-- **set:マーカセット名**: (省略可能) マーカセット名。省略するとデフォルトマーカセットになります。
-
-#### マーカの削除 (dmarker delete)
-指定したマーカを削除します。
-
-```
-/dmarker delete マーカの表示名 set:マーカセット名
-```
-
-- **set:マーカセット名**: (省略可能) マーカセット名。省略するとデフォルトマーカセットになります。
 
 ## WorldEdit
+コマンドを用いた地形操作をできるようにします。
 
-&lt;block&gt; はブロック名かブロック ID (非推奨) を使用します。<br />
-**Minecraft ID List**<br />
-[http://minecraft-ids.grahamedgecombe.com](http://minecraft-ids.grahamedgecombe.com)
+現在の Minecraft バージョンでは一般開放していません。しばらくおまちください
+{ .note .info }
 
-[direction] は u d e w s n (上、下、東、西、南、北) で指定可能。
 
-* コマンド一覧(英語) - [http://wiki.sk89q.com/wiki/WorldEdit/Reference](http://wiki.sk89q.com/wiki/WorldEdit/Reference)
-* [コマンド一覧](http://lilly-wizard.tumblr.com/post/8467284834/worldedit-%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E4%B8%80%E8%A6%A7%E6%97%A5%E6%9C%AC%E8%AA%9E%E7%89%88-ver2)
+### コマンド
 
-`//set <block>` | 選択範囲を &lt;block&gt; に置き換える
-`//replace <block1> <block2>` | 選択範囲の &lt;block1&gt; を &lt;block2&gt; に置き換える
-`//fill` | 埋める
-`//drain` | 水や溶岩を連鎖的に消す(吸い込む)
-`//move <distance> [direction]` | [direction] 方向に &lt;distance&gt; ブロック分移動する
-`//stack <count> [direction]` | [direction] 方向に &lt;count&gt; 回繰り返しコピーする
+コマンド | 説明
+:-----|:-----
+`//set <block>` | 選択範囲を `block` に置き換える
+`//replace <block1> <block2>` | 選択範囲の `block1` を `block2` に置き換える
+`//fill <block> <radius> [depth]` | 自分の周り半径 `radius` を深さ `depth` のブロック `block` で埋める
+`//drain <radius>` | 自分の周り半径 `radius` 内にある水や溶岩を連鎖的に消す (吸い込む)
+`//move <distance> [direction]` | `direction` 方向に `distance` ブロック分移動する
+`//stack <count> [direction]` | `direction` 方向に `count` 回繰り返しコピーする
+`//undo` | もとにもどす
+`//redo` | (もとにもどしたものを) すすめる
 
+
+### 各種パラメータ
+
+ブロック名とブロック ID は以下のサイトを参考  
+**Minecraft ID List** - [http://minecraft-ids.grahamedgecombe.com](http://minecraft-ids.grahamedgecombe.com)
+{ .note .info }
+
+- `block` ... ブロック名。ブロック名かブロック ID (非推奨) で指定する
+- `direction` ... `u`, `d`, `e`, `w`, `s`, `n` (上、下、東、西、南、北) で指定可能。
+
+### 範囲選択
+
+#### 木の斧を使った範囲選択
+
+1. 木の斧を使って右クリックすると座標 1 (pos1) が記録される
+1. 木の斧を使って右クリックすると座標 2 (pos2) が記録される
+1. 座標 1 と座標 2 の二点が対角線となる直方体が選択範囲として定義される
+
+#### コマンドによる範囲選択
+- `//chunk` ... 現在のチャンクをすべて選択
+
+### 関連ページ
+- <https://worldedit.enginehub.org/en/latest/commands/>
+- <https://lilly-wizard.tumblr.com/post/8467284834>
