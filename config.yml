@@ -20,3 +20,7 @@ markup:
     parser:
       attribute:
         block: true
+frontmatter:
+  date:
+    - :filename  # imported from jekyll
+    - :default

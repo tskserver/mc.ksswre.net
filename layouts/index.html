@@ -5,7 +5,7 @@
 		<div class="container-twice">
 			<div class="container-left">
 				<section class="post-list">
-					{{ range (where .Site.RegularPages "Section" "posts").ByDate }}
+					{{ range (where .Site.RegularPages "Section" "posts").ByDate.Reverse }}
 						<article vocab="http://schema.org/" typeof="BlogPosting">
 							<h1 class="post-title">
 								<span property="name">{{ .Title }}</span>

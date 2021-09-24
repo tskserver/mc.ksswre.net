@@ -75,10 +75,10 @@
 					<section>
 						<h2>Recent Posts</h2>
 						<section>
-							{{ range (where .Site.RegularPages "Section" "posts").ByDate }}
+							{{ range (where .Site.RegularPages "Section" "posts").ByDate.Reverse }}
 							<ul>
 								<li vocab="http://schema.org/" typeof="BlogPosting">
-									<strong><time property="datePublished" content="{{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" }}">{{ .PublishDate.Format "2006/01/02" }}</time></strong><br />
+									<strong><time property="datePublished" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "2006/01/02" }}</time></strong><br />
 									<a href="{{ .File.Path }}" property="name">{{ .Title }}</a>
 								</li>
 							</ul>
