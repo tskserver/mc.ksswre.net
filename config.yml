@@ -1,5 +1,6 @@
 baseURL: https://mc.ksswre.net/
 languageCode: ja
+defaultContentLanguage: ja
 hasCJKLanguage: true
 googleAnalytics: UA-23849444-15
 enableEmoji: true
