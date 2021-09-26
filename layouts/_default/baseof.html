@@ -76,7 +76,7 @@
 									<span>
 										<i class="fa fa-calendar"></i>
 										<span>
-											Published: <time property="datePublished" content="{{ .Format "2006-01-02 15:04" }}">{{ .Format "2006-01-02 15:04" }}</time>
+											Posted: <time property="datePublished" content="{{ .Format "2006-01-02 15:04" }}">{{ .Format "2006-01-02 15:04" }}</time>
 										</span>
 									</span>
 									<span>/</span>
@@ -94,6 +94,9 @@
 								</p>
 								</section>
 								<section property="articleBody">
+									{{ if gt (now.Sub .Lastmod).Seconds 31536000 }}
+									<p class="note warning">この記事の最終更新日は 1 年以上前です。古い情報を含む場合があります。</p>
+									{{ end }}
 									{{ .Content }}
 								</section>
 							</article>
