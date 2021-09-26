@@ -10,10 +10,9 @@ noToc: true
 ちなみに RailCraft とは別物で、(プラグインの配布ページによれば) このプラグインは RailCraft と共存できません。
 
 ## 紹介動画
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/XfCjDgMWogU?rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+{{<youtube XfCjDgMWogU>}}
 
-<blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="en" dir="ltr">TrainCarts <a href="https://t.co/7Hw5Ccv3JR">pic.twitter.com/7Hw5Ccv3JR</a></p>&mdash; k5342 (@k5342) <a href="https://twitter.com/k5342/status/944191138466074625?ref_src=twsrc%5Etfw">December 22, 2017</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+{{<tweet 944191138466074625>}}
 
 ## 機能
 
