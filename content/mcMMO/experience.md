@@ -7,7 +7,7 @@ description: tskserver の mcMMO 設定を公開します。これを見れば�
 
 サーバの `mcMMO/experience.yml` なファイルを公開します。
 
-{% highlight yaml %}
+```yaml
 #
 #  Experience configuration
 #  Last updated on 1.5.06-SNAPSHOT-b145
@@ -269,6 +269,6 @@ Experience:
             Guardian: 3.0
             Elder_Guardian: 4.0
             Shulker: 2.0
-{% endhighlight %}
+```
 
 {% include related/mcMMO.md %}
