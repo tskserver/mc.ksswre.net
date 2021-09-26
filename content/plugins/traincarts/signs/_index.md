@@ -24,7 +24,7 @@ noToc: true
 ## 3, 4 行目
 3, 4 行目は 2 行目で選んだ種類によって書く内容が指定されている場合もあるし、何も書かなくて良い場合もあります。
 詳しくは以下を参照してください。
-また、[Wiki](https://minecraft.gamepedia.com/Custom_servers/Bukkit/TrainCarts/Signs#Types) に全部の機能が載っているのでこちらを参照してください。
+また、[Wiki](https://wiki.traincarts.net/p/TrainCarts/Signs#Types) に全部の機能が載っているのでこちらを参照してください。
 
 
 ## TrainCarts 関連記事

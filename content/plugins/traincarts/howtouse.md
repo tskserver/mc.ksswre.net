@@ -4,7 +4,7 @@ noToc: true
 description: TrainCarts の使い方やコマンドを解説します
 ---
 
-TrainCarts の使い方やコマンドを解説します。
+[TrainCarts](/plugins/traincarts) の使い方やコマンドを解説します。
 
 ## トロッコを連結させる
 トロッコを複数台線路に置いてトロッコを衝突させると、衝突したトロッコ同士が自動的に連結します。
@@ -70,9 +70,9 @@ TrainCarts は `/train` と `/cart` コマンドがあって、`/train` は連�
 
 ## 看板と連携して TrainCarts のトロッコの情報を表示する
 SignLink (tskserver には導入済み) というプラグインを使うと、TrainCarts のトロッコの情報を看板に表示することができます。
-TrainCarts の看板による [Trigger 機能](signs/trigger)を使用します。
+TrainCarts の看板による [Trigger 機能](/plugins/traincarts/signs/trigger)を使用します。
 
 ## その他コマンド
-コマンドについてより詳しく知りたい場合は [Wiki](https://minecraft.gamepedia.com/Custom_servers/Bukkit/TrainCarts/Commands) を参照してください。
+コマンドについてより詳しく知りたい場合は [Wiki](https://wiki.traincarts.net/p/TrainCarts/Commands) を参照してください。
 
 {% include related/TrainCarts.md %}

@@ -9,6 +9,10 @@ noToc: true
 
 ちなみに RailCraft とは別物で、(プラグインの配布ページによれば) このプラグインは RailCraft と共存できません。
 
+* [TrainCarts 配布ページ](https://www.spigotmc.org/resources/traincarts.39592/)
+* [Wiki](https://wiki.traincarts.net/p/TrainCarts)
+
+
 ## 紹介動画
 {{<youtube XfCjDgMWogU>}}
 
@@ -19,7 +23,7 @@ noToc: true
 ### トロッコの振る舞いの追加
 * トロッコを連結して電車のようにできます
 * トロッコのスピードをめっちゃ速くできます
-* [トロッコに表示されるブロックを変更できます](https://minecraft.gamepedia.com/Custom_servers/Bukkit/TrainCarts/Signs/BlockChanger)
+* [トロッコに表示されるブロックを変更できます](https://wiki.traincarts.net/p/TrainCarts/Signs/BlockChanger)
 * はしごを使って垂直方向に線路を敷設できます
 * 感圧板をつかって[平面交差](https://ja.wikipedia.org/wiki/%E3%83%80%E3%82%A4%E3%83%A4%E3%83%A2%E3%83%B3%E3%83%89%E3%82%AF%E3%83%AD%E3%83%83%E3%82%B7%E3%83%B3%E3%82%B0)する線路を敷設できます
 * チャンクがアンロードされても走行し続けるようにできます
@@ -49,10 +53,4 @@ noToc: true
 * トロッコの行き先を変更する
 * トロッコを一時停止させる
 * ... など
-
-## 外部ソース
-以下のページは、このページを作るときに参考にしたサイトです。英語資料ですが、このページよりも詳しいことが書いてあります。
-
-* [TrainCarts 配布ページ](https://www.spigotmc.org/resources/traincarts.39592/)
-* [Wiki](https://minecraft.gamepedia.com/Bukkit/TrainCarts)
 
