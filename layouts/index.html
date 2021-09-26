@@ -6,46 +6,8 @@
 			<div class="container-left">
 				<section class="post-list">
 					{{ range (where .Site.RegularPages "Section" "posts").ByDate.Reverse }}
-						<article vocab="http://schema.org/" typeof="BlogPosting">
-							<h1 class="post-title">
-								<span property="name">{{ .Title }}</span>
-								{{ if .IsPage }}
-									{{ $tags := .Params.tags | default slice }}
-									<section class="tags" property="keywords" content="{{ delimit $tags "," }}">
-										{{ range .Params.tags }}
-											<a href="/tag/{{ . | urlize }}" rel="tag">{{ . }}</a>
-										{{ end }}
-									</section>
-								{{ end }}
-							</h1>
-							<p class="post-meta">
-								{{ with .Date }}
-								<span>
-									<i class="fa fa-calendar"></i>
-									<span>
-										Posted: <time property="datePublished" content="{{ .Format "2006-01-02T15:04:05Z-07:00" }}">{{ .Format "2006-01-02 15:04" }}</time>
-									</span>
-								</span>
-								<span>/</span>
-								{{ end }}
-								{{ with .Lastmod }}
-								<span>
-									<i class="fa fa-rotate-left"></i>
-									<span>
-										Updated: <time property="dateModified" content="{{ .Format "2006-01-02T15:04:05Z-07:00" }}">{{ .Format "2006-01-02 15:04" }}</time>
-									</span>
-								</span>
-								{{ end }}
-							</p>
-							<p class="post-body" property="headline" content="{{ .Summary }}">{{ .Summary }}</p>
-							
-							<a class="post-link" href="{{ .Permalink }}">
-								<button class="post-more" href="{{ .Permalink }}">
-									続きを読む
-									<i class="fa fa-caret-right"></i>
-								</button>
-							</a>
-						</article>
+						{{ .Scratch.Set "scope" "list" }}
+						{{ partial "article.html" . }}
 					{{ end }}
 				</section>
 			</div>

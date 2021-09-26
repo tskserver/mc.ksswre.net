@@ -54,47 +54,8 @@
 				<div class="container-twice">
 					<div class="container-left">
 						{{ block "main-container-left" . }}
-							<article vocab="http://schema.org/" typeof="BlogPosting">
-								<h1 class="post-title">
-									<span property="name">{{ .Title }}</span>
-									{{ if .IsPage }}
-										{{ $tags := .Params.tags | default slice }}
-										<section class="tags" property="keywords" content="{{ delimit $tags "," }}">
-											{{ range .Params.tags }}
-												<a href="/tag/{{ . | urlize }}" rel="tag">{{ . }}</a>
-											{{ end }}
-										</section>
-									{{ end }}
-								</h1>
-								<p class="post-meta">
-									{{ with .Date }}
-									<span>
-										<i class="fa fa-calendar"></i>
-										<span>
-											Posted: <time property="datePublished" content="{{ .Format "2006-01-02T15:04:05Z-07:00" }}">{{ .Format "2006-01-02 15:04" }}</time>
-										</span>
-									</span>
-									<span>/</span>
-									{{ end }}
-									{{ with .Lastmod }}
-									<span>
-										<i class="fa fa-rotate-left"></i>
-										<span>
-											Updated: <time property="dateModified" content="{{ .Format "2006-01-02T15:04:05Z-07:00" }}">{{ .Format "2006-01-02 15:04" }}</time>
-										</span>
-									</span>
-									<span>//</span>
-									{{ end }}
-									<a href="https://github.com/k5342/mc.ksswre.net/blob/master/content/{{ .File.Path }}"><i class="fa fa-github" aria-hidden="true"></i>Source</a>
-								</p>
-								</section>
-								<section property="articleBody">
-									{{ if gt (now.Sub .Lastmod).Seconds 31536000 }}
-									<p class="note warning">この記事の最終更新日は 1 年以上前です。古い情報を含む場合があります。</p>
-									{{ end }}
-									{{ .Content }}
-								</section>
-							</article>
+							{{ .Scratch.Set "scope" "single" }}
+							{{ partial "article.html" . }}
 							{{ block "post-related" . }}
 								{{ $related := .Site.RegularPages.Related . | first 5 }}
 								{{ with $related }}
