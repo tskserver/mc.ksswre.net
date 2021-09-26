@@ -1,7 +1,8 @@
 ---
 title: The Unusual Skyblock サーバ復旧しました
-date: 2016/09/07 19:51
-tag: [update, skyblock, outage]
+date: 2016-09-07T19:51:00Z
+lastmod: 2016-09-07T19:51:00Z
+tags: [update, skyblock, outage]
 ---
 
 以前、[試運転](https://twitter.com/k5342/status/723502398510116865)で [The Unusual Skyblock](http://forum.minecraftuser.jp/viewtopic.php?t=5255) サーバを立ち上げていましたが、負荷が大きく、ラグが酷い、**3 分間隔で落ちる**などといったトラブルが多発し、実用に耐えるものではありませんでした。
@@ -14,10 +15,9 @@ tag: [update, skyblock, outage]
 
 **ちなみに、すでに卵島は爆発済です** Ω＼ζ゜）ﾁｰﾝ
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="ja" dir="ltr"><a href="https://twitter.com/hashtag/tskserver?src=hash">#tskserver</a> のホワイトリスト引き継いで試しに Skyblock のサーバを立てています <a href="https://t.co/5e8vmOflT7">pic.twitter.com/5e8vmOflT7</a></p>&mdash; k5342 (@k5342) <a href="https://twitter.com/k5342/status/723502398510116865">April 22, 2016</a></blockquote>
+{{< tweet 723502398510116865>}}
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="ja" dir="ltr">Unusual Skyblock サーバ立て直した<a href="https://twitter.com/hashtag/tskserver?src=hash">#tskserver</a> <a href="https://t.co/WQyoRdF2tF">pic.twitter.com/WQyoRdF2tF</a></p>&mdash; k5342 (@k5342) <a href="https://twitter.com/k5342/status/773476779562414080">September 7, 2016</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+{{< tweet 773476779562414080>}}
 
 ## 前回の試運転からの変更点
 

@@ -22,5 +22,10 @@ markup:
         block: true
 frontmatter:
   date:
-    - :filename  # imported from jekyll
-    - :default
+  - :filename  # imported from jekyll
+  - :default
+  lastmod:
+  - lastmod
+  - :default
+permalinks:
+  posts: /:year/:month/:day/:slug
