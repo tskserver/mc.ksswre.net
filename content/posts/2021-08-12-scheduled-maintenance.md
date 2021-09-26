@@ -2,7 +2,7 @@
 title: メンテナンス実施のお知らせ
 date: 2021-08-12T09:20:00
 lastmod: 2021-08-12T09:31:00
-tags: [maintenance, gen9]
+tags: [maintenance, gen10]
 description: メンテナンス (8/12) のお知らせ
 images:
 - /img/2021-06-29_00.28.46.png
