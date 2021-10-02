@@ -27,17 +27,17 @@ tskserver に接続するために必要になる情報です。
 サーバに接続できない場合は[サーバ稼働状況](/status)のページを参照ください
 { .note .info }
 
-{{ $server := .Site.Data.servers.tskserver }}
-
-| アドレス             | {{ $server.host }} |
-| Minecraft バージョン | {{ $server.version }} |
-| Dynmap | <{{ $server.dynmap_url }}> |
-| ワールドリセット実施日 | {{ server.last_reset_at }} |
-| メンテナンス実施日 | {{ server.last_updated_at }} |
+|||
+|:---|:---|
+| アドレス               | {{<var servers.tskserver.host>}} |
+| Minecraft バージョン   | {{<var servers.tskserver.version>}} |
+| Dynmap                 | {{<var servers.tskserver.dynmap_url >}} |
+| ワールドリセット実施日 | {{<var servers.tskserver.last_reset_at >}} |
+| メンテナンス実施日     | {{<var servers.tskserver.last_updated_at >}} |
 
 
 ## ワールドリセット情報
-最新のワールドリセットは {{ site.data.servers.tskserver.last_reset_at }} で、バージョンは {{ site.data.servers.tskserver.version }} です。
+最新のワールドリセットは {{<var servers.tskserver.last_reset_at >}} で、バージョンは {{<var servers.tskserver.version >}} です。
 
 過去のリセット前のワールド情報については[ギャラリー](/galleries)を参照ください
 { .note .info }
