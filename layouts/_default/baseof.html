@@ -25,7 +25,8 @@
 				</a>
 			</div>
 			<nav vocab="http://schema.org/" typeof="SiteNavigationElement">
-				<div class="container">
+				<section class="navbar">
+					<div class="container">
 						<ul>
 							<li>
 								<a propery="name" href="/">トップページ</a>
@@ -46,7 +47,15 @@
 								<a propery="name" href="/introduction">サーバ参加ガイド</a>
 							</li>
 						</ul>
-				</div>
+					</div>
+				</section>
+				{{- if not .IsHome -}}
+					<section class="breadcrumb">
+						<div class="container">
+							{{ partial "breadcrumb.html" . }}
+						</div>
+					</section>
+				{{- end -}}
 			</nav>
 		</header>
 		{{ block "main" . }}

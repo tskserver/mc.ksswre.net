@@ -27,7 +27,7 @@ header {
 	width: 100%;
 	min-width: 900px;
 	padding: 30px 0 0 0;
-	margin-bottom: 50px;
+	margin-bottom: 32px;
 	border-top: solid 10px rgb(130, 236, 133);
 }
 
@@ -58,39 +58,47 @@ header .logo span {
 }
 
 header nav {
-	color: rgb(255, 255, 255);
 	width: 100%;
-	margin: 2em 0;
+	margin: 2em 0 0 0;
+}
+
+header nav .navbar {
+	color: rgb(255, 255, 255);
 	background-color: rgb(55, 55, 55);
 }
 
 header nav ul {
 	width: 100%;
+	margin: 0;
 	padding: 0;
 	list-style-type: none;
 	display: -webkit-flex;
 	display: flex;
+	align-items: center;
 }
 
 header nav li {
-	width: 150px;
 	margin: 0;
-	display: block;
-	line-height: 55px;
-	text-align: center;
-	font-weight: bold;
 }
 
-header nav li:hover {
+header nav .navbar li {
+	width: 150px;
+	height: 55px;
+	font-weight: bold;
+	text-align: center;
+}
+
+header nav .navbar li:hover {
 	height: 50px;
 	background: rgba(0, 0, 0, 0.1);
-	margin-bottom: -5px;
 	border-bottom: solid 5px rgb(119, 208, 255);
 }
 
-header nav li a {
+header nav .navbar li a {
 	cursor: pointer;
 	width: 100%;
+	height: 50px;
+	line-height: 50px;
 	color: rgb(255, 255, 255);
 	text-decoration: none;
 	display: inline-block;
@@ -101,6 +109,45 @@ header a.logo {
 	text-decoration: none;
 }
 
+header .breadcrumb {
+	background-color: rgb(230, 230, 230);
+}
+
+header .breadcrumb ul {
+	height: 40px;
+}
+
+header .breadcrumb li a {
+	text-decoration: none;
+	display: inline-block;
+	white-space: nowrap;
+}
+
+header .breadcrumb li.home a {
+	color: rgb(90, 90, 90);
+}
+header .breadcrumb li.leaf a {
+	color: rgb(140, 140, 140);
+}
+
+header .breadcrumb li.active a {
+	color: rgb(90, 90, 90);
+}
+
+header .breadcrumb li.home i {
+	font-size: 1.1rem;
+	margin-right: 0;
+}
+
+header .breadcrumb li.leaf {
+	margin-left: 0.5rem;
+}
+
+header .breadcrumb li.leaf a:before {
+	content: '\f105';
+	font-family: FontAwesome;
+	padding-right: 0.3rem;
+}
 
 footer {
 	color: rgb(255, 255, 255);
