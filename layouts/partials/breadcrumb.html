@@ -10,6 +10,6 @@
   {{- if .p1.IsHome -}}
   <li class="home"><a href="{{ .p1.Permalink }}"><i class="fa fa-home"></i></a></li>
   {{- else -}}
-  <li class="leaf {{ if eq .p1 .p2 }} active{{ end }}"><a href="{{ .p1.Permalink }}">{{ .p1.Title }}</a></li>
+  <li class="leaf {{ if eq .p1 .p2 }} active{{ end }}"><i class="fa fa-angle-right"></i><a href="{{ .p1.Permalink }}">{{ .p1.Title }}</a></li>
   {{- end -}}
 {{ end }}

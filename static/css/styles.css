@@ -117,10 +117,14 @@ header .breadcrumb ul {
 	height: 40px;
 }
 
-header .breadcrumb li a {
+header .breadcrumb li,
+header .breadcrumb a {
 	text-decoration: none;
 	display: inline-block;
 	white-space: nowrap;
+}
+header .breadcrumb li a:hover {
+	text-decoration: underline;
 }
 
 header .breadcrumb li.home a {
@@ -140,13 +144,10 @@ header .breadcrumb li.home i {
 }
 
 header .breadcrumb li.leaf {
-	margin-left: 0.5rem;
+	margin-left: 0.55rem;
 }
-
-header .breadcrumb li.leaf a:before {
-	content: '\f105';
-	font-family: FontAwesome;
-	padding-right: 0.3rem;
+header .breadcrumb li.leaf i {
+	margin-right: 0.55rem;
 }
 
 footer {
