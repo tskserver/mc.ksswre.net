@@ -1,0 +1,16 @@
+<table>
+  <tbody>
+    {{ range .Site.Data.plugins.traincarts.signs }}
+      <tr>
+        <td>
+          {{ if .has_page }}
+            <a href="/plugins/traincarts/signs/{{ .name }}">{{ .name }}</a>
+          {{ else }}
+            {{ .name }}
+          {{ end }}
+        </td>
+        <td>{{ .description }}</td>
+      </tr>
+    {{ end }}
+  </tbody>
+</table>
