@@ -6,7 +6,7 @@ description: mcMMO で実装されている 15 個のスキルが持つアクテ
 
 mcMMO は以下の 15 個のスキルがあります。
 
-{% include skills.html %}
+{{< mcmmo_skills >}}
 
 
 ## [mcMMO の関連ページ](/mcMMO)

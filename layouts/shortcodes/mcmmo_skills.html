@@ -1,0 +1,12 @@
+{{
+  $slice := slice "Acrobatics" "Alchemy" "Archery" "Axes"
+              "Excavation" "Fishing" "Herbalism" "Mining"
+              "Repair" "Salvage" "Smelting" "Swords"
+              "Taming" "Unarmed" "Woodcutting"
+}}
+
+{{- range $slice -}}
+  <li>
+    <a href="/mcMMO/skills/{{- lower . -}}">{{- . -}}</a>
+  </li>
+{{- end -}}
