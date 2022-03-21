@@ -2,6 +2,7 @@
 title: 高度な遊び方
 date: 2017-12-16
 noToc: true
+weight: 500
 ---
 
 高度な遊び方を紹介します。
@@ -17,10 +18,3 @@ tskserver はパブリックサーバなので、誰でも招待しちゃって�
   * [プラグイン紹介](/plugins)
   * [コマンド集](/commands)
 
-
-## [サーバ参加ガイド目次](/introduction)
-* [tskserver で遊ぶ準備](/introduction/prepare)
-* [ログイン後の操作](/introduction/day1)
-* [プラグイン紹介](/introduction/plugins)
-* [Minecraft 外の便利ツールについて](/introduction/tools)
-* [高度な遊び方](/introduction/advanced)

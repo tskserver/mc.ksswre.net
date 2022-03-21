@@ -2,6 +2,7 @@
 title: ログイン後の操作
 date: 2021-06-29
 noToc: true
+weight: 200
 ---
 
 このページでは Minecraft マルチサーバでの基本的な操作を解説します。
@@ -49,9 +50,3 @@ Windows の場合のスクリーンショットの保存場所は `%appdata%\.mi
 
 Minecraft の操作方法はこのくらいにして、[次のページ](/introduction/plugins)ではマルチプレイのサーバに導入されているプラグインについて解説します！
 
-## [サーバ参加ガイド目次](/introduction)
-* [tskserver で遊ぶ準備](/introduction/prepare)
-* [ログイン後の操作](/introduction/day1)
-* [プラグイン紹介](/introduction/plugins)
-* [Minecraft 外の便利ツールについて](/introduction/tools)
-* [高度な遊び方](/introduction/advanced)

@@ -1,6 +1,7 @@
 ---
 title: プラグイン紹介
 noToc: true
+weight: 300
 ---
 
 tskserver はバニラの Minecraft で遊ぶことが出来ますが、
@@ -31,10 +32,3 @@ Dynmap というプラグインを導入しています。このプラグイン�
 WireRod という立体機動な釣り竿なプラグインを導入しています。
 木の棒の代わりに鉄インゴットを使って釣り竿を作ると作製できます。
 
-
-## [サーバ参加ガイド目次](/introduction)
-* [tskserver で遊ぶ準備](/introduction/prepare)
-* [ログイン後の操作](/introduction/day1)
-* [プラグイン紹介](/introduction/plugins)
-* [Minecraft 外の便利ツールについて](/introduction/tools)
-* [高度な遊び方](/introduction/advanced)

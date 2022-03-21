@@ -537,6 +537,36 @@ article table th {
 	padding: 0.5em 1em;
 }
 
+nav.page-navigation {
+	border-radius: 2px 3px 3px 2px;
+	border: solid 2px rgba(0, 0, 0, 0.1);
+}
+
+nav.page-navigation .page-navigation-adjacent {
+	justify-content: space-between;
+	display: flex;
+	padding: 0.6em 1ch;
+	background-color: rgb(245, 245, 245);
+}
+
+nav.page-navigation .page-navigation-adjacent p {
+	white-space: nowrap;
+}
+
+nav.page-navigation .page-navigation-adjacent .next {
+	margin-left: auto;
+	order: 2;
+}
+
+nav.page-navigation .page-navigation-adjacent .next i {
+	margin-right: 0;
+	margin-left: 0.5ch;
+}
+
+nav.page-navigation .page-navigation-list {
+	padding: 1em 0.5em 0.5em 0.5em;
+}
+
 .top-image {
 	border-radius: 0.3em;
 	width: 950px;

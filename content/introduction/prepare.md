@@ -3,6 +3,7 @@ title: tskserver で遊ぶ準備
 date: 2017-11-29
 noToc: true
 description: このページでは tskserver で遊ぶための設定方法を解説します
+weight: 100
 ---
 
 このページでは tskserver で遊ぶための設定方法を解説します。大雑把に、以下のような手順になります。
@@ -56,10 +57,3 @@ Minecraft Launcher に表示されるバージョンが正しいことを確認 
 一方で、本当にサーバが落ちていることも有りえます。
 そのときは [Minecraft 外の便利ツール](/introduction/tools)を使って情報収集してサーバが落ちているかどうか確認してください。
 
-
-## [サーバ参加ガイド目次](/introduction)
-* [tskserver で遊ぶ準備](/introduction/prepare)
-* [ログイン後の操作](/introduction/day1)
-* [プラグイン紹介](/introduction/plugins)
-* [Minecraft 外の便利ツールについて](/introduction/tools)
-* [高度な遊び方](/introduction/advanced)

@@ -1,6 +1,7 @@
 ---
 title: Minecraft 外の便利ツールについて
 noToc: true
+weight: 400
 ---
 
 
@@ -33,9 +34,3 @@ Dynmap というプラグインを導入していて、これを使うとサー�
 
 * ハッシュタグ [#tskserver](https://twitter.com/search?q=%23tskserver)
 
-## [サーバ参加ガイド目次](/introduction)
-* [tskserver で遊ぶ準備](/introduction/prepare)
-* [ログイン後の操作](/introduction/day1)
-* [プラグイン紹介](/introduction/plugins)
-* [Minecraft 外の便利ツールについて](/introduction/tools)
-* [高度な遊び方](/introduction/advanced)
