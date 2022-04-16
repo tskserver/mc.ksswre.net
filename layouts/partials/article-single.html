@@ -1,0 +1,9 @@
+<article vocab="http://schema.org/" typeof="BlogPosting">
+	{{ partial "article-meta.html" . }}
+	<section property="articleBody">
+		{{ if gt (now.Sub .Lastmod).Seconds 31536000 }}
+		<p class="note warning">この記事の最終更新日は 1 年以上前です。古い情報を含む場合があります。</p>
+		{{ end }}
+		{{ .Content }}
+	</section>
+</article>

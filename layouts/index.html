@@ -6,8 +6,7 @@
 			<div class="container-left">
 				<section class="post-list">
 					{{ range (where .Site.RegularPages "Section" "posts").ByDate.Reverse }}
-						{{ .Scratch.Set "scope" "list" }}
-						{{ partial "article.html" . }}
+						{{ partial "article-list.html" . }}
 					{{ end }}
 				</section>
 			</div>
