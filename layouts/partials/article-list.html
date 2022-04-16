@@ -1,5 +1,5 @@
 <article vocab="http://schema.org/" typeof="BlogPosting">
-	{{ partial "article-meta.html" . }}
+	{{ partial "post-meta.html" . }}
 	<p class="post-body" property="headline" content="{{ .Summary }}">{{ .Summary }}</p>
 	<a class="post-link" href="{{ .Permalink }}">
 		<button class="post-more" href="{{ .Permalink }}">

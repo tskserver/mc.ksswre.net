@@ -1,2 +1,18 @@
-{{- define "post-related" -}}
+{{- define "main-container-left" -}}
+  {{ partial "article-single.html" . }}
+  {{ if not (len .Content) }}
+    {{ if and (eq .Section "tags") .Parent.IsHome }}
+      <section property="keywords">
+        {{ range .Pages }}
+          <a href="{{ .RelPermalink | urlize }}" rel="tag">{{ .Title }}</a>
+        {{ end }}
+      </section>
+    {{ else }}
+      <section class="post-list">
+        {{ range .Pages }}
+          {{ partial "article-list.html" . }}
+        {{ end }}
+      </section>
+    {{ end }}
+  {{ end }}
 {{- end -}}

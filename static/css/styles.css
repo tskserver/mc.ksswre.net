@@ -677,7 +677,7 @@ pre.highlight {
 	display: inline-flex;
 }
 
-.tag, a[rel=tag]:before,
+.tag:before, a[rel=tag]:before,
 .tag-cloud > a:before {
 	content: "\f02b";
 	margin-right: 0.5ch;
@@ -696,11 +696,11 @@ pre.highlight {
 	margin: 0.2em 0.1ch;
 }
 
-.tag, a[rel=tag].set-1, .tag-cloud > a.set-1 { font-size: 1.0em; }
-.tag, a[rel=tag].set-2, .tag-cloud > a.set-2 { font-size: 1.1em; }
-.tag, a[rel=tag].set-3, .tag-cloud > a.set-3 { font-size: 1.2em; }
-.tag, a[rel=tag].set-4, .tag-cloud > a.set-4 { font-size: 1.3em; }
-.tag, a[rel=tag].set-5, .tag-cloud > a.set-5 { font-size: 1.4em; }
+a[rel=tag].set-1, .tag-cloud > a.set-1 { font-size: 1.0em; }
+a[rel=tag].set-2, .tag-cloud > a.set-2 { font-size: 1.1em; }
+a[rel=tag].set-3, .tag-cloud > a.set-3 { font-size: 1.2em; }
+a[rel=tag].set-4, .tag-cloud > a.set-4 { font-size: 1.3em; }
+a[rel=tag].set-5, .tag-cloud > a.set-5 { font-size: 1.4em; }
 
 .album img {
 	width: 48%;
