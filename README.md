@@ -1,17 +1,12 @@
 # mc.ksswre.net
-A minecraft server, tskserver's web page.
-available on [mc.ksswre.net](https://mc.ksswre.net)
+A web page of tskserver, available on https://mc.ksswre.net/
 
 ## Install & Build
 ```
-bundle install --path vendor/bundle
-bundle exec jekyll serve
+$ git clone ...
+$ hugo 
 ```
 
 ## Requirements
-* jekyll
-* jekyll-toc-generator - https://github.com/dafi/jekyll-toc-generator
+- hugo
 
-## TODO
-* support categories
-* support oEmbed about this site and preview other site in Markdown

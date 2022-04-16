@@ -1,0 +1,7 @@
+{{- $keys := (split (index .Params 0) ".") -}}
+{{- $data := .Site.Data -}}
+
+{{- range $keys -}}
+  {{- $data = (index $data .) -}}
+{{- end -}}
+{{- $data | safeHTML -}}

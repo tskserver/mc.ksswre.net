@@ -1,0 +1,44 @@
+<nav class="page-navigation">
+	<section class="page-navigation page-navigation-adjacent">
+		{{ with .NextInSection }}
+			<p class="prev">
+				<i class="fa fa-arrow-left"></i>
+				Prev: <a href="{{ .Permalink }}">{{ .Title }}</a>
+			</p>
+		{{ end }}
+		{{ with .PrevInSection }}
+			<p class="next">
+				Next: <a href="{{ .Permalink }}">{{ .Title }}</a>
+				<i class="fa fa-arrow-right"></i>
+			</p>
+		{{ else }}
+			{{ with .Parent }}
+				<p class="next">
+					Back to: <a href="{{ .Permalink }}">{{ .Title }}</a>
+					<i class="fa fa-chevron-up"></i>
+				</p>
+			{{ end }}
+		{{ end }}
+	</section>
+	{{ $this := .Page }}
+	{{ with $this.Parent }}
+	<section class="page-navigation page-navigation-list">
+		<ul>
+			<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+			<ul>
+				{{ range .Site.RegularPages }}
+					{{ if eq .Parent $this.Parent }}
+					<li>
+						{{ if eq . $this }}
+							<strong><a href="{{ .RelPermalink }} ">{{ .Title }}</a></strong>
+						{{ else }}
+							<a href="{{ .RelPermalink }} ">{{ .Title }}</a>
+						{{ end }}
+					</li>
+					{{ end }}
+				{{ end }}
+			</ul>
+		</ul>
+	</section>
+	{{ end }}
+</nav>

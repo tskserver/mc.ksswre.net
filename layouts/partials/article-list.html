@@ -1,0 +1,10 @@
+<article vocab="http://schema.org/" typeof="BlogPosting">
+	{{ partial "post-meta.html" . }}
+	<p class="post-body" property="headline" content="{{ .Summary }}">{{ .Summary }}</p>
+	<a class="post-link" href="{{ .Permalink }}">
+		<button class="post-more" href="{{ .Permalink }}">
+			続きを読む
+			<i class="fa fa-caret-right"></i>
+		</button>
+	</a>
+</article>

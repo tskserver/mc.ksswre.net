@@ -1,0 +1,5 @@
+{{- define "post-related" -}}
+  {{ if not .Parent.IsHome }}
+    {{ partial "navigation.html" . }}
+  {{ end }}
+{{- end -}}

@@ -1,0 +1,7 @@
+<article vocab="http://schema.org/" typeof="BlogPosting">
+	{{ partial "post-meta.html" . }}
+	{{ partial "warning-outdated.html" . }}
+	<section property="articleBody">
+		{{ .Content }}
+	</section>
+</article>

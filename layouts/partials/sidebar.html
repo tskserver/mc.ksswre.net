@@ -1,0 +1,87 @@
+					<section>
+						<h2>Links</h2>
+						<ul>
+							<li><a href="/galleries">tskserver 写真集</a></li>
+						</ul>
+					</section>
+					<section>
+						<h2>Server Status</h2>
+						<section>
+							<h3><i class="fa fa-server"></i>tskserver</h3>
+							<table class="server-status">
+								<tr>
+									<th class="left">Running?</th>
+									<td id="tskserver-is-running" class="right">
+										<i class="fa fa-refresh fa-spin aqua"></i>
+									</td>
+								</tr>
+								<tr>
+									<th class="left">Version</th>
+									<td id="tskserver-version" class="right">
+										<i class="fa fa-question"></i>
+									</td>
+								</tr>
+								<tr>
+									<th class="left">Status</th>
+									<td id="tskserver-status" class="right">
+										<i class="fa fa-refresh fa-spin aqua"></i>
+									</td>
+								</tr>
+							</table>
+							<p id="tskserver-last-checked-at" class="right italic small">
+							(pinging)
+							</p>
+						</section>
+<!--					<section>
+							<h3><i class="fa fa-server"></i>KEGO KOGYO (Beta)</h3>
+							<table>
+								<tr>
+									<th class="left">Running?</th>
+									<td id="skyblock-is-running" class="right">
+										<i class="fa fa-refresh fa-spin aqua"></i>
+									</td>
+								</tr>
+								<tr>
+									<th class="left">Version</th>
+									<td id="skyblock-version" class="right">
+										<i class="fa fa-question"></i>
+									</td>
+								</tr>
+								<tr>
+									<th class="left">Status</th>
+									<td id="skyblock-status" class="right">
+										<i class="fa fa-question"></i>
+									</td>
+								</tr>
+							</table>
+							<p id="skyblock-last-checked-at" class="right italic small">
+							(pinging)
+							</p>
+						</section>
+-->
+						<section style="text-align: right;">
+							<a href="/status">
+								<img src="//graph.ksswre.net/tskserver" alt="tskserver online users count by week" width="213" height="117"/>
+								<i class="fa fa-bolt" aria-hidden="true"></i> status detail
+							</a>
+						</section>
+					</section>
+					<section>
+						<h2>Dynmap</h2>
+						<section>
+							<a href="https://dynmap.mc.ksswre.net" target="noopener">dynmap.mc.ksswre.net</a>
+						</section>
+					</section>
+					<section>
+						<h2>Recent Posts</h2>
+						<section>
+							{{ range (where .Site.RegularPages "Section" "posts").ByDate.Reverse }}
+							<ul>
+								<li vocab="http://schema.org/" typeof="BlogPosting">
+									<strong><time property="datePublished" content="{{ .Date.Format "2006-01-02T15:04:05-07:00" }}">{{ .Date.Format "2006/01/02" }}</time></strong><br />
+									<a href="{{ .Permalink }}" property="name">{{ .Title }}</a>
+								</li>
+							</ul>
+							{{ end }}
+						</section>
+					</section>

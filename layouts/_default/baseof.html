@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="google-site-verification" content="XabRge_swrYHPC0fR1d_7yqKf2sqFcCIy4IaXL-T2Cs" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+		<link rel="manifest" href="/favicon/site.webmanifest">
+		<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#ff0000">
+		<meta name="msapplication-TileColor" content="#00aba9">
+		<meta name="theme-color" content="#ffffff">
+		<link href='/css/styles.css' rel='stylesheet' />
+		{{ if eq .Section "tags" }}
+			<title>Tag:&nbsp;{{- .Title -}}</title>
+		{{ else }}
+			<title>{{- .Title -}}</title>
+		{{ end }}
+		{{ range .AlternativeOutputFormats -}}
+    	{{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+		{{ end -}}
+		{{ template "_internal/google_analytics.html" . }}
+		{{ template "_internal/opengraph.html" . }}
+		{{ template "_internal/twitter_cards.html" . }}
+	</head>
+	<body>
+		<header>
+			<div class="container" vocab="http://schema.org/" typeof="logo">
+				<a href="/" class="logo">
+					<h1>tskserver</h1>
+					<span>A Minecraft Server!</span>
+				</a>
+			</div>
+			<nav vocab="http://schema.org/" typeof="SiteNavigationElement">
+				<section class="navbar">
+					<div class="container">
+						<ul>
+							<li>
+								<a propery="name" href="/">トップページ</a>
+							</li>
+							<li>
+								<a propery="name" href="/about">サーバ情報</a>
+							</li>
+							<li>
+								<a propery="name" href="/plugins">プラグイン紹介</a>
+							</li>
+							<li>
+								<a propery="name" href="/commands">コマンド集</a>
+							</li>
+							<li>
+								<a propery="name" href="/mcMMO">mcMMO</a>
+							</li>
+							<li>
+								<a propery="name" href="/introduction">サーバ参加ガイド</a>
+							</li>
+						</ul>
+					</div>
+				</section>
+				{{- if not .IsHome -}}
+					<section class="breadcrumb">
+						<div class="container">
+							{{ partial "breadcrumb.html" . }}
+						</div>
+					</section>
+				{{- end -}}
+			</nav>
+		</header>
+		{{ block "main" . }}
+			<div class="container">
+				<div class="container-twice">
+					<div class="container-left">
+						{{ block "main-container-left" . }}
+							{{ partial "article-single.html" . }}
+							{{ block "post-related" . }}
+								{{ $related := .Site.RegularPages.Related . | first 5 }}
+								{{ with $related }}
+									<section>
+										<h2>Related</h2>
+										<section>
+											<ul>
+												{{ range . }}
+												<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+												{{ end }}
+											</ul>
+										</section>
+									</section>
+								{{ end }}
+							{{ end }}
+						{{ end }}
+					</div>
+					<div class="container-right sidebar" vocab="http://schema.org/" typeof="SiteNavigationElement">
+						{{ partial "sidebar.html" . }}
+					</div>
+				</div>
+			</div>
+		{{ end }}
+		<footer>
+			<div class="container">
+				<div class="flex flex-align-center">
+					<section class="quarter">
+						<a href="/">
+							<div class="logo">
+								<img class="logo-logo" src="/img/tskserver-logo.png" srcset="/img/tskserver-logo.png 1x, /img/tskserver-logo@2x.png 2x" alt="logo" />
+								<img class="logo-text" src="/img/tskserver-logo-text.svg" alt="tskserver: a minecraft server" />
+							</div>
+						</a>
+					</section>
+					<section class="three-quarter">
+						<section class="footer-footer">
+							<aside>mc.ksswre.net は Google Analytics を利用して統計情報を収集しています</aside>
+							<section class="copyright">&copy; tskserver</section>
+						</section>
+					</section>
+				</div>
+		</footer>
+	</body>
+	<link href='/fonts/fontawesome-webfont.woff2?v=4.6.3' rel='preload' as='font' type='font/woff2' crossorigin/>
+	<link href='/css/toc.css' rel='stylesheet' />
+	<link href='/css/highlight.css' rel='stylesheet' />
+	<link href='/css/font-awesome.css' rel='stylesheet' />
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Passion+One:wght@700&display=swap" rel="stylesheet">
+	<script defer src="/scripts/script.js"></script>
+</html>

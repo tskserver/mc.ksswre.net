@@ -1,0 +1,19 @@
+{{ define "main" }}
+	<section class="top-image">
+	</section>
+	<div class="container">
+		<div class="container-twice">
+			<div class="container-left">
+				<section class="post-list">
+					{{ range (where .Site.RegularPages "Section" "posts").ByDate.Reverse }}
+						{{ partial "article-list.html" . }}
+					{{ end }}
+				</section>
+			</div>
+			<div class="container-right sidebar">
+				{{ partial "sidebar.html" . }}
+			</div>
+		</div>
+		<p class="rss-subscribe">subscribe <a href="/index.xml">via RSS</a></p>
+	</div>
+{{ end }}
