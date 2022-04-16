@@ -29,3 +29,9 @@ frontmatter:
   - :default
 permalinks:
   posts: /:year/:month/:day/:slug
+outputs:
+  home:
+  - HTML
+  - RSS
+  section:
+  - HTML
