@@ -1,6 +1,3 @@
-<section>
-  {{ if gt (now.Sub .Lastmod).Seconds 31536000 }}
-  <p class="note warning">このページの最終更新日は 1 年以上前です。古い情報を含む場合があります。</p>
-  {{ end }}
-  {{ .Content }}
-</section>
+{{ if gt (now.Sub .Lastmod).Seconds 31536000 }}
+<p class="note warning">このページの最終更新日は 1 年以上前です。古い情報を含む場合があります。</p>
+{{ end }}
