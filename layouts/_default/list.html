@@ -15,4 +15,7 @@
       </section>
     {{ end }}
   {{ end }}
+  {{ if not .Parent.IsHome }}
+    {{ partial "navigation.html" . }}
+  {{ end }}
 {{- end -}}

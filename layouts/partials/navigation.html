@@ -26,7 +26,7 @@
 		<ul>
 			<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
 			<ul>
-				{{ range .Site.RegularPages }}
+				{{ range .Site.Pages }}
 					{{ if eq .Parent $this.Parent }}
 					<li>
 						{{ if eq . $this }}
