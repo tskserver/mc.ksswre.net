@@ -74,5 +74,3 @@ TrainCarts の看板による [Trigger 機能](/plugins/traincarts/signs/trigger
 
 ## その他コマンド
 コマンドについてより詳しく知りたい場合は [Wiki](https://wiki.traincarts.net/p/TrainCarts/Commands) を参照してください。
-
-{% include related/TrainCarts.md %}

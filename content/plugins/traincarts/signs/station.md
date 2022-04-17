@@ -21,5 +21,3 @@ TrainCarts の看板の書き方についてのルールは[このページ](/pl
 
 ## 外部ソース
 - <https://wiki.traincarts.net/p/TrainCarts/Signs/Station>
-
-{% include related/TrainCarts.md %}

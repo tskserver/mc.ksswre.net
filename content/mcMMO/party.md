@@ -43,5 +43,3 @@ mcMMO のパーティを始めるには、新しいパーティを作成する�
 ### XP Sharing
 
 ### パーティを管理する
-
-{% include related/mcMMO.md %}
