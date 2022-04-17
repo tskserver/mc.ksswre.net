@@ -44,5 +44,3 @@ train の所要時間を事前に調べて入力することで、train 到着�
 
 ## 外部ソース
 - <https://wiki.traincarts.net/p/TrainCarts/Signs/Trigger>
-
-{% include related/TrainCarts.md %}

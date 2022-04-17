@@ -270,5 +270,3 @@ Experience:
             Elder_Guardian: 4.0
             Shulker: 2.0
 ```
-
-{% include related/mcMMO.md %}
