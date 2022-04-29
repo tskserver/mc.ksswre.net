@@ -1,6 +1,16 @@
 <article vocab="http://schema.org/" typeof="BlogPosting">
 	{{ partial "post-meta.html" . }}
 	<p class="post-body" property="headline" content="{{ .Summary }}">{{ .Summary }}</p>
+	<p class="post-thumbnail">
+		{{- $images := $.Resources.ByType "image" -}}
+		{{- $featured := $images.GetMatch "*feature*" -}}
+		{{- if not $featured }}{{ $featured = $images.GetMatch "{*cover*,*thumbnail*}" }}{{ end -}}
+		{{- with $featured -}}
+		<img class="post-thumbnail" src="{{ $featured.Permalink }}" />
+		{{- else -}}
+		{{- with $.Params.images }}<img class="post-thumbnail" src="{{ index . 0 | absURL }}"/>{{ end -}}
+		{{- end -}}
+	</p>
 	<a class="post-link" href="{{ .Permalink }}">
 		<button class="post-more" href="{{ .Permalink }}">
 			続きを読む
