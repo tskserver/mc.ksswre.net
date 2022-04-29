@@ -7,7 +7,8 @@ images:
 - /img/gen8/ac365fffaee5fda55f55bab448f92a71.png
 ---
 
-gen8 は tskserver のワールドリセット後の八代目マップ。
+gen8 は tskserver の八代目マップ。提供時期は 2019 年 6 月ごろのはずですがあまり記録がない。
+<!--more-->
 
 ![](/img/gen8/ac365fffaee5fda55f55bab448f92a71.png)
 

@@ -7,7 +7,8 @@ images:
 - /img/gen1/2013-02-20_15.30.44.png
 ---
 
-gen1 は tskserver の初代のマップ。
+gen1 は tskserver の初代のマップ。提供時期は 2013 年 2 月～11 月。
+<!--more-->
 
 ![](/img/gen1/2013-02-20_15.30.44.png)
 
