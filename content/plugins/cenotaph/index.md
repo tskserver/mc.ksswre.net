@@ -11,20 +11,31 @@ cenotaph は慰霊碑という意味のとおり、デスチェストには **RI
 - <https://www.spigotmc.org/resources/cenotaph.2180/>
 - <https://github.com/cindyker/Cenotaph>
 
-## 使い方
-### デスチェストの作成
-プレイヤーがインベントリにチェストを持った状態で倒されると、Cenotaph はデスチェスト (シングルチェスト) をプレイヤーの足元に自動生成します。
-デスチェストにはインベントリの内容物が自動的に格納されますが、チェストから溢れた場合はその場に散らばります。
+## 機能
+### デスチェストの自動生成
+プレイヤーが死亡すると足元にデスチェストを自動生成してインベントリの内容を格納します。チェストから溢れた場合はその場に散らばります。
 
-このデスチェストは時限式で、**60 分で自動消滅** (Remove / Removal) します。
+デスチェストはインベントリ内にチェストが無い場合には生成されません
+{ .note .warning }
 
-Cenotaph のデスチェストはデフォルト設定で TNT の爆破耐性を持ちます (`tntProtection: true`)。クリーパーはだめです (`creeperProtection: false`)。
-火炎耐性あたりは・・どうだったかな。
+![Cenotaph によるデスチェスト自動生成](./cenotaph-create.gif)
 
-デスチェストを他のプレイヤーが破壊することもできません (`noDestroy: true`)。
 
-### デスチェストの回収
-デスチェストを右クリックすると、デスチェストの内容物が自動回収されます (`destroyQuickLoot: true`, `cenotaph.quickloot` 権限の付与)。
+#### デスチェストの仕様
+デスチェストの仕様は以下のようになっています。細かくサーバ設定で変更できる内容なのでサーバによって差がありますが、tskserver では以下の設定にしています。
+
+- **時限式 (60 分で自動消滅)**
+- TNT の爆破耐性あり (`tntProtection: true`)
+- クリーパーの爆風で破壊される (`creeperProtection: false`)
+- 他のプレイヤーは破壊できない (`noDestroy: true`)
+- チェストの最大サイズはラージチェスト一個分 (`cenotaph.large` 権限の付与。デフォルト設定はシングルチェスト一個分です)
+- デスチェストの座標が [Dynmap](https://dynmap.mc.ksswre.net/) のマーカとして自動登録される (`dynmapEnable: true`)
+- 火炎耐性あり
+
+### デスチェストからの回収
+デスチェストを右クリックすると、デスチェストの内容物が自動回収されます。
+
+![右クリックでデスチェストを自動回収する](./cenotaph-pickup.gif)
 
 ## コマンド
 デフォルトで OP 以外のプレイヤーは以下のコマンドを使用できます。
@@ -38,16 +49,7 @@ OP は以下のコマンドを使用できます。
 - `/cenadmin find <player> <#>`
 - `/cenadmin remove <player> <#>`
 
-詳しくはソースを見ると良いです: <https://github.com/cindyker/Cenotaph/blob/master/src/main/resources/plugin.yml>
-
-## tskserver での追加設定
-
-### ラージチェストのサポート
-デスチェストをラージチェストで生成可能にしています (`cenotaph.large` 権限の付与)。
-Cenotaph のデフォルト構成はシングルチェストが上限です。
-
-### Dynmap 連携
-Cenotaph がデスチェストを生成したとき、同時に [Dynmap](https://dynmap.mc.ksswre.net/) にマーカーを登録します (`dynmapEnable: true`)。マーカーの座標はデスチェストの生成位置です。
+詳しくはソースコードを見ると良いです: <https://github.com/cindyker/Cenotaph/blob/master/src/main/resources/plugin.yml>
 
 ## 他の機能
 Cenotaph ではその他に以下の設定が利用可能ですが、tskserver では使っていないか無効化されています。
