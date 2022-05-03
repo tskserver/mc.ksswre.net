@@ -33,7 +33,7 @@ tskserver に接続するために必要になる情報です。
 | Minecraft バージョン   | {{<var servers.tskserver.version>}} |
 | Dynmap                 | {{<var servers.tskserver.dynmap_url >}} |
 | ワールドリセット実施日 | {{<var servers.tskserver.last_reset_at >}} |
-| メンテナンス実施日     | {{<var servers.tskserver.last_updated_at >}} |
+| メンテナンス実施日     | {{<var servers.tskserver.last_maintenance_date >}} |
 
 
 ## ワールドリセット情報
