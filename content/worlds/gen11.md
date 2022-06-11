@@ -4,13 +4,13 @@ noToc: true
 tags: [gen11]
 weight: 5110
 images:
-- /img/2021-12-01_23.59.54.png
+- /img/gen11/2022-06-08_21.27.00.png
 ---
 
 gen11 は tskserver のワールドリセット後の第 11 世代目のマップ。Minecraft 1.18.x 世代。
 <!--more-->
 
-![](/img/2021-12-01_23.59.54.png)
+![](/img/gen11/2022-06-08_21.27.00.png)
 
 # 基本情報
 - 運用期間: 2021-12-01 ~ 2022-06-08
@@ -28,3 +28,10 @@ Cenotaph, Dynmap, HttpHeartBeat, LuckPerms, TreeAssist, UnifiedMetrics, WireRod,
 
 ▼ 公共倉庫 @ リスポーン付近
 ![](/img/2021-12-11_21.00.50.png)
+
+![](/img/gen11/2022-05-02_10.31.15.png)
+![](/img/gen11/2022-05-02_10.32.52.png)
+![](/img/gen11/2022-05-02_10.35.05.png)
+![](/img/gen11/2022-06-08_21.27.00.png)
+![](/img/gen11/2022-06-08_21.29.31.png)
+![](/img/gen11/2022-06-08_21.31.26.png)
