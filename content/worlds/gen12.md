@@ -1,5 +1,5 @@
 ---
-title: "ワールド情報: gen11"
+title: "ワールド情報: gen12"
 noToc: true
 tags: [gen12]
 weight: 5112
