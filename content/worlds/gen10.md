@@ -15,6 +15,7 @@ gen10 は tskserver の第十世代目のマップ。提供時期は 2021 年 6 
 # 基本情報
 - 運用期間: 2021-06-18 ~ 2021-12-01
 - Minecraft 1.17, 1.17.1
+- シード値: `3161617923210526439` ([SeedMap](https://www.chunkbase.com/apps/seed-map#3161617923210526439); Version: Java 1.17)
 
 # ニュース
 - [/tags/gen10](/tags/gen10) を参照
