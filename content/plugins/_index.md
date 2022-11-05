@@ -71,7 +71,7 @@ Dynmap では地図上にマーカを配置できるように設定していま�
 
 <https://dev.bukkit.org/projects/worldguard>
 
-### [mcMMO](/mcMMO)
+### [mcMMO](/plugins/mcMMO)
 Minecraft に MMO 要素を追加します。スキル経験値という新しい概念を追加します。スキル経験値が貯まるといいことがたくさん起こるようになります。
 
 <https://github.com/mcMMO-Dev/mcMMO>
