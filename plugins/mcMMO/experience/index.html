@@ -1,0 +1,574 @@
+<!doctype html><html lang=ja>
+<head>
+<meta charset=utf-8>
+<meta name=google-site-verification content="XabRge_swrYHPC0fR1d_7yqKf2sqFcCIy4IaXL-T2Cs">
+<link rel=apple-touch-icon sizes=180x180 href=/favicon/apple-touch-icon.png>
+<link rel=icon type=image/png sizes=32x32 href=/favicon/favicon-32x32.png>
+<link rel=icon type=image/png sizes=16x16 href=/favicon/favicon-16x16.png>
+<link rel=manifest href=/favicon/site.webmanifest>
+<link rel=mask-icon href=/favicon/safari-pinned-tab.svg color=#ff0000>
+<meta name=msapplication-TileColor content="#00aba9">
+<meta name=theme-color content="#ffffff">
+<link href=/css/styles.css rel=stylesheet>
+<title>mcMMO/experience</title>
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-23849444-15','auto'),ga('send','pageview'))</script>
+<meta property="og:title" content="mcMMO/experience">
+<meta property="og:description" content="tskserver の mcMMO 設定を公開します。これを見れば何をすれば経験値がいくら貰えるかが全部わかります。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://mc.ksswre.net/plugins/mcMMO/experience/"><meta property="article:section" content="plugins">
+<meta property="article:modified_time" content="2022-04-29T20:56:11+09:00">
+<meta name=twitter:card content="summary">
+<meta name=twitter:title content="mcMMO/experience">
+<meta name=twitter:description content="tskserver の mcMMO 設定を公開します。これを見れば何をすれば経験値がいくら貰えるかが全部わかります。">
+</head>
+<body>
+<header>
+<div class=container vocab="http://schema.org/" typeof="logo">
+<a href=/ class=logo>
+<h1>tskserver</h1>
+<span>A Minecraft Server!</span>
+</a>
+</div>
+<nav vocab="http://schema.org/" typeof="SiteNavigationElement">
+<section class=navbar>
+<div class=container>
+<ul>
+<li>
+<a propery=name href=/>トップページ</a>
+</li>
+<li>
+<a propery=name href=/about>サーバ情報</a>
+</li>
+<li>
+<a propery=name href=/plugins>プラグイン紹介</a>
+</li>
+<li>
+<a propery=name href=/commands>コマンド集</a>
+</li>
+<li>
+<a propery=name href=/worlds>ワールド紹介</a>
+</li>
+<li>
+<a propery=name href=/introduction>サーバ参加ガイド</a>
+</li>
+</ul>
+</div>
+</section><section class=breadcrumb>
+<div class=container>
+<ul class="nav navbar-nav">
+<li class=home><a href=https://mc.ksswre.net/><i class="fa fa-home"></i></a></li><li class=leaf><i class="fa fa-angle-right"></i><a href=https://mc.ksswre.net/plugins/>プラグイン紹介</a></li><li class=leaf><i class="fa fa-angle-right"></i><a href=https://mc.ksswre.net/plugins/mcMMO/>mcMMO</a></li><li class="leaf active"><i class="fa fa-angle-right"></i><a href=https://mc.ksswre.net/plugins/mcMMO/experience/>mcMMO/experience</a></li></ul>
+</div>
+</section></nav>
+</header>
+<div class=container>
+<div class=container-twice>
+<div class=container-left>
+<article vocab="http://schema.org/" typeof="BlogPosting">
+<h1 class=post-title>
+<span property="name">mcMMO/experience</span>
+<section class=tags property="keywords" content>
+</section>
+</h1>
+<p class=post-meta>
+<span>
+<i class="fa fa-rotate-left"></i>
+<span>
+Updated: <time property="dateModified" content="2022-04-29T20:56:11Z+09:00">2022-04-29 20:56</time>
+</span>
+</span>
+</p>
+<section property="articleBody">
+<p>サーバの <code>mcMMO/experience.yml</code> なファイルを公開します。</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#75715e>#</span>
+<span style=color:#75715e>#  Experience configuration</span>
+<span style=color:#75715e>#  Last updated on 1.5.06-SNAPSHOT-b145</span>
+<span style=color:#75715e>#</span>
+<span style=color:#75715e>#  Configure the experience formula and experience settings here.</span>
+<span style=color:#75715e>#</span>
+<span style=color:#75715e>#####</span>
+
+<span style=color:#75715e>#</span>
+<span style=color:#75715e>#  Settings for XP formula</span>
+<span style=color:#75715e>###</span>
+<span style=color:#f92672>Experience_Formula</span>:
+    <span style=color:#75715e># Valid values are: LINEAR and EXPONENTIAL</span>
+    <span style=color:#75715e># If an invalid value is entered, this will reset to the default setting, which is LINEAR</span>
+    <span style=color:#75715e># LINEAR:      base + (level * multiplier)</span>
+    <span style=color:#75715e># EXPONENTIAL: multiplier * level ^ exponent + base</span>
+    <span style=color:#f92672>Curve</span>: <span style=color:#ae81ff>LINEAR</span>
+
+    <span style=color:#75715e># If invalid values are entered mcMMO will not start and print an error in the console</span>
+    <span style=color:#f92672>Linear_Values</span>:
+        <span style=color:#f92672>base</span>: <span style=color:#ae81ff>1020</span>
+        <span style=color:#f92672>multiplier</span>: <span style=color:#ae81ff>20</span>
+    <span style=color:#f92672>Exponential_Values</span>:
+        <span style=color:#f92672>multiplier</span>: <span style=color:#ae81ff>0.1</span>
+        <span style=color:#f92672>exponent</span>: <span style=color:#ae81ff>1.80</span>
+        <span style=color:#f92672>base</span>: <span style=color:#ae81ff>2000</span>
+
+    <span style=color:#75715e># Cumulative experience curves will use a players power level instead of their skill level,</span>
+    <span style=color:#75715e># players with high power levels will have to gain a lot more experience to reach the next level in every skill.</span>
+    <span style=color:#f92672>Cumulative_Curve</span>: <span style=color:#66d9ef>false</span>
+
+    <span style=color:#75715e># Experience gained in every skill will get multiplied by this value. 1.0 by default, 2.0 means two times as much</span>
+    <span style=color:#f92672>Multiplier</span>:
+        <span style=color:#f92672>Global</span>: <span style=color:#ae81ff>1.0</span>
+        <span style=color:#f92672>PVP</span>: <span style=color:#ae81ff>1.0</span>
+
+    <span style=color:#75715e># Experience gained from mobs not naturally spawned will get multiplied by this value. 0 by default.</span>
+    <span style=color:#f92672>Mobspawners</span>:
+        <span style=color:#f92672>Multiplier</span>: <span style=color:#ae81ff>0</span>
+    <span style=color:#f92672>Breeding</span>:
+        <span style=color:#f92672>Multiplier</span>: <span style=color:#ae81ff>1.0</span>
+
+    <span style=color:#75715e># Experience gained will get divided by these values. 1.0 by default, 2.0 means two times less XP gained.</span>
+    <span style=color:#f92672>Modifier</span>:
+        <span style=color:#f92672>Swords</span>: <span style=color:#ae81ff>1.0</span>
+        <span style=color:#f92672>Taming</span>: <span style=color:#ae81ff>1.0</span>
+        <span style=color:#f92672>Acrobatics</span>: <span style=color:#ae81ff>1.0</span>
+        <span style=color:#f92672>Excavation</span>: <span style=color:#ae81ff>1.0</span>
+        <span style=color:#f92672>Herbalism</span>: <span style=color:#ae81ff>1.0</span>
+        <span style=color:#f92672>Unarmed</span>: <span style=color:#ae81ff>1.0</span>
+        <span style=color:#f92672>Woodcutting</span>: <span style=color:#ae81ff>1.0</span>
+        <span style=color:#f92672>Mining</span>: <span style=color:#ae81ff>1.0</span>
+        <span style=color:#f92672>Archery</span>: <span style=color:#ae81ff>1.0</span>
+        <span style=color:#f92672>Axes</span>: <span style=color:#ae81ff>1.0</span>
+        <span style=color:#f92672>Repair</span>: <span style=color:#ae81ff>1.0</span>
+        <span style=color:#f92672>Fishing</span>: <span style=color:#ae81ff>1.0</span>
+        <span style=color:#f92672>Alchemy</span>: <span style=color:#ae81ff>1.0</span>
+
+    <span style=color:#75715e># XP earned by players with the permission mcmmo.perks.xp.customboost.&lt;skillname&gt; will get multiplied</span>
+    <span style=color:#75715e># with 1.25 by default, resulting in a 25% XP boost</span>
+    <span style=color:#f92672>Custom_XP_Perk</span>:
+        <span style=color:#f92672>Boost</span>: <span style=color:#ae81ff>1.25</span>
+
+<span style=color:#75715e>#</span>
+<span style=color:#75715e># Settings for Diminished Returns</span>
+<span style=color:#75715e>###</span>
+<span style=color:#f92672>Diminished_Returns</span>:
+    <span style=color:#f92672>Enabled</span>: <span style=color:#66d9ef>false</span>
+
+    <span style=color:#75715e># Limit the amount of experience a player can earn:</span>
+    <span style=color:#75715e># Threshold (amount of experience) per Time_Interval (in minutes)</span>
+    <span style=color:#f92672>Threshold</span>:
+        <span style=color:#f92672>Swords</span>: <span style=color:#ae81ff>20000</span>
+        <span style=color:#f92672>Taming</span>: <span style=color:#ae81ff>20000</span>
+        <span style=color:#f92672>Acrobatics</span>: <span style=color:#ae81ff>20000</span>
+        <span style=color:#f92672>Excavation</span>: <span style=color:#ae81ff>20000</span>
+        <span style=color:#f92672>Herbalism</span>: <span style=color:#ae81ff>20000</span>
+        <span style=color:#f92672>Unarmed</span>: <span style=color:#ae81ff>20000</span>
+        <span style=color:#f92672>Woodcutting</span>: <span style=color:#ae81ff>20000</span>
+        <span style=color:#f92672>Mining</span>: <span style=color:#ae81ff>20000</span>
+        <span style=color:#f92672>Archery</span>: <span style=color:#ae81ff>20000</span>
+        <span style=color:#f92672>Axes</span>: <span style=color:#ae81ff>20000</span>
+        <span style=color:#f92672>Repair</span>: <span style=color:#ae81ff>20000</span>
+        <span style=color:#f92672>Fishing</span>: <span style=color:#ae81ff>20000</span>
+        <span style=color:#f92672>Alchemy</span>: <span style=color:#ae81ff>20000</span>
+
+    <span style=color:#f92672>Time_Interval</span>: <span style=color:#ae81ff>10</span>
+
+<span style=color:#75715e>#</span>
+<span style=color:#75715e>#  Settings for XP conversion with &#39;/mcconvert experience&#39;</span>
+<span style=color:#75715e>###</span>
+<span style=color:#f92672>Conversion</span>:
+    <span style=color:#75715e># Old experience will get divided by this modifier</span>
+    <span style=color:#f92672>Exp_Modifier</span>: <span style=color:#ae81ff>1</span>
+
+<span style=color:#75715e>#</span>
+<span style=color:#75715e>#  Settings for XP distribution</span>
+<span style=color:#75715e>###</span>
+<span style=color:#f92672>Experience</span>:
+    <span style=color:#f92672>PVP</span>:
+        <span style=color:#f92672>Rewards</span>: <span style=color:#66d9ef>true</span>
+    <span style=color:#f92672>Acrobatics</span>:
+        <span style=color:#f92672>Dodge</span>: <span style=color:#ae81ff>120</span>
+        <span style=color:#f92672>Roll</span>: <span style=color:#ae81ff>80</span>
+        <span style=color:#f92672>Fall</span>: <span style=color:#ae81ff>120</span>
+
+        <span style=color:#75715e># FeatherFall_Multiplier: Multiply Acrobatics XP by this value when wearing boots with the Feather Fall enchant</span>
+        <span style=color:#f92672>FeatherFall_Multiplier</span>: <span style=color:#ae81ff>2.0</span>
+    <span style=color:#f92672>Alchemy</span>:
+        <span style=color:#75715e># Alchemy potion stages are based on the number of ingredients added</span>
+        <span style=color:#75715e># Potion_Stage_1 represents a base potion</span>
+        <span style=color:#75715e># Potion_Stage_2 represents a base potion with one ingredient</span>
+        <span style=color:#75715e># Potion_Stage_3 represents a base potion with one ingredient and one amplifier</span>
+        <span style=color:#75715e># Potion_Stage_4 represents a base potion with one ingredient and two amplifiers</span>
+        <span style=color:#75715e># Potion_Stage_5 represents a base potion with one ingredient where the amplifiers are swapped</span>
+        <span style=color:#f92672>Potion_Stage_1</span>: <span style=color:#ae81ff>15</span>
+        <span style=color:#f92672>Potion_Stage_2</span>: <span style=color:#ae81ff>30</span>
+        <span style=color:#f92672>Potion_Stage_3</span>: <span style=color:#ae81ff>60</span>
+        <span style=color:#f92672>Potion_Stage_4</span>: <span style=color:#ae81ff>120</span>
+        <span style=color:#f92672>Potion_Stage_5</span>: <span style=color:#ae81ff>0</span>
+    <span style=color:#f92672>Archery</span>:
+        <span style=color:#f92672>Distance_Multiplier</span>: <span style=color:#ae81ff>0.025</span>
+    <span style=color:#f92672>Fishing</span>:
+        <span style=color:#f92672>Raw_Fish</span>: <span style=color:#ae81ff>800</span>
+        <span style=color:#f92672>Raw_Salmon</span>: <span style=color:#ae81ff>800</span>
+        <span style=color:#f92672>Clownfish</span>: <span style=color:#ae81ff>800</span>
+        <span style=color:#f92672>Pufferfish</span>: <span style=color:#ae81ff>800</span>
+        <span style=color:#f92672>Shake</span>: <span style=color:#ae81ff>50</span>
+    <span style=color:#f92672>Excavation</span>:
+        <span style=color:#f92672>Clay</span>: <span style=color:#ae81ff>40</span>
+        <span style=color:#f92672>Dirt</span>: <span style=color:#ae81ff>40</span>
+        <span style=color:#f92672>Coarse_Dirt</span>: <span style=color:#ae81ff>40</span>
+        <span style=color:#f92672>Podzol</span>: <span style=color:#ae81ff>40</span>
+        <span style=color:#f92672>Grass</span>: <span style=color:#ae81ff>40</span>
+        <span style=color:#f92672>Gravel</span>: <span style=color:#ae81ff>40</span>
+        <span style=color:#f92672>Mycel</span>: <span style=color:#ae81ff>40</span>
+        <span style=color:#f92672>Sand</span>: <span style=color:#ae81ff>40</span>
+        <span style=color:#f92672>Red_Sand</span>: <span style=color:#ae81ff>40</span>
+        <span style=color:#f92672>Snow</span>: <span style=color:#ae81ff>20</span>
+        <span style=color:#f92672>Snow_Block</span>: <span style=color:#ae81ff>40</span>
+        <span style=color:#f92672>Soul_Sand</span>: <span style=color:#ae81ff>40</span>
+    <span style=color:#f92672>Woodcutting</span>:
+        <span style=color:#f92672>Acacia</span>: <span style=color:#ae81ff>90</span>
+        <span style=color:#f92672>Birch</span>: <span style=color:#ae81ff>90</span>
+        <span style=color:#f92672>Dark_Oak</span>: <span style=color:#ae81ff>90</span>
+        <span style=color:#f92672>Generic</span>: <span style=color:#ae81ff>70</span>
+        <span style=color:#f92672>Jungle</span>: <span style=color:#ae81ff>100</span>
+        <span style=color:#f92672>Redwood</span>: <span style=color:#ae81ff>80</span>
+        <span style=color:#f92672>Huge_Mushroom_Red</span>: <span style=color:#ae81ff>70</span>
+        <span style=color:#f92672>Huge_Mushroom_Brown</span>: <span style=color:#ae81ff>70</span>
+    <span style=color:#f92672>Herbalism</span>:
+        <span style=color:#f92672>Allium</span>: <span style=color:#ae81ff>300</span>
+        <span style=color:#f92672>Azure_Bluet</span>: <span style=color:#ae81ff>150</span>
+        <span style=color:#f92672>Beetroot_Block</span>: <span style=color:#ae81ff>50</span>
+        <span style=color:#f92672>Blue_Orchid</span>: <span style=color:#ae81ff>150</span>
+        <span style=color:#f92672>Brown_Mushroom</span>: <span style=color:#ae81ff>150</span>
+        <span style=color:#f92672>Cactus</span>: <span style=color:#ae81ff>30</span>
+        <span style=color:#f92672>Carrot</span>: <span style=color:#ae81ff>50</span>
+        <span style=color:#f92672>Chorus_Flower</span>: <span style=color:#ae81ff>25</span>
+        <span style=color:#f92672>Chorus_Plant</span>: <span style=color:#ae81ff>1</span>
+        <span style=color:#f92672>Cocoa</span>: <span style=color:#ae81ff>30</span>
+        <span style=color:#f92672>Crops</span>: <span style=color:#ae81ff>50</span>
+        <span style=color:#f92672>Dead_Bush</span>: <span style=color:#ae81ff>30</span>
+        <span style=color:#f92672>Lilac</span>: <span style=color:#ae81ff>50</span>
+        <span style=color:#f92672>Melon_Block</span>: <span style=color:#ae81ff>20</span>
+        <span style=color:#f92672>Nether_Warts</span>: <span style=color:#ae81ff>50</span>
+        <span style=color:#f92672>Orange_Tulip</span>: <span style=color:#ae81ff>150</span>
+        <span style=color:#f92672>Oxeye_Daisy</span>: <span style=color:#ae81ff>150</span>
+        <span style=color:#f92672>Peony</span>: <span style=color:#ae81ff>50</span>
+        <span style=color:#f92672>Pink_Tulip</span>: <span style=color:#ae81ff>150</span>
+        <span style=color:#f92672>Poppy</span>: <span style=color:#ae81ff>100</span>
+        <span style=color:#f92672>Potato</span>: <span style=color:#ae81ff>50</span>
+        <span style=color:#f92672>Pumpkin</span>: <span style=color:#ae81ff>20</span>
+        <span style=color:#f92672>Red_Mushroom</span>: <span style=color:#ae81ff>150</span>
+        <span style=color:#f92672>Red_Tulip</span>: <span style=color:#ae81ff>150</span>
+        <span style=color:#f92672>Rose_Bush</span>: <span style=color:#ae81ff>50</span>
+        <span style=color:#f92672>Small_Fern</span>: <span style=color:#ae81ff>10</span>
+        <span style=color:#f92672>Small_Grass</span>: <span style=color:#ae81ff>10</span>
+        <span style=color:#f92672>Sugar_Cane_Block</span>: <span style=color:#ae81ff>30</span>
+        <span style=color:#f92672>Sunflower</span>: <span style=color:#ae81ff>50</span>
+        <span style=color:#f92672>Tall_Grass</span>: <span style=color:#ae81ff>50</span>
+        <span style=color:#f92672>Tall_Fern</span>: <span style=color:#ae81ff>50</span>
+        <span style=color:#f92672>Vine</span>: <span style=color:#ae81ff>10</span>
+        <span style=color:#f92672>Water_Lily</span>: <span style=color:#ae81ff>100</span>
+        <span style=color:#f92672>White_Tulip</span>: <span style=color:#ae81ff>150</span>
+        <span style=color:#f92672>Yellow_Flower</span>: <span style=color:#ae81ff>100</span>
+    <span style=color:#f92672>Mining</span>:
+        <span style=color:#f92672>Coal_Ore</span>: <span style=color:#ae81ff>100</span>
+        <span style=color:#f92672>Diamond_Ore</span>: <span style=color:#ae81ff>750</span>
+        <span style=color:#f92672>Emerald_Ore</span>: <span style=color:#ae81ff>1000</span>
+        <span style=color:#f92672>End_Bricks</span>: <span style=color:#ae81ff>200</span>
+        <span style=color:#f92672>Ender_Stone</span>: <span style=color:#ae81ff>150</span>
+        <span style=color:#f92672>Glowstone</span>: <span style=color:#ae81ff>30</span>
+        <span style=color:#f92672>Gold_Ore</span>: <span style=color:#ae81ff>350</span>
+        <span style=color:#f92672>Hard_Clay</span>: <span style=color:#ae81ff>30</span>
+        <span style=color:#f92672>Iron_Ore</span>: <span style=color:#ae81ff>250</span>
+        <span style=color:#f92672>Lapis_Ore</span>: <span style=color:#ae81ff>400</span>
+        <span style=color:#f92672>Mossy_Cobblestone</span>: <span style=color:#ae81ff>30</span>
+        <span style=color:#f92672>Netherrack</span>: <span style=color:#ae81ff>30</span>
+        <span style=color:#f92672>Obsidian</span>: <span style=color:#ae81ff>150</span>
+        <span style=color:#f92672>Packed_Ice</span>: <span style=color:#ae81ff>50</span>
+        <span style=color:#f92672>Quartz_Ore</span>: <span style=color:#ae81ff>100</span>
+        <span style=color:#f92672>Redstone_Ore</span>: <span style=color:#ae81ff>150</span>
+        <span style=color:#f92672>Sandstone</span>: <span style=color:#ae81ff>30</span>
+        <span style=color:#f92672>Stained_Clay</span>: <span style=color:#ae81ff>50</span>
+        <span style=color:#f92672>Stone</span>: <span style=color:#ae81ff>30</span>
+        <span style=color:#f92672>Red_Sandstone</span>: <span style=color:#ae81ff>100</span>
+        <span style=color:#f92672>Prismarine</span>: <span style=color:#ae81ff>70</span>
+        <span style=color:#f92672>Purpur_Block</span>: <span style=color:#ae81ff>200</span>
+        <span style=color:#f92672>Purpur_Pillar</span>: <span style=color:#ae81ff>250</span>
+        <span style=color:#f92672>Purpur_Slab</span>: <span style=color:#ae81ff>150</span>
+        <span style=color:#f92672>Purpur_Stairs</span>: <span style=color:#ae81ff>250</span>
+    <span style=color:#f92672>Repair</span>:
+        <span style=color:#f92672>Base</span>: <span style=color:#ae81ff>1000.0</span>
+        <span style=color:#f92672>Wood</span>: <span style=color:#ae81ff>0.6</span>
+        <span style=color:#f92672>Stone</span>: <span style=color:#ae81ff>1.3</span>
+        <span style=color:#f92672>Iron</span>: <span style=color:#ae81ff>2.5</span>
+        <span style=color:#f92672>Gold</span>: <span style=color:#ae81ff>0.3</span>
+        <span style=color:#f92672>Diamond</span>: <span style=color:#ae81ff>5.0</span>
+        <span style=color:#f92672>Leather</span>: <span style=color:#ae81ff>1.6</span>
+        <span style=color:#f92672>String</span>: <span style=color:#ae81ff>1.8</span>
+        <span style=color:#f92672>Other</span>: <span style=color:#ae81ff>1.5</span>
+    <span style=color:#f92672>Smelting</span>:
+        <span style=color:#f92672>Coal_Ore</span>: <span style=color:#ae81ff>10</span>
+        <span style=color:#f92672>Diamond_Ore</span>: <span style=color:#ae81ff>75</span>
+        <span style=color:#f92672>Emerald_Ore</span>: <span style=color:#ae81ff>100</span>
+        <span style=color:#f92672>Gold_Ore</span>: <span style=color:#ae81ff>35</span>
+        <span style=color:#f92672>Iron_Ore</span>: <span style=color:#ae81ff>25</span>
+        <span style=color:#f92672>Lapis_Ore</span>: <span style=color:#ae81ff>40</span>
+        <span style=color:#f92672>Quartz_Ore</span>: <span style=color:#ae81ff>25</span>
+        <span style=color:#f92672>Redstone_Ore</span>: <span style=color:#ae81ff>15</span>
+    <span style=color:#f92672>Taming</span>:
+        <span style=color:#f92672>Animal_Taming</span>:
+            <span style=color:#f92672>Wolf</span>: <span style=color:#ae81ff>250</span>
+            <span style=color:#f92672>Ocelot</span>: <span style=color:#ae81ff>500</span>
+            <span style=color:#f92672>Horse</span>: <span style=color:#ae81ff>1000</span>
+    <span style=color:#f92672>Combat</span>:
+        <span style=color:#f92672>Multiplier</span>:
+            <span style=color:#f92672>Animals</span>: <span style=color:#ae81ff>1.0</span>
+            <span style=color:#f92672>Creeper</span>: <span style=color:#ae81ff>4.0</span>
+            <span style=color:#f92672>Skeleton</span>: <span style=color:#ae81ff>3.0</span>
+            <span style=color:#f92672>Spider</span>: <span style=color:#ae81ff>2.0</span>
+            <span style=color:#f92672>Giant</span>: <span style=color:#ae81ff>4.0</span>
+            <span style=color:#f92672>Zombie</span>: <span style=color:#ae81ff>2.0</span>
+            <span style=color:#f92672>Slime</span>: <span style=color:#ae81ff>2.0</span>
+            <span style=color:#f92672>Ghast</span>: <span style=color:#ae81ff>3.0</span>
+            <span style=color:#f92672>Pig_Zombie</span>: <span style=color:#ae81ff>3.0</span>
+            <span style=color:#f92672>Enderman</span>: <span style=color:#ae81ff>1.0</span>
+            <span style=color:#f92672>Cave_Spider</span>: <span style=color:#ae81ff>3.0</span>
+            <span style=color:#f92672>Silverfish</span>: <span style=color:#ae81ff>3.0</span>
+            <span style=color:#f92672>Blaze</span>: <span style=color:#ae81ff>3.0</span>
+            <span style=color:#f92672>Magma_Cube</span>: <span style=color:#ae81ff>2.0</span>
+            <span style=color:#f92672>Ender_Dragon</span>: <span style=color:#ae81ff>0.0</span>
+            <span style=color:#f92672>Wither</span>: <span style=color:#ae81ff>0.0</span>
+            <span style=color:#f92672>Witch</span>: <span style=color:#ae81ff>0.0</span>
+            <span style=color:#f92672>Iron_Golem</span>: <span style=color:#ae81ff>2.0</span>
+            <span style=color:#f92672>Wither_Skeleton</span>: <span style=color:#ae81ff>4.0</span>
+            <span style=color:#f92672>Endermite</span>: <span style=color:#ae81ff>2.0</span>
+            <span style=color:#f92672>Guardian</span>: <span style=color:#ae81ff>3.0</span>
+            <span style=color:#f92672>Elder_Guardian</span>: <span style=color:#ae81ff>4.0</span>
+            <span style=color:#f92672>Shulker</span>: <span style=color:#ae81ff>2.0</span>
+</code></pre></div>
+</section>
+</article>
+<nav class=page-navigation>
+<section class="page-navigation page-navigation-adjacent">
+<p class=prev>
+<i class="fa fa-arrow-left"></i>
+Prev: <a href=https://mc.ksswre.net/plugins/mcMMO/party/>mcMMO の Party システム</a>
+</p>
+<p class=next>
+Back to: <a href=https://mc.ksswre.net/plugins/mcMMO/>mcMMO</a>
+<i class="fa fa-chevron-up"></i>
+</p>
+</section>
+<section class="page-navigation page-navigation-list">
+<ul>
+<li><a href=https://mc.ksswre.net/plugins/mcMMO/>mcMMO</a></li>
+<ul>
+<li>
+<a href=/plugins/mcMMO/party/>mcMMO の Party システム</a>
+</li>
+<li>
+<a href=/plugins/mcMMO/skills/>mcMMO のスキル一覧</a>
+</li>
+<li>
+<strong><a href=/plugins/mcMMO/experience/>mcMMO/experience</a></strong>
+</li>
+</ul>
+</ul>
+</section>
+</nav>
+</div>
+<div class="container-right sidebar" vocab="http://schema.org/" typeof="SiteNavigationElement">
+<section>
+<h2>Links</h2>
+<ul>
+<li><a href=/galleries>tskserver 写真集</a></li>
+</ul>
+</section>
+<section>
+<h2>Server Status</h2>
+<section>
+<h3><i class="fa fa-server"></i>tskserver</h3>
+<table class=server-status>
+<tr>
+<th class=left>Running?</th>
+<td id=tskserver-is-running class=right>
+<i class="fa fa-refresh fa-spin aqua"></i>
+</td>
+</tr>
+<tr>
+<th class=left>Version</th>
+<td id=tskserver-version class=right>
+<i class="fa fa-question"></i>
+</td>
+</tr>
+<tr>
+<th class=left>Status</th>
+<td id=tskserver-status class=right>
+<i class="fa fa-refresh fa-spin aqua"></i>
+</td>
+</tr>
+</table>
+<p id=tskserver-last-checked-at class="right italic small">
+(pinging)
+</p>
+</section>
+<section style=text-align:right>
+<a href=/status>
+<img src=//graph.ksswre.net/tskserver alt="tskserver online users count by week" width=213 height=117>
+<i class="fa fa-bolt" aria-hidden=true></i> status detail
+</a>
+</section>
+</section>
+<section>
+<h2>Dynmap</h2>
+<section>
+<a href=https://dynmap.mc.ksswre.net target=noopener>dynmap.mc.ksswre.net</a>
+</section>
+</section>
+<section>
+<h2>Recent Posts</h2>
+<section>
+<ul>
+<li vocab="http://schema.org/" typeof="BlogPosting">
+<strong><time property="datePublished" content="2022-07-29T00:00:00+09:00">2022/07/29</time></strong><br>
+<a href=https://mc.ksswre.net/2022/07/29/1.19.1-update/ property="name">Minecraft 1.19.1 にアップデートしました</a>
+</li>
+</ul>
+<ul>
+<li vocab="http://schema.org/" typeof="BlogPosting">
+<strong><time property="datePublished" content="2022-06-08T00:00:00+09:00">2022/06/08</time></strong><br>
+<a href=https://mc.ksswre.net/2022/06/08/1.19-update/ property="name">Minecraft 1.19 にアップデートしました</a>
+</li>
+</ul>
+<ul>
+<li vocab="http://schema.org/" typeof="BlogPosting">
+<strong><time property="datePublished" content="2022-03-05T00:00:00+09:00">2022/03/05</time></strong><br>
+<a href=https://mc.ksswre.net/2022/03/05/1.18.2-update/ property="name">Minecraft 1.18.2 にアップデートしました</a>
+</li>
+</ul>
+<ul>
+<li vocab="http://schema.org/" typeof="BlogPosting">
+<strong><time property="datePublished" content="2021-12-11T00:00:00+09:00">2021/12/11</time></strong><br>
+<a href=https://mc.ksswre.net/2021/12/11/1.18.1-update/ property="name">Minecraft 1.18.1 にアップデートしました</a>
+</li>
+</ul>
+<ul>
+<li vocab="http://schema.org/" typeof="BlogPosting">
+<strong><time property="datePublished" content="2021-12-01T00:00:00+09:00">2021/12/01</time></strong><br>
+<a href=https://mc.ksswre.net/2021/12/01/1.18-update/ property="name">Minecraft 1.18 にアップデートしました</a>
+</li>
+</ul>
+<ul>
+<li vocab="http://schema.org/" typeof="BlogPosting">
+<strong><time property="datePublished" content="2021-08-12T00:00:00+09:00">2021/08/12</time></strong><br>
+<a href=https://mc.ksswre.net/2021/08/12/scheduled-maintenance/ property="name">メンテナンス実施のお知らせ</a>
+</li>
+</ul>
+<ul>
+<li vocab="http://schema.org/" typeof="BlogPosting">
+<strong><time property="datePublished" content="2021-07-07T00:00:00+09:00">2021/07/07</time></strong><br>
+<a href=https://mc.ksswre.net/2021/07/07/1.17.1-update/ property="name">Minecraft 1.17.1 にアップデートしました</a>
+</li>
+</ul>
+<ul>
+<li vocab="http://schema.org/" typeof="BlogPosting">
+<strong><time property="datePublished" content="2021-06-20T00:00:00+09:00">2021/06/20</time></strong><br>
+<a href=https://mc.ksswre.net/2021/06/20/1.17-update/ property="name">Minecraft 1.17 にアップデートしました</a>
+</li>
+</ul>
+<ul>
+<li vocab="http://schema.org/" typeof="BlogPosting">
+<strong><time property="datePublished" content="2018-10-23T00:00:00+09:00">2018/10/23</time></strong><br>
+<a href=https://mc.ksswre.net/2018/10/23/1.13.2-update/ property="name">Minecraft 1.13.2 にアップデートしました</a>
+</li>
+</ul>
+<ul>
+<li vocab="http://schema.org/" typeof="BlogPosting">
+<strong><time property="datePublished" content="2018-10-06T00:00:00+09:00">2018/10/06</time></strong><br>
+<a href=https://mc.ksswre.net/2018/10/06/1.13-update/ property="name">Minecraft 1.13.1 にアップデートしました</a>
+</li>
+</ul>
+<ul>
+<li vocab="http://schema.org/" typeof="BlogPosting">
+<strong><time property="datePublished" content="2017-12-22T00:00:00+09:00">2017/12/22</time></strong><br>
+<a href=https://mc.ksswre.net/2017/12/22/update/ property="name">TrainCarts を追加しました</a>
+</li>
+</ul>
+<ul>
+<li vocab="http://schema.org/" typeof="BlogPosting">
+<strong><time property="datePublished" content="2017-11-19T00:00:00+09:00">2017/11/19</time></strong><br>
+<a href=https://mc.ksswre.net/2017/11/19/1.12-update/ property="name">Minecraft 1.12 にアップデートしました</a>
+</li>
+</ul>
+<ul>
+<li vocab="http://schema.org/" typeof="BlogPosting">
+<strong><time property="datePublished" content="2017-07-10T00:00:00+09:00">2017/07/10</time></strong><br>
+<a href=https://mc.ksswre.net/2017/07/10/kogyo/ property="name">工業サーバを建てました</a>
+</li>
+</ul>
+<ul>
+<li vocab="http://schema.org/" typeof="BlogPosting">
+<strong><time property="datePublished" content="2016-12-01T00:00:00+09:00">2016/12/01</time></strong><br>
+<a href=https://mc.ksswre.net/2016/12/01/1.11-update/ property="name">Minecraft 1.11 にアップデートしました</a>
+</li>
+</ul>
+<ul>
+<li vocab="http://schema.org/" typeof="BlogPosting">
+<strong><time property="datePublished" content="2016-09-08T00:00:00+09:00">2016/09/08</time></strong><br>
+<a href=https://mc.ksswre.net/2016/09/08/skyblock-server-is-currently-unavailable/ property="name">The Unusual SkyBlock サーバを一時休止しています</a>
+</li>
+</ul>
+<ul>
+<li vocab="http://schema.org/" typeof="BlogPosting">
+<strong><time property="datePublished" content="2016-09-07T00:00:00+09:00">2016/09/07</time></strong><br>
+<a href=https://mc.ksswre.net/2016/09/07/unusual-skyblock/ property="name">The Unusual Skyblock サーバ復旧しました</a>
+</li>
+</ul>
+<ul>
+<li vocab="http://schema.org/" typeof="BlogPosting">
+<strong><time property="datePublished" content="2016-08-29T00:00:00+09:00">2016/08/29</time></strong><br>
+<a href=https://mc.ksswre.net/2016/08/29/multiworld-is-now-available/ property="name">ぼうけんワールドとクリエイティブワールドを開放しました。</a>
+</li>
+</ul>
+<ul>
+<li vocab="http://schema.org/" typeof="BlogPosting">
+<strong><time property="datePublished" content="2016-08-29T00:00:00+09:00">2016/08/29</time></strong><br>
+<a href=https://mc.ksswre.net/2016/08/29/update/ property="name">2016年8月29日アップデート情報</a>
+</li>
+</ul>
+<ul>
+<li vocab="http://schema.org/" typeof="BlogPosting">
+<strong><time property="datePublished" content="2016-08-09T00:00:00+09:00">2016/08/09</time></strong><br>
+<a href=https://mc.ksswre.net/2016/08/09/1.10-update/ property="name">Minecraft 1.10 にアップデートしました</a>
+</li>
+</ul>
+</section>
+</section>
+</div>
+</div>
+</div>
+<footer>
+<div class=container>
+<div class="flex flex-align-center">
+<section class=quarter>
+<a href=/>
+<div class=logo>
+<img class=logo-logo src=/img/tskserver-logo.png srcset="/img/tskserver-logo.png 1x, /img/tskserver-logo@2x.png 2x" alt=logo>
+<img class=logo-text src=/img/tskserver-logo-text.svg alt="tskserver: a minecraft server">
+</div>
+</a>
+</section>
+<section class=three-quarter>
+<section class=footer-footer>
+<aside>mc.ksswre.net は Google Analytics を利用して統計情報を収集しています</aside>
+<section class=copyright>&copy; tskserver</section>
+</section>
+</section>
+</div>
+</footer>
+</body>
+<link href="/fonts/fontawesome-webfont.woff2?v=4.6.3" rel=preload as=font type=font/woff2 crossorigin>
+<link href=/css/toc.css rel=stylesheet>
+<link href=/css/highlight.css rel=stylesheet>
+<link href=/css/font-awesome.css rel=stylesheet>
+<link rel=dns-prefetch href=//fonts.googleapis.com>
+<link rel=preconnect href=https://fonts.googleapis.com>
+<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Passion+One:wght@700&display=swap" rel=stylesheet>
+<script defer src=/scripts/script.js></script>
+</html>

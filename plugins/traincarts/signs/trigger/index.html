@@ -1,0 +1,382 @@
+<!doctype html><html lang=ja>
+<head>
+<meta charset=utf-8>
+<meta name=google-site-verification content="XabRge_swrYHPC0fR1d_7yqKf2sqFcCIy4IaXL-T2Cs">
+<link rel=apple-touch-icon sizes=180x180 href=/favicon/apple-touch-icon.png>
+<link rel=icon type=image/png sizes=32x32 href=/favicon/favicon-32x32.png>
+<link rel=icon type=image/png sizes=16x16 href=/favicon/favicon-16x16.png>
+<link rel=manifest href=/favicon/site.webmanifest>
+<link rel=mask-icon href=/favicon/safari-pinned-tab.svg color=#ff0000>
+<meta name=msapplication-TileColor content="#00aba9">
+<meta name=theme-color content="#ffffff">
+<link href=/css/styles.css rel=stylesheet>
+<title>trigger を使って線路上のトロッコを検出する</title>
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-23849444-15','auto'),ga('send','pageview'))</script>
+<meta property="og:title" content="trigger を使って線路上のトロッコを検出する">
+<meta property="og:description" content="TrainCarts の trigger の使い方を解説します。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://mc.ksswre.net/plugins/traincarts/signs/trigger/"><meta property="article:section" content="plugins">
+<meta property="article:modified_time" content="2022-04-17T20:24:22+09:00">
+<meta name=twitter:card content="summary">
+<meta name=twitter:title content="trigger を使って線路上のトロッコを検出する">
+<meta name=twitter:description content="TrainCarts の trigger の使い方を解説します。">
+</head>
+<body>
+<header>
+<div class=container vocab="http://schema.org/" typeof="logo">
+<a href=/ class=logo>
+<h1>tskserver</h1>
+<span>A Minecraft Server!</span>
+</a>
+</div>
+<nav vocab="http://schema.org/" typeof="SiteNavigationElement">
+<section class=navbar>
+<div class=container>
+<ul>
+<li>
+<a propery=name href=/>トップページ</a>
+</li>
+<li>
+<a propery=name href=/about>サーバ情報</a>
+</li>
+<li>
+<a propery=name href=/plugins>プラグイン紹介</a>
+</li>
+<li>
+<a propery=name href=/commands>コマンド集</a>
+</li>
+<li>
+<a propery=name href=/worlds>ワールド紹介</a>
+</li>
+<li>
+<a propery=name href=/introduction>サーバ参加ガイド</a>
+</li>
+</ul>
+</div>
+</section><section class=breadcrumb>
+<div class=container>
+<ul class="nav navbar-nav">
+<li class=home><a href=https://mc.ksswre.net/><i class="fa fa-home"></i></a></li><li class=leaf><i class="fa fa-angle-right"></i><a href=https://mc.ksswre.net/plugins/>プラグイン紹介</a></li><li class=leaf><i class="fa fa-angle-right"></i><a href=https://mc.ksswre.net/plugins/traincarts/>TrainCarts</a></li><li class=leaf><i class="fa fa-angle-right"></i><a href=https://mc.ksswre.net/plugins/traincarts/signs/>TrainCarts で看板を設置してトロッコを制御する方法</a></li><li class="leaf active"><i class="fa fa-angle-right"></i><a href=https://mc.ksswre.net/plugins/traincarts/signs/trigger/>trigger を使って線路上のトロッコを検出する</a></li></ul>
+</div>
+</section></nav>
+</header>
+<div class=container>
+<div class=container-twice>
+<div class=container-left>
+<article vocab="http://schema.org/" typeof="BlogPosting">
+<h1 class=post-title>
+<span property="name">trigger を使って線路上のトロッコを検出する</span>
+<section class=tags property="keywords" content>
+</section>
+</h1>
+<p class=post-meta>
+<span>
+<i class="fa fa-rotate-left"></i>
+<span>
+Updated: <time property="dateModified" content="2022-04-17T20:24:22Z+09:00">2022-04-17 20:24</time>
+</span>
+</span>
+</p>
+<section property="articleBody">
+<p><strong>Trigger</strong> は、その上を走る train を検出し、train の情報を変数に代入できる機能です。
+カウントダウンタイマーの機能もあり、駅などで次の列車の到着想定時間や行き先を案内できます。</p>
+<p>変数の内容は <a href=https://www.spigotmc.org/resources/signlink.39593/>SignLink</a> という別のプラグインを使って別の看板に表示させます。</p>
+<h2 id=看板の書き方>看板の書き方</h2>
+<p>TrainCarts の看板の書き方についてのルールは<a href=/plugins/traincarts/signs>このページ</a>を参照してください。</p>
+<table>
+<thead>
+<tr>
+<th style=text-align:center>#</th>
+<th style=text-align:left>記述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:center>2行目</td>
+<td style=text-align:left><code>trigger</code></td>
+</tr>
+<tr>
+<td style=text-align:center>3行目</td>
+<td style=text-align:left>トリガの名前 (ユニーク)</td>
+</tr>
+<tr>
+<td style=text-align:center>4行目</td>
+<td style=text-align:left>カウントダウンの時間 <code>mm:ss</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id=トリガの名前>トリガの名前</h3>
+<p>三行目で定義される値です。トリガの名前は自分で決めます。このときの名前はユニークである (他の重複しない) 必要があります。また文字数制限の関係からこの名前はできるだけ短い方が良いと思います。</p>
+<h3 id=カウントダウン>カウントダウン</h3>
+<p>四行目で定義される値です。トリガの上を train が通過するとスタートするカウントダウンタイマの時間を <code>mm:ss</code> の形式で指定します。
+例えば 1 分 30 秒なら <code>1:30</code> です。
+train の所要時間を事前に調べて入力することで、train 到着までの想定待ち時間を看板で案内できます。</p>
+<p>この欄を省略すると、TrainCarts が自動的に時間を決定します。時間は train 通過後、最初に停車するまでの時間になります。</p>
+<h2 id=trigger-で検知したトロッコの情報を別の看板で表示する>trigger で検知したトロッコの情報を別の看板で表示する</h2>
+<p>三行目で書いたトリガの名前が <code>trigger1</code> としたとき、以下の書式を看板に書くとトロッコの情報が看板に表示されます。</p>
+<table>
+<thead>
+<tr>
+<th style=text-align:center>書式</th>
+<th style=text-align:left>表示内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:center><code>%trigger1%</code></td>
+<td style=text-align:left>四行目で定義したカウントダウンタイマーの内容</td>
+</tr>
+<tr>
+<td style=text-align:center><code>%trigger1T%</code></td>
+<td style=text-align:left>(上記と同じ)</td>
+</tr>
+<tr>
+<td style=text-align:center><code>%trigger1D%</code></td>
+<td style=text-align:left>train の目的地 (destination)</td>
+</tr>
+<tr>
+<td style=text-align:center><code>%trigger1N%</code></td>
+<td style=text-align:left>train の名前</td>
+</tr>
+<tr>
+<td style=text-align:center><code>%trigger1V%</code></td>
+<td style=text-align:left>train の速度</td>
+</tr>
+</tbody>
+</table>
+<p>表示例
+<blockquote class=twitter-tweet><p lang=en dir=ltr>TrainCarts <a href=https://t.co/7Hw5Ccv3JR>pic.twitter.com/7Hw5Ccv3JR</a></p>&mdash; k5342 (@k5342) <a href="https://twitter.com/k5342/status/944191138466074625?ref_src=twsrc%5Etfw">December 22, 2017</a></blockquote>
+<script async src=https://platform.twitter.com/widgets.js></script>
+</p>
+<h2 id=外部ソース>外部ソース</h2>
+<ul>
+<li><a href=https://wiki.traincarts.net/p/TrainCarts/Signs/Trigger>https://wiki.traincarts.net/p/TrainCarts/Signs/Trigger</a></li>
+</ul>
+</section>
+</article>
+<nav class=page-navigation>
+<section class="page-navigation page-navigation-adjacent">
+<p class=prev>
+<i class="fa fa-arrow-left"></i>
+Prev: <a href=https://mc.ksswre.net/plugins/traincarts/signs/station/>station を定義する</a>
+</p>
+<p class=next>
+Back to: <a href=https://mc.ksswre.net/plugins/traincarts/signs/>TrainCarts で看板を設置してトロッコを制御する方法</a>
+<i class="fa fa-chevron-up"></i>
+</p>
+</section>
+<section class="page-navigation page-navigation-list">
+<ul>
+<li><a href=https://mc.ksswre.net/plugins/traincarts/signs/>TrainCarts で看板を設置してトロッコを制御する方法</a></li>
+<ul>
+<li>
+<a href=/plugins/traincarts/signs/station/>station を定義する</a>
+</li>
+<li>
+<strong><a href=/plugins/traincarts/signs/trigger/>trigger を使って線路上のトロッコを検出する</a></strong>
+</li>
+</ul>
+</ul>
+</section>
+</nav>
+</div>
+<div class="container-right sidebar" vocab="http://schema.org/" typeof="SiteNavigationElement">
+<section>
+<h2>Links</h2>
+<ul>
+<li><a href=/galleries>tskserver 写真集</a></li>
+</ul>
+</section>
+<section>
+<h2>Server Status</h2>
+<section>
+<h3><i class="fa fa-server"></i>tskserver</h3>
+<table class=server-status>
+<tr>
+<th class=left>Running?</th>
+<td id=tskserver-is-running class=right>
+<i class="fa fa-refresh fa-spin aqua"></i>
+</td>
+</tr>
+<tr>
+<th class=left>Version</th>
+<td id=tskserver-version class=right>
+<i class="fa fa-question"></i>
+</td>
+</tr>
+<tr>
+<th class=left>Status</th>
+<td id=tskserver-status class=right>
+<i class="fa fa-refresh fa-spin aqua"></i>
+</td>
+</tr>
+</table>
+<p id=tskserver-last-checked-at class="right italic small">
+(pinging)
+</p>
+</section>
+<section style=text-align:right>
+<a href=/status>
+<img src=//graph.ksswre.net/tskserver alt="tskserver online users count by week" width=213 height=117>
+<i class="fa fa-bolt" aria-hidden=true></i> status detail
+</a>
+</section>
+</section>
+<section>
+<h2>Dynmap</h2>
+<section>
+<a href=https://dynmap.mc.ksswre.net target=noopener>dynmap.mc.ksswre.net</a>
+</section>
+</section>
+<section>
+<h2>Recent Posts</h2>
+<section>
+<ul>
+<li vocab="http://schema.org/" typeof="BlogPosting">
+<strong><time property="datePublished" content="2022-07-29T00:00:00+09:00">2022/07/29</time></strong><br>
+<a href=https://mc.ksswre.net/2022/07/29/1.19.1-update/ property="name">Minecraft 1.19.1 にアップデートしました</a>
+</li>
+</ul>
+<ul>
+<li vocab="http://schema.org/" typeof="BlogPosting">
+<strong><time property="datePublished" content="2022-06-08T00:00:00+09:00">2022/06/08</time></strong><br>
+<a href=https://mc.ksswre.net/2022/06/08/1.19-update/ property="name">Minecraft 1.19 にアップデートしました</a>
+</li>
+</ul>
+<ul>
+<li vocab="http://schema.org/" typeof="BlogPosting">
+<strong><time property="datePublished" content="2022-03-05T00:00:00+09:00">2022/03/05</time></strong><br>
+<a href=https://mc.ksswre.net/2022/03/05/1.18.2-update/ property="name">Minecraft 1.18.2 にアップデートしました</a>
+</li>
+</ul>
+<ul>
+<li vocab="http://schema.org/" typeof="BlogPosting">
+<strong><time property="datePublished" content="2021-12-11T00:00:00+09:00">2021/12/11</time></strong><br>
+<a href=https://mc.ksswre.net/2021/12/11/1.18.1-update/ property="name">Minecraft 1.18.1 にアップデートしました</a>
+</li>
+</ul>
+<ul>
+<li vocab="http://schema.org/" typeof="BlogPosting">
+<strong><time property="datePublished" content="2021-12-01T00:00:00+09:00">2021/12/01</time></strong><br>
+<a href=https://mc.ksswre.net/2021/12/01/1.18-update/ property="name">Minecraft 1.18 にアップデートしました</a>
+</li>
+</ul>
+<ul>
+<li vocab="http://schema.org/" typeof="BlogPosting">
+<strong><time property="datePublished" content="2021-08-12T00:00:00+09:00">2021/08/12</time></strong><br>
+<a href=https://mc.ksswre.net/2021/08/12/scheduled-maintenance/ property="name">メンテナンス実施のお知らせ</a>
+</li>
+</ul>
+<ul>
+<li vocab="http://schema.org/" typeof="BlogPosting">
+<strong><time property="datePublished" content="2021-07-07T00:00:00+09:00">2021/07/07</time></strong><br>
+<a href=https://mc.ksswre.net/2021/07/07/1.17.1-update/ property="name">Minecraft 1.17.1 にアップデートしました</a>
+</li>
+</ul>
+<ul>
+<li vocab="http://schema.org/" typeof="BlogPosting">
+<strong><time property="datePublished" content="2021-06-20T00:00:00+09:00">2021/06/20</time></strong><br>
+<a href=https://mc.ksswre.net/2021/06/20/1.17-update/ property="name">Minecraft 1.17 にアップデートしました</a>
+</li>
+</ul>
+<ul>
+<li vocab="http://schema.org/" typeof="BlogPosting">
+<strong><time property="datePublished" content="2018-10-23T00:00:00+09:00">2018/10/23</time></strong><br>
+<a href=https://mc.ksswre.net/2018/10/23/1.13.2-update/ property="name">Minecraft 1.13.2 にアップデートしました</a>
+</li>
+</ul>
+<ul>
+<li vocab="http://schema.org/" typeof="BlogPosting">
+<strong><time property="datePublished" content="2018-10-06T00:00:00+09:00">2018/10/06</time></strong><br>
+<a href=https://mc.ksswre.net/2018/10/06/1.13-update/ property="name">Minecraft 1.13.1 にアップデートしました</a>
+</li>
+</ul>
+<ul>
+<li vocab="http://schema.org/" typeof="BlogPosting">
+<strong><time property="datePublished" content="2017-12-22T00:00:00+09:00">2017/12/22</time></strong><br>
+<a href=https://mc.ksswre.net/2017/12/22/update/ property="name">TrainCarts を追加しました</a>
+</li>
+</ul>
+<ul>
+<li vocab="http://schema.org/" typeof="BlogPosting">
+<strong><time property="datePublished" content="2017-11-19T00:00:00+09:00">2017/11/19</time></strong><br>
+<a href=https://mc.ksswre.net/2017/11/19/1.12-update/ property="name">Minecraft 1.12 にアップデートしました</a>
+</li>
+</ul>
+<ul>
+<li vocab="http://schema.org/" typeof="BlogPosting">
+<strong><time property="datePublished" content="2017-07-10T00:00:00+09:00">2017/07/10</time></strong><br>
+<a href=https://mc.ksswre.net/2017/07/10/kogyo/ property="name">工業サーバを建てました</a>
+</li>
+</ul>
+<ul>
+<li vocab="http://schema.org/" typeof="BlogPosting">
+<strong><time property="datePublished" content="2016-12-01T00:00:00+09:00">2016/12/01</time></strong><br>
+<a href=https://mc.ksswre.net/2016/12/01/1.11-update/ property="name">Minecraft 1.11 にアップデートしました</a>
+</li>
+</ul>
+<ul>
+<li vocab="http://schema.org/" typeof="BlogPosting">
+<strong><time property="datePublished" content="2016-09-08T00:00:00+09:00">2016/09/08</time></strong><br>
+<a href=https://mc.ksswre.net/2016/09/08/skyblock-server-is-currently-unavailable/ property="name">The Unusual SkyBlock サーバを一時休止しています</a>
+</li>
+</ul>
+<ul>
+<li vocab="http://schema.org/" typeof="BlogPosting">
+<strong><time property="datePublished" content="2016-09-07T00:00:00+09:00">2016/09/07</time></strong><br>
+<a href=https://mc.ksswre.net/2016/09/07/unusual-skyblock/ property="name">The Unusual Skyblock サーバ復旧しました</a>
+</li>
+</ul>
+<ul>
+<li vocab="http://schema.org/" typeof="BlogPosting">
+<strong><time property="datePublished" content="2016-08-29T00:00:00+09:00">2016/08/29</time></strong><br>
+<a href=https://mc.ksswre.net/2016/08/29/multiworld-is-now-available/ property="name">ぼうけんワールドとクリエイティブワールドを開放しました。</a>
+</li>
+</ul>
+<ul>
+<li vocab="http://schema.org/" typeof="BlogPosting">
+<strong><time property="datePublished" content="2016-08-29T00:00:00+09:00">2016/08/29</time></strong><br>
+<a href=https://mc.ksswre.net/2016/08/29/update/ property="name">2016年8月29日アップデート情報</a>
+</li>
+</ul>
+<ul>
+<li vocab="http://schema.org/" typeof="BlogPosting">
+<strong><time property="datePublished" content="2016-08-09T00:00:00+09:00">2016/08/09</time></strong><br>
+<a href=https://mc.ksswre.net/2016/08/09/1.10-update/ property="name">Minecraft 1.10 にアップデートしました</a>
+</li>
+</ul>
+</section>
+</section>
+</div>
+</div>
+</div>
+<footer>
+<div class=container>
+<div class="flex flex-align-center">
+<section class=quarter>
+<a href=/>
+<div class=logo>
+<img class=logo-logo src=/img/tskserver-logo.png srcset="/img/tskserver-logo.png 1x, /img/tskserver-logo@2x.png 2x" alt=logo>
+<img class=logo-text src=/img/tskserver-logo-text.svg alt="tskserver: a minecraft server">
+</div>
+</a>
+</section>
+<section class=three-quarter>
+<section class=footer-footer>
+<aside>mc.ksswre.net は Google Analytics を利用して統計情報を収集しています</aside>
+<section class=copyright>&copy; tskserver</section>
+</section>
+</section>
+</div>
+</footer>
+</body>
+<link href="/fonts/fontawesome-webfont.woff2?v=4.6.3" rel=preload as=font type=font/woff2 crossorigin>
+<link href=/css/toc.css rel=stylesheet>
+<link href=/css/highlight.css rel=stylesheet>
+<link href=/css/font-awesome.css rel=stylesheet>
+<link rel=dns-prefetch href=//fonts.googleapis.com>
+<link rel=preconnect href=https://fonts.googleapis.com>
+<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Passion+One:wght@700&display=swap" rel=stylesheet>
+<script defer src=/scripts/script.js></script>
+</html>
