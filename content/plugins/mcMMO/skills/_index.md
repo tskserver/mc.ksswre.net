@@ -9,13 +9,13 @@ mcMMO は以下の 15 個のスキルがあります。
 {{< mcmmo_skills >}}
 
 
-## [mcMMO の関連ページ](/mcMMO)
+## [mcMMO の関連ページ](..)
 
-### [スキル一覧](/mcMMO/skills)
+### [スキル一覧](./skills)
 mcMMO の 15 のスキルについてのまとめ。
 
-### [Party システム](/mcMMO/party)
+### [Party システム](./party)
 仲間とパーティを作って一緒に経験値をもらうことができます。
 
-### [経験値設定ファイル](/mcMMO/experience)
+### [経験値設定ファイル](./experience)
 mcMMO の各アクションでもらえる経験値の設定がぜんぶわかります。
