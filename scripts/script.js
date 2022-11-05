@@ -9,7 +9,7 @@ function fetch_status(callback) {
 			callback(obj);
 		}
 	}
-	xhr.open("GET", "/api/status");
+	xhr.open("GET", "https://api.mc.ksswre.net/api/status");
 	xhr.send(null);
 }
 
