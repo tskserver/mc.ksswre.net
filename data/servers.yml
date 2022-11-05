@@ -1,5 +1,5 @@
 tskserver:
-  host: mc.ksswre.net
+  host: game.mc.ksswre.net
   port: 25565
   version: Minecraft Java Edition 1.19.1
   version_short: 1.19.1
