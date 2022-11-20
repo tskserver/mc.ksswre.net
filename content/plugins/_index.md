@@ -76,6 +76,12 @@ Minecraft に MMO 要素を追加します。スキル経験値という新し�
 
 <https://github.com/mcMMO-Dev/mcMMO>
 
+### Mob Catcher
+友好Mobに対して、shift+右クリックでMobを手に抱えることができます。
+村人は役職なしでないと抱えられません。
+
+<https://www.spigotmc.org/resources/mob-catcher.96642/>
+
 ## 過去に導入していたプラグイン
 以下のプラグインは現在の tskserver では導入されていません。
 
