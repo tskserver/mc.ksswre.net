@@ -22,15 +22,3 @@ Dynmap というプラグインを導入していて、これを使うとサー�
 
 ![](/img/dynmap.png)
 
-## Twitter Bot
-誰かがログインしたときやサーバが落ちたり復活したときにツイートしてくれる bot です。
-<a href="https://twitter.com/tskserver?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-dnt="true" data-show-count="false">Follow @tskserver</a>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
-## Twitter Hashtag
-上述の Bot に加え、このサイトが更新されたときのツイートが流れてくるのと、プレイヤーの誰かが騒いています。
-ハッシュタグは [#tskserver](https://twitter.com/search?q=%23tskserver) なので、どうか賑やかにしてください。
-
-* ハッシュタグ [#tskserver](https://twitter.com/search?q=%23tskserver)
-
