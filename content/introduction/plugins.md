@@ -16,6 +16,8 @@ tskserver はバニラの Minecraft で遊ぶことが出来ますが、
 Dynmap の左上のレイヤーアイコンにマウスを重ねて、Cenotaphs チェックボックスをオンにしてください。
 詳しいことは [Cenotaph](/plugins/cenotaph) のページを参照してみてください。
 
+![Cenotaph のデスチェストからアイテムを復旧する](/plugins/cenotaph/cenotaph-pickup.gif)
+
 ## 木の伐採の効率化
 木こり MOD として TreeAssist を導入しています。
 石以上の材質のオノを使って木を切ると、連鎖的に原木ブロックがアイテム化されます。
