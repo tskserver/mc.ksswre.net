@@ -8,11 +8,19 @@
         {{ end }}
       </section>
     {{ else }}
-      <section class="post-list">
-        {{ range .Pages }}
-          {{ partial "article-list.html" . }}
-        {{ end }}
-      </section>
+      {{ if .Param "reversed" }}
+        <section class="post-list">
+          {{ range .Pages.Reverse }}
+            {{ partial "article-list.html" . }}
+          {{ end }}
+        </section>
+      {{ else }}
+        <section class="post-list">
+          {{ range .Pages }}
+            {{ partial "article-list.html" . }}
+          {{ end }}
+        </section>
+      {{ end }}
     {{ end }}
   {{ end }}
   {{ if not .Parent.IsHome }}
