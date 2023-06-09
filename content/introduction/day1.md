@@ -24,13 +24,6 @@ weight: 200
 > minecraft player no naka niha katakata hyouki ga sonomama eitango ni naru hito mo iru  
 > (マインクラフトプレイヤーの中にはカタカナ表記がそのまま英単語なる人もいる)
 
-## サーバのマップや他のプレイヤーの位置を確認する
-Dynmap を Web ブラウザで開いてみてください。Dynmap へのリンクは tskserver のサイト内の全てのページの右側に貼ってあります。
-
-こちらの URL から → <https://dynmap.mc.ksswre.net/>
-
-![Dynmap](/img/dynmap.png)
-
 ## ログイン中のプレイヤーを表示する
 <kbd>Tab</kbd> キーを押すと、ログイン中のプレイヤーを一覧表示できます。
 

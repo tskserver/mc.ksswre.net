@@ -7,14 +7,14 @@ images:
 - /img/gen12/2022-06-08_23.03.37.png
 ---
 
-gen12 は tskserver のワールドリセット後の第 12 世代目のマップ。Minecraft 1.19。
+gen12 は tskserver のワールドリセット後の第 12 世代目のマップ。Minecraft 1.19.x。
 <!--more-->
 
 ![](/img/gen12/2022-06-08_23.03.37.png)
 
 # 基本情報
-- 運用期間: 2022-06-08 ~
-- Minecraft 1.19
+- 運用期間: 2022-06-08 ~ 2023-06-09
+- Minecraft 1.19, 1.19.1, ~~1.19.2~~, ~~1.19.3~~
 - ワールド境界: 5000 blocks
 - シード値: `-5559450641115787874`
 
@@ -22,7 +22,7 @@ gen12 は tskserver のワールドリセット後の第 12 世代目のマッ�
 - [/tags/gen12](/tags/gen12) を参照
 
 # 導入プラグイン
-([調整中](/2022/06/08/1.19-update/))
+AFK, [Cenotaph](/plugins/cenotaph), CoreProtect, dynmap, dynmap-mobs, HttpHeartBeat, LuckPerms, [mcMMO](/plugins/mcMMO), MobCatcher, PrometheusExporter, TreeAssist, UnifiedMetrics, WireRod, WorldEdit, WorldGuard
 
 # スクリーンショット
 ▼ 仮拠点

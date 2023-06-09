@@ -8,6 +8,14 @@ tskserver はバニラの Minecraft で遊ぶことが出来ますが、
 バニラの範囲内で、少し派手なプラグインを幾つか追加しているので紹介します。
 ここに書いてないプラグインもあるので、詳細は[プラグイン紹介](/plugins)を参照してください。
 
+## サーバのマップや他のプレイヤーの位置を確認する
+Dynmap を Web ブラウザで開いてみてください。Dynmap へのリンクは tskserver のサイト内の全てのページの右側に貼ってあります。
+
+こちらの URL から → <https://dynmap.mc.ksswre.net/>
+
+![Dynmap](/img/dynmap.png)
+
+
 ## デスチェストの作成
 [Cenotaph](/plugins/cenotaph) というデスチェストを設置してくれるプラグインを導入しています。
 インベントリにチェストを持った状態でプレイヤーが倒されると、その場にチェストを設置してインベントリを格納してくれます。
@@ -15,6 +23,8 @@ tskserver はバニラの Minecraft で遊ぶことが出来ますが、
 あと tskserver はやさしいので、[Dynmap](https://dynmap.mc.ksswre.net) でデスチェストの位置が表示されるようにしています。
 Dynmap の左上のレイヤーアイコンにマウスを重ねて、Cenotaphs チェックボックスをオンにしてください。
 詳しいことは [Cenotaph](/plugins/cenotaph) のページを参照してみてください。
+
+![Cenotaph のデスチェストからアイテムを復旧する](/plugins/cenotaph/cenotaph-pickup.gif)
 
 ## 木の伐採の効率化
 木こり MOD として TreeAssist を導入しています。
