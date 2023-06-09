@@ -35,8 +35,15 @@ AFK, [Cenotaph](/plugins/cenotaph), CoreProtect, dynmap, dynmap-mobs, HttpHeartB
 ![](/img/gen12/respawn.png)
 
 ▼ 開拓後
+![](/img/gen12/2023-06-01_19.21.48.png)
 ![](/img/gen12/2023-06-01_19.23.50.png)
+![](/img/gen12/2023-06-08_17.55.05.png)
+![](/img/gen12/2023-06-08_17.55.29.png)
+![](/img/gen12/2023-06-08_17.55.52.png)
+![](/img/gen12/2023-06-01_20.34.53.png)
 ![](/img/gen12/2023-06-01_20.35.30.png)
-![](/img/gen12/2023-06-01_20.40.05.png)
+![](/img/gen12/2023-06-08_17.56.46.png)
 ![](/img/gen12/2023-06-08_18.05.38.png)
 ![](/img/gen12/2023-06-08_18.11.14.png)
+![](/img/gen12/2023-06-01_20.40.05.png)
+![](/img/gen12/2023-06-01_20.50.53.png)
