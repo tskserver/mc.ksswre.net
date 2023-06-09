@@ -360,7 +360,7 @@ article h2 {
 }
 
 article h3 {
-	font-size: 1.5em;
+	font-size: 1.3em;
 }
 
 article h4 {
@@ -470,6 +470,7 @@ button {
 	background-color: rgb(75, 75, 75);
 	transition: 0.2s linear;
 	border: none;
+	border-radius: 25px;
 }
 
 button:hover {
@@ -497,8 +498,8 @@ article .post-meta {
 
 article .post-thumbnail {
 	width: 100%;
-	max-height: 250px;
-	border-radius: 3px;
+	max-height: 350px;
+	border-radius: 10px;
 }
 
 article .post-thumbnail img {
@@ -509,7 +510,7 @@ article .post-thumbnail img {
 
 article button {
 	width: 60%;
-	margin: 3em auto 0 auto;
+	margin: 2em auto 0 auto;
 	display: block;
 }
 
