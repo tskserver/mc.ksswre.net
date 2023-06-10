@@ -17,3 +17,8 @@ tskserver はパブリックサーバなので、誰でも招待しちゃって�
   * [プラグイン紹介](/plugins)
   * [コマンド集](/commands)
 
+## このサイトを更新する
+tskserver の Web サイト (mc.ksswre.net) のソースコードは GitHub で管理されており、どなたでも編集提案できます。編集提案は GitHub の Pull Request からお送りください。
+特に[アルバム](/galleries)や[過去のワールド紹介](/worlds)のページにスクリーンショットや情報追加などは歓迎します。
+
+- <https://github.com/tskserver/mc.ksswre.net>
