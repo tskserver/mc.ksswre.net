@@ -4,6 +4,7 @@ date: 2024-06-30
 noToc: true
 description: tskserver で遊ぶ上でのルールを紹介します
 weight: 50
+image: /img/floating-tree.png
 ---
 
 tskserver で遊ぶ上での約束事を紹介します。基本的にはなんでもやっていいですが、他人に迷惑をかける行為は禁止です（ここに書いていない内容も当然ある）。具体例を紹介します。
