@@ -7,20 +7,20 @@ images:
 - /img/gen13/2023-06-09_22.21.07.png
 ---
 
-gen12 は tskserver のワールドリセット後の第 13 世代目のマップ。Minecraft 1.20.x。
+gen13 は tskserver のワールドリセット後の第 13 世代目のマップ。Minecraft 1.20.x。
 <!--more-->
 
 ![](/img/gen13/2023-06-09_22.21.07.png)
 
 # 基本情報
-- 運用期間: 2022-06-09 ~
-- Minecraft 1.20, 1.20.1
+- 運用期間: 2023-06-09 ~ 2024-03-10
+- Minecraft 1.20, 1.20.1, 1.20.4
 - ワールド境界: 5000 blocks
 - 初期リスポーン座標: (x, z) = (13, 36)
-- シード値: `<TBA>`
+- シード値: `237679882190154802`
 
 # ニュース
-- [/tags/gen12](/tags/gen13) を参照
+- [/tags/gen13](/tags/gen13) を参照
 
 # 導入プラグイン
 AFK, [Cenotaph](/plugins/cenotaph), CoreProtect, dynmap, dynmap-mobs, HttpHeartBeat, LuckPerms, [mcMMO](/plugins/mcMMO), MobCatcher, PrometheusExporter, TreeAssist, UnifiedMetrics, WireRod, WorldEdit, WorldGuard
