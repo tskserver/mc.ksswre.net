@@ -1,8 +1,8 @@
 tskserver:
   host: game.mc.ksswre.net
   port: 25565
-  version: Minecraft Java Edition 1.20.4
-  version_short: "1.20"
+  version: Minecraft Java Edition 1.21
+  version_short: "1.21"
   dynmap_url: https://dynmap.mc.ksswre.net/
-  last_reset_at: 2023-06-09
-  last_maintenance_date: 2024-01-19
+  last_reset_at: 2024-06-27
+  last_maintenance_date: 2024-06-27
