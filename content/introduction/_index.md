@@ -19,6 +19,13 @@ tskserver は **Minecraft Java Edition** のパブリックサーバです。
 
 過去のワールドリセットなどのサーバに関する情報は[サーバ情報](/about)のページも参照ください。
 
+## [ルール・禁止事項について](/introduction/rules)
+  * 禁止行為の考え方
+  * 禁止事項について
+  * 共有チェストについて
+  * やるといいこと
+  * 異常を発見したら
+
 ## [tskserver で遊ぶ準備](/introduction/prepare)
   * Minecraft バージョンを揃える
   * サーバ設定の追加
