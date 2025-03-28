@@ -1,13 +1,13 @@
 ---
-title: "ワールド情報: gen14"
+title: "ワールド情報: gen15"
 noToc: true
 tags: [gen15]
-weight: 5114
+weight: 5115
 images:
 - /img/gen15/2025-03-28_23.48.02.png
 ---
 
-gen15 は tskserver のワールドリセット後の第 14 世代目のマップ。Minecraft 1.21.5-。
+gen15 は tskserver のワールドリセット後の第 15 世代目のマップ。Minecraft 1.21.5-。
 <!--more-->
 
 ![](/img/gen15/2025-03-28_23.48.02.png)
@@ -27,5 +27,5 @@ AFK, [Cenotaph](/plugins/cenotaph), CoreProtect, dynmap, dynmap-mobs, HttpHeartB
 
 # スクリーンショット
 ▼ 初期スポーン周辺
-![](/img/gen14/2024-06-27_01.12.02.png)
-![](/img/gen14/2025-03-28_23.47.12.png)
+![](/img/gen15/2025-03-28_23.48.02.png)
+![](/img/gen15/2025-03-28_23.47.12.png)
